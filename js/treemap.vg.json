@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Panel 13: Government funding (Australian Government plus state and territory) received by schools in each state, then by school sector, 2024. Source: ACARA, school income 2024.",
+  "width": 500,
+  "height": 360,
+  "data": [
+    {
+      "name": "funding",
+      "url": "data/school_income_2024.csv",
+      "format": {"type": "csv", "parse": {"total_aud": "number"}},
+      "transform": [
+        {"type": "filter", "expr": "datum.state != 'Australia' && datum.source_group == 'Government'"},
+        {"type": "aggregate", "groupby": ["state", "state_abbr", "sector"], "fields": ["total_aud"], "ops": ["sum"], "as": ["funding"]},
+        {"type": "joinaggregate", "groupby": ["state_abbr"], "fields": ["funding"], "ops": ["sum"], "as": ["state_total"]},
+        {"type": "nest", "keys": ["state_abbr"], "generate": true},
+        {
+          "type": "treemap",
+          "field": "funding",
+          "sort": {"field": "value", "order": "descending"},
+          "round": true,
+          "paddingTop": 16,
+          "paddingInner": 2,
+          "size": [{"signal": "width"}, {"signal": "height"}]
+        }
+      ]
+    },
+    {
+      "name": "states",
+      "source": "funding",
+      "transform": [{"type": "filter", "expr": "datum.depth == 1"}]
+    },
+    {
+      "name": "sectors",
+      "source": "funding",
+      "transform": [{"type": "filter", "expr": "datum.depth == 2"}]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Government", "Catholic", "Independent"],
+      "range": ["#3a3f4b", "#7b8291", "#b9bec8"]
+    }
+  ],
+  "legends": [
+    {"fill": "color", "orient": "bottom", "direction": "horizontal", "symbolType": "square"}
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "states"},
+      "encode": {
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fill": {"value": "#eceef2"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "states"},
+      "encode": {
+        "update": {
+          "x": {"field": "x0", "offset": 4},
+          "y": {"field": "y0", "offset": 12},
+          "text": {"field": "key"},
+          "fontWeight": {"value": "bold"},
+          "fontSize": {"value": 11},
+          "fill": {"value": "#1f2430"}
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "sectors"},
+      "encode": {
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fill": {"scale": "color", "field": "sector"},
+          "tooltip": {"signal": "{'State': datum.state, 'Sector': datum.sector, 'Government funding': format(datum.funding, '$,.0f'), 'Share of the state total': format(datum.funding / datum.state_total, '.0%')}"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "sectors"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"field": "x0", "offset": 5},
+          "y": {"field": "y0", "offset": 15},
+          "text": {"signal": "[datum.sector, format(datum.funding / 1e9, '$.1f') + ' billion']"},
+          "fontSize": {"value": 11},
+          "fill": [
+            {"test": "datum.sector == 'Independent'", "value": "#1f2430"},
+            {"value": "white"}
+          ],
+          "opacity": [
+            {"test": "datum.x1 - datum.x0 > 70 && datum.y1 - datum.y0 > 36", "value": 1},
+            {"value": 0}
+          ]
+        }
+      }
+    }
+  ],
+  "config": {
+    "text": {"font": "Atkinson Hyperlegible"},
+    "legend": {"labelFont": "Atkinson Hyperlegible", "labelFontSize": 11}
+  }
+}

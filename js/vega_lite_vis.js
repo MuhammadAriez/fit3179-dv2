@@ -60,3 +60,8 @@ vegaEmbed("#waffle_chart", vg_waffle, embedOptions).then(function (result) {
 var vg_butterfly = "js/butterfly_chart.vg.json";
 vegaEmbed("#butterfly_chart", vg_butterfly, embedOptions).then(function (result) {
 }).catch(console.error);
+
+// Panel 13: treemap
+var vg_treemap = "js/treemap.vg.json";
+vegaEmbed("#treemap", vg_treemap, embedOptions).then(function (result) {
+}).catch(console.error);
