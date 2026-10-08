@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 8: How much more government funding each government-school student receives than each non-government-school student, by state and territory, 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "width": "container",
+  "height": 260,
+  "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
+  "transform": [
+    {"filter": "datum.year == '2023-24' && datum.source == 'Total government'"},
+    {"pivot": "sector", "value": "per_student_real_2023_24_aud", "groupby": ["state", "state_abbr"]},
+    {"calculate": "datum.Government - datum['Non-government']", "as": "gap"}
+  ],
+  "layer": [
+    {
+      "transform": [
+        {"filter": "datum.state_abbr == 'Aust'"},
+        {"calculate": "'Australia: ' + format(datum.gap, '$,.0f')", "as": "label"}
+      ],
+      "encoding": {"x": {"field": "gap", "type": "quantitative"}},
+      "layer": [
+        {"mark": {"type": "rule", "color": "#7a8294", "strokeDash": [4, 4]}},
+        {"mark": {"type": "text", "align": "left", "dx": 5, "y": -8, "fontSize": 12, "color": "#4a5263"}, "encoding": {"text": {"field": "label", "type": "nominal"}}}
+      ]
+    },
+    {
+      "transform": [{"filter": "datum.state_abbr != 'Aust'"}],
+      "encoding": {
+        "y": {"field": "state_abbr", "type": "nominal", "title": null, "sort": "-x"},
+        "x": {"field": "gap", "type": "quantitative", "axis": {"format": "$,.0f", "values": [0, 5000, 10000, 15000, 20000]}, "title": "Extra government funding per government-school student"},
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State or territory"},
+          {"field": "Government", "type": "quantitative", "title": "Per government-school student", "format": "$,.0f"},
+          {"field": "Non-government", "type": "quantitative", "title": "Per non-government-school student", "format": "$,.0f"},
+          {"field": "gap", "type": "quantitative", "title": "Difference", "format": "$,.0f"}
+        ]
+      },
+      "layer": [
+        {"mark": {"type": "rule", "color": "#c9cdd6", "strokeWidth": 3}, "encoding": {"x2": {"datum": 0}}},
+        {"mark": {"type": "point", "filled": true, "size": 120, "opacity": 1, "color": "#5b3c94"}},
+        {
+          "mark": {"type": "text", "align": "left", "dx": 10, "fontWeight": "bold", "fontSize": 12, "color": "#5b3c94"},
+          "encoding": {
+            "text": {"field": "gap", "type": "quantitative", "format": "$,.0f"},
+            "opacity": {"condition": {"test": "datum.state_abbr == 'ACT' || datum.state_abbr == 'NT'", "value": 1}, "value": 0}
+          }
+        }
+      ]
+    }
+  ],
+  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+}

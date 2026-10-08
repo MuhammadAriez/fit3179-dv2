@@ -41,6 +41,11 @@ var vg_symbol = "js/symbol_map.vg.json";
 vegaEmbed("#symbol_map", vg_symbol, embedOptions).then(function (result) {
 }).catch(console.error);
 
+// Panel 8: lollipop chart
+var vg_lollipop = "js/lollipop_chart.vg.json";
+vegaEmbed("#lollipop_chart", vg_lollipop, embedOptions).then(function (result) {
+}).catch(console.error);
+
 // Panel 9: small-multiple maps
 var vg_small_maps = "js/small_multiple_maps.vg.json";
 vegaEmbed("#small_multiple_maps", vg_small_maps, embedOptions).then(function (result) {
