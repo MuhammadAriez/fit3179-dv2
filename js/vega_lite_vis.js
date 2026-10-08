@@ -51,3 +51,12 @@ var vg_small_maps = "js/small_multiple_maps.vg.json";
 vegaEmbed("#small_multiple_maps", vg_small_maps, embedOptions).then(function (result) {
 }).catch(console.error);
 
+// Panel 1: waffle chart
+var vg_waffle = "js/waffle_chart.vg.json";
+vegaEmbed("#waffle_chart", vg_waffle, embedOptions).then(function (result) {
+}).catch(console.error);
+
+// Panel 12: butterfly chart
+var vg_butterfly = "js/butterfly_chart.vg.json";
+vegaEmbed("#butterfly_chart", vg_butterfly, embedOptions).then(function (result) {
+}).catch(console.error);

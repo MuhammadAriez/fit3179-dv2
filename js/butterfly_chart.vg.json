@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 12: Share of students (ABS, Schools 2024, full-time equivalent) against share of government funding received by schools (ACARA, school income 2024), by school sector, Australia, 2024.",
+  "spacing": 8,
+  "hconcat": [
+    {
+      "title": {"text": "Share of students", "fontSize": 13},
+      "width": 180,
+      "height": 150,
+      "data": {"url": "data/enrolments.csv", "format": {"parse": {"fte_students": "number"}}},
+      "transform": [
+        {"filter": "datum.year == 2024 && datum.state == 'Australia'"},
+        {"joinaggregate": [{"op": "sum", "field": "fte_students", "as": "total"}]},
+        {"calculate": "datum.fte_students / datum.total", "as": "share"}
+      ],
+      "encoding": {
+        "y": {"field": "sector", "type": "nominal", "title": null, "sort": ["Government", "Catholic", "Independent"], "axis": {"orient": "right"}},
+        "x": {"field": "share", "type": "quantitative", "title": null, "scale": {"domain": [0, 0.8], "reverse": true}, "axis": {"format": "%", "values": [0, 0.2, 0.4, 0.6, 0.8]}}
+      },
+      "layer": [
+        {
+          "mark": {"type": "bar"},
+          "encoding": {
+            "color": {"field": "sector", "type": "nominal", "scale": {"domain": ["Government", "Catholic", "Independent"], "range": ["#3a3f4b", "#7b8291", "#b9bec8"]}, "legend": null},
+            "tooltip": [
+              {"field": "sector", "type": "nominal", "title": "Sector"},
+              {"field": "share", "type": "quantitative", "title": "Share of students", "format": ".1%"},
+              {"field": "fte_students", "type": "quantitative", "title": "Students (full-time equivalent)", "format": ",.0f"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "text", "align": "right", "dx": -5, "fontWeight": "bold", "fontSize": 12, "color": "#1f2430"},
+          "encoding": {"text": {"field": "share", "type": "quantitative", "format": ".0%"}}
+        }
+      ]
+    },
+    {
+      "title": {"text": "Share of government funding", "fontSize": 13},
+      "width": 180,
+      "height": 150,
+      "data": {"url": "data/school_income_2024.csv", "format": {"parse": {"total_aud": "number"}}},
+      "transform": [
+        {"filter": "datum.state == 'Australia' && datum.source_group == 'Government'"},
+        {"aggregate": [{"op": "sum", "field": "total_aud", "as": "funding"}], "groupby": ["sector"]},
+        {"joinaggregate": [{"op": "sum", "field": "funding", "as": "total"}]},
+        {"calculate": "datum.funding / datum.total", "as": "share"}
+      ],
+      "encoding": {
+        "y": {"field": "sector", "type": "nominal", "title": null, "sort": ["Government", "Catholic", "Independent"], "axis": null},
+        "x": {"field": "share", "type": "quantitative", "title": null, "scale": {"domain": [0, 0.8]}, "axis": {"format": "%", "values": [0, 0.2, 0.4, 0.6, 0.8]}}
+      },
+      "layer": [
+        {
+          "mark": {"type": "bar"},
+          "encoding": {
+            "color": {"field": "sector", "type": "nominal", "scale": {"domain": ["Government", "Catholic", "Independent"], "range": ["#3a3f4b", "#7b8291", "#b9bec8"]}, "legend": null},
+            "tooltip": [
+              {"field": "sector", "type": "nominal", "title": "Sector"},
+              {"field": "share", "type": "quantitative", "title": "Share of government funding", "format": ".1%"},
+              {"field": "funding", "type": "quantitative", "title": "Government funding", "format": "$,.0f"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "text", "align": "left", "dx": 5, "fontWeight": "bold", "fontSize": 12, "color": "#1f2430"},
+          "encoding": {"text": {"field": "share", "type": "quantitative", "format": ".0%"}}
+        }
+      ]
+    }
+  ],
+  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+}
