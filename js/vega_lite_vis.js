@@ -65,3 +65,9 @@ vegaEmbed("#butterfly_chart", vg_butterfly, embedOptions).then(function (result)
 var vg_treemap = "js/treemap.vg.json";
 vegaEmbed("#treemap", vg_treemap, embedOptions).then(function (result) {
 }).catch(console.error);
+
+
+//Panel 2: sankey diagram
+var vg_sankey = "js/sankey_diagram.vg.json";
+vegaEmbed("#sankey_diagram", vg_sankey, embedOptions).then(function (result) {
+}).catch(console.error);

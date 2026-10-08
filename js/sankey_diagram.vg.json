@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Panel 2: School income in Australia in 2024, from each source (Australian Government, state and territory governments, fees and private money) to each school sector. Source: ACARA, school finance dataset, school income 2024.",
+  "width": 900,
+  "height": 340,
+  "autosize": "none",
+  "signals": [
+    {"name": "gap", "value": 16},
+    {"name": "leftX", "value": 210},
+    {"name": "rightX", "value": 730}
+  ],
+  "data": [
+    {
+      "name": "flows",
+      "url": "data/school_income_2024.csv",
+      "format": {"type": "csv", "parse": {"total_aud": "number"}},
+      "transform": [
+        {"type": "filter", "expr": "datum.state == 'Australia' && datum.source != 'Total gross income'"},
+        {"type": "formula", "expr": "datum.source_group == 'Private' ? 'Fees and private money' : datum.source", "as": "income_source"},
+        {"type": "aggregate", "groupby": ["income_source", "sector"], "fields": ["total_aud"], "ops": ["sum"], "as": ["amount"]},
+        {"type": "joinaggregate", "groupby": ["sector"], "fields": ["amount"], "ops": ["sum"], "as": ["sector_total"]},
+        {"type": "formula", "expr": "datum.income_source == 'State and territory government' ? 0 : datum.income_source == 'Australian Government' ? 1 : 2", "as": "source_order"},
+        {"type": "formula", "expr": "datum.sector == 'Government' ? 0 : datum.sector == 'Catholic' ? 1 : 2", "as": "sector_order"},
+        {"type": "stack", "field": "amount", "sort": {"field": ["source_order", "sector_order"]}, "as": ["s0", "s1"]},
+        {"type": "stack", "field": "amount", "sort": {"field": ["sector_order", "source_order"]}, "as": ["t0", "t1"]}
+      ]
+    },
+    {
+      "name": "links",
+      "source": "flows",
+      "transform": [
+        {"type": "formula", "expr": "leftX + 14", "as": "sx"},
+        {"type": "formula", "expr": "scale('y', (datum.s0 + datum.s1) / 2) + datum.source_order * gap", "as": "sy"},
+        {"type": "formula", "expr": "rightX", "as": "tx"},
+        {"type": "formula", "expr": "scale('y', (datum.t0 + datum.t1) / 2) + datum.sector_order * gap", "as": "ty"},
+        {"type": "linkpath", "orient": "horizontal", "shape": "diagonal", "sourceX": "sx", "sourceY": "sy", "targetX": "tx", "targetY": "ty"}
+      ]
+    },
+    {
+      "name": "source_nodes",
+      "source": "flows",
+      "transform": [
+        {"type": "aggregate", "groupby": ["income_source", "source_order"], "fields": ["s0", "s1", "amount"], "ops": ["min", "max", "sum"], "as": ["y0", "y1", "total"]}
+      ]
+    },
+    {
+      "name": "sector_nodes",
+      "source": "flows",
+      "transform": [
+        {"type": "aggregate", "groupby": ["sector", "sector_order"], "fields": ["t0", "t1", "amount"], "ops": ["min", "max", "sum"], "as": ["y0", "y1", "total"]}
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {"data": "flows", "field": "s1"},
+      "zero": true,
+      "range": [0, {"signal": "height - 2 * gap"}]
+    },
+    {
+      "name": "source_color",
+      "type": "ordinal",
+      "domain": ["Australian Government", "State and territory government", "Fees and private money"],
+      "range": ["#2f6db5", "#3e8e6e", "#c8801f"]
+    },
+    {
+      "name": "sector_color",
+      "type": "ordinal",
+      "domain": ["Government", "Catholic", "Independent"],
+      "range": ["#3a3f4b", "#7b8291", "#b9bec8"]
+    }
+  ],
+  "marks": [
+    {
+      "type": "path",
+      "from": {"data": "links"},
+      "encode": {
+        "update": {
+          "path": {"field": "path"},
+          "stroke": {"scale": "source_color", "field": "income_source"},
+          "strokeWidth": {"scale": "y", "field": "amount"},
+          "strokeOpacity": {"value": 0.4},
+          "tooltip": {"signal": "{'From': datum.income_source, 'To': datum.sector + ' schools', 'Amount': format(datum.amount, '$,.0f'), 'Share of sector income': format(datum.amount / datum.sector_total, '.0%')}"}
+        },
+        "hover": {
+          "strokeOpacity": {"value": 0.75}
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "source_nodes"},
+      "encode": {
+        "update": {
+          "x": {"signal": "leftX"},
+          "width": {"value": 14},
+          "y": {"signal": "scale('y', datum.y0) + datum.source_order * gap"},
+          "y2": {"signal": "scale('y', datum.y1) + datum.source_order * gap"},
+          "fill": {"scale": "source_color", "field": "income_source"}
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "sector_nodes"},
+      "encode": {
+        "update": {
+          "x": {"signal": "rightX"},
+          "width": {"value": 14},
+          "y": {"signal": "scale('y', datum.y0) + datum.sector_order * gap"},
+          "y2": {"signal": "scale('y', datum.y1) + datum.sector_order * gap"},
+          "fill": {"scale": "sector_color", "field": "sector"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "source_nodes"},
+      "encode": {
+        "update": {
+          "x": {"signal": "leftX - 8"},
+          "y": {"signal": "scale('y', (datum.y0 + datum.y1) / 2) + datum.source_order * gap"},
+          "text": {"signal": "[datum.income_source, format(datum.total / 1e9, '$.1f') + ' billion']"},
+          "align": {"value": "right"},
+          "baseline": {"value": "middle"},
+          "fontSize": {"value": 12},
+          "fill": {"value": "#1f2430"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "sector_nodes"},
+      "encode": {
+        "update": {
+          "x": {"signal": "rightX + 22"},
+          "y": {"signal": "scale('y', (datum.y0 + datum.y1) / 2) + datum.sector_order * gap"},
+          "text": {"signal": "[datum.sector + ' schools', format(datum.total / 1e9, '$.1f') + ' billion']"},
+          "align": {"value": "left"},
+          "baseline": {"value": "middle"},
+          "fontSize": {"value": 12},
+          "fill": {"value": "#1f2430"}
+        }
+      }
+    }
+  ],
+  "config": {
+    "text": {"font": "Atkinson Hyperlegible"}
+  }
+}
