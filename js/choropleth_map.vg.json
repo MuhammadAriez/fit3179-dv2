@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 6: Government recurrent funding per student, all schools, by state and territory, 2023-24 (in 2023-24 dollars). Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "width": "container",
+  "height": 420,
+  "projection": {"type": "conicEqualArea", "parallels": [-18, -36], "rotate": [-132, 0]},
+  "layer": [
+    {
+      "data": {
+        "url": "data/geo/aus_states.topojson",
+        "format": {"type": "topojson", "feature": "states"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.STATE_NAME",
+          "from": {
+            "data": {"url": "data/states.csv"},
+            "key": "state",
+            "fields": ["state_abbr", "funding_per_student_2023_24"]
+          }
+        },
+        {
+          "calculate": "datum.funding_per_student_2023_24 < 21000 ? 'Under $21,000' : datum.funding_per_student_2023_24 < 22500 ? '$21,000 to $22,499' : datum.funding_per_student_2023_24 < 25000 ? '$22,500 to $24,999' : '$25,000 and over'",
+          "as": "funding_band"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1.5},
+      "encoding": {
+        "color": {
+          "field": "funding_band",
+          "type": "ordinal",
+          "title": "Funding per student",
+          "scale": {
+            "domain": ["Under $21,000", "$21,000 to $22,499", "$22,500 to $24,999", "$25,000 and over"],
+            "range": ["#e7e1f2", "#c3b4e0", "#8f74c2", "#5b3c94"]
+          },
+          "legend": {"orient": "bottom", "direction": "horizontal", "columns": 2, "columnPadding": 24, "symbolType": "square", "symbolSize": 160}
+        },
+        "tooltip": [
+          {"field": "properties.STATE_NAME", "type": "nominal", "title": "State or territory"},
+          {"field": "funding_per_student_2023_24", "type": "quantitative", "title": "Funding per student", "format": "$,.0f"}
+        ]
+      }
+    },
+    {
+      "data": {"url": "data/states.csv"},
+      "transform": [{"filter": "datum.state_abbr != 'ACT'"}],
+      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "state_abbr", "type": "nominal"},
+        "color": {
+          "condition": {"test": "datum.funding_per_student_2023_24 >= 25000", "value": "white"},
+          "value": "black"
+        }
+      }
+    },
+    {
+      "data": {"url": "data/states.csv"},
+      "transform": [{"filter": "datum.state_abbr == 'ACT'"}],
+      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12, "dx": 30, "dy": 4},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "state_abbr", "type": "nominal"}
+      }
+    },
+    {
+      "data": {"url": "data/states.csv"},
+      "mark": {"type": "text", "fontSize": 12, "dy": 15},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "funding_per_student_2023_24", "type": "quantitative", "format": "$,.0f"},
+        "color": {
+          "condition": {"test": "datum.funding_per_student_2023_24 >= 25000", "value": "white"},
+          "value": "black"
+        },
+        "opacity": {
+          "condition": {"test": "datum.state_abbr == 'NT' || datum.state_abbr == 'Vic'", "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Atkinson Hyperlegible",
+    "view": {"stroke": null},
+    "legend": {"titleFontSize": 12, "labelFontSize": 12}
+  }
+}

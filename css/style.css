@@ -1,0 +1,193 @@
+/* ---------- Fonts (Week 5) ----------
+   All text uses Atkinson Hyperlegible, a sans-serif typeface designed to be
+   easy to read (DV1 feedback: paragraphs should be sans-serif).
+   Only the big headings use Fraunces, a serif display typeface. */
+
+body * {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Fraunces', serif;
+}
+
+/* ---------- Page ---------- */
+
+body {
+  background-color: white;
+  color: #1f2430;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* Like the .page box in the Week 9 studio. max-width instead of a fixed
+   width, so the page shrinks on a small laptop instead of scrolling sideways. */
+.page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px;
+}
+
+/* Space between every row of the grid (Week 9) */
+.pure-g {
+  margin-bottom: 48px;
+}
+
+/* DV1 feedback: no more than about 10 words per line */
+p {
+  max-width: 52ch;
+}
+
+/* ---------- Headings ---------- */
+
+h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 48px 0 16px 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0 0 4px 0;
+}
+
+.kicker {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a8294;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #4a5263;
+  margin: 0 0 16px 0;
+}
+
+.byline {
+  font-size: 14px;
+  color: #7a8294;
+}
+
+.section-intro {
+  font-size: 19px;
+}
+
+.chart-subtitle {
+  font-size: 15px;
+  color: #4a5263;
+  margin: 0 0 16px 0;
+}
+
+.chart-source {
+  font-size: 13px;
+  color: #7a8294;
+}
+
+/* ---------- Columns (Week 9) ----------
+   pure.css columns sit right next to each other, so each side gets some
+   padding to leave a gap in the middle. */
+
+.description-left,
+.chart-left {
+  padding-right: 24px;
+}
+
+.description-right,
+.chart-right {
+  padding-left: 24px;
+}
+
+.vis-container {
+  width: 100%;
+}
+
+/* Grey dashed box for a chart that is not built yet.
+   Remove the "placeholder" class from the div once the chart is embedded. */
+.placeholder {
+  height: 300px;
+  border: 1px dashed #c9cdd6;
+  color: #7a8294;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Colour-coded words (Week 5, the FT example) ----------
+   These match the colours in the charts. */
+
+.cwlth_text {
+  color: #2f6db5;
+  font-weight: bold;
+}
+
+.state_text {
+  color: #3e8e6e;
+  font-weight: bold;
+}
+
+.private_text {
+  color: #c8801f;
+  font-weight: bold;
+}
+
+/* ---------- Colour key ---------- */
+
+.colour-key {
+  border-top: 1px solid #dcdfe5;
+  border-bottom: 1px solid #dcdfe5;
+  padding: 16px 0;
+}
+
+.key-title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a8294;
+  margin: 0 0 8px 0;
+}
+
+.key-item {
+  display: inline-block;
+  margin-right: 24px;
+  font-size: 15px;
+  color: #4a5263;
+}
+
+.key-chip {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.cwlth-chip   { background-color: #2f6db5; }
+.state-chip   { background-color: #3e8e6e; }
+.private-chip { background-color: #c8801f; }
+.funding-chip {
+  width: 48px;
+  background: linear-gradient(to right, #e7e1f2, #5b3c94);
+}
+
+/* ---------- Footer (Week 9 .small-font) ---------- */
+
+.footer {
+  border-top: 1px solid #dcdfe5;
+  padding-top: 24px;
+}
+
+.small-font {
+  font-size: 14px;
+  color: #4a5263;
+}

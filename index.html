@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who pays for Australia's schools?</title>
+
+  <!-- Import Vega, Vega-Lite and Vega-Embed  -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+  <!-- Import pure.css for the grid layout  -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- ========== TITLE ========== -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <p class="kicker">School funding in Australia</p>
+        <h1>Who pays for Australia's schools?</h1>
+        <p class="subtitle">And does the money follow the students?</p>
+        <p class="byline">Muhammad Ariez Zuhayr · October 2026</p>
+      </div>
+    </div>
+
+    <!-- ========== COLOUR KEY: one colour means one thing on the whole page ========== -->
+    <div class="pure-g colour-key">
+      <div class="pure-u-1-1">
+        <p class="key-title">How to read the colours</p>
+        <span class="key-item"><span class="key-chip cwlth-chip"></span>Australian Government money</span>
+        <span class="key-item"><span class="key-chip state-chip"></span>State and territory government money</span>
+        <span class="key-item"><span class="key-chip private-chip"></span>Fees and private money</span>
+        <span class="key-item"><span class="key-chip funding-chip"></span>Funding per student, low to high</span>
+      </div>
+    </div>
+
+    <!-- ========== SECTION 1: How Australian schooling is funded ========== -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2>How Australian schooling is funded</h2>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description-left">
+          <p>Australia has three kinds of school. <b>Government schools</b> are run by the states and
+            territories. <b>Catholic</b> and <b>independent</b> schools are non-government: they charge fees,
+            but they also receive public money.</p>
+          <p>Two levels of government pay for schools: the <span class="cwlth_text">Australian
+              Government</span> in Canberra, and the eight <span class="state_text">state and territory
+              governments</span>.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="chart-right">
+          <h3>Six in ten students attend a government school</h3>
+          <p class="chart-subtitle">Every 100 students in 2025, by school sector</p>
+          <div id="waffle_chart" class="vis-container placeholder">Panel 1: waffle chart</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h3>Each sector is paid for by a different source</h3>
+        <p class="chart-subtitle">Where school income came from in 2024, and which sector it went to</p>
+        <div id="sankey_diagram" class="vis-container placeholder">Panel 2: Sankey diagram</div>
+      </div>
+    </div>
+
+    <!-- ========== SECTION 2: Who pays ========== -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2>Who pays</h2>
+        <p class="section-intro">In 2023-24, governments spent <b>$91.04 billion</b> on schools. The
+          <span class="state_text">states and territories</span> paid 68% and the
+          <span class="cwlth_text">Australian Government</span> paid 32%. But the split depends on which
+          school a child attends.</p>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h3>Canberra sends money to every state and territory</h3>
+        <p class="chart-subtitle">Australian Government recurrent funding for schools, 2023-24</p>
+        <div id="flow_map" class="vis-container placeholder">Panel 3: flow map</div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="chart-left">
+          <h3>Catholic schools lean on Canberra; government schools on their state</h3>
+          <p class="chart-subtitle">Government income per student by source, 2024</p>
+          <div id="dumbbell_chart" class="vis-container"></div>
+          <p class="chart-source">Source: ACARA, school finance dataset, school income 2024.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="chart-right">
+          <h3>Independent schools raise half their income privately</h3>
+          <p class="chart-subtitle">Share of each sector's income by source, 2024</p>
+          <div id="stacked_bar_chart" class="vis-container"></div>
+          <p class = "chart-source">Source: ACARA, school finance dataset, school income 2024.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SECTION 3: Where the money lands ========== -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2>Where the money lands</h2>
+        <p class="section-intro">Government funding per student ranges from <b>$20,715</b> in Victoria to
+          <b>$30,845</b> in the Northern Territory.</p>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="chart-left">
+          <h3>The Northern Territory spends the most per student</h3>
+          <p class="chart-subtitle">Government recurrent funding per student, all schools, 2023-24</p>
+          <div id="choropleth_map" class="vis-container"></div>
+          <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026,
+            Table 4A.32.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="chart-right">
+          <h3>Most students live in the three eastern states</h3>
+          <p class="chart-subtitle">All students and non-government students, 2025</p>
+          <div id="symbol_map" class="vis-container"></div>
+          <p class="chart-source">Source: Australian Bureau of Statistics, Schools 2025, Table 43a (full-time equivalent students).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h3>In every state, government schools receive more public money per student</h3>
+        <p class="chart-subtitle">Government funding per student, government and non-government schools, 2023-24</p>
+        <div id="lollipop_chart" class="vis-container placeholder">Panel 8: lollipop chart</div>
+      </div>
+    </div>
+
+    <!-- ========== SECTION 4: A decade of change ========== -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2>A decade of change</h2>
+        <p class="section-intro">After inflation, government funding per student rose <b>25.7%</b> between
+          2014-15 and 2023-24. For government schools, <span class="cwlth_text">Australian
+            Government</span> funding per student rose 55.1%, against 22.6% from the
+          <span class="state_text">states</span>.</p>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h3>Every state now spends more per student than a decade ago</h3>
+        <p class="chart-subtitle">Government funding per student, after inflation</p>
+        <div id="small_multiple_maps" class="vis-container"></div>
+        <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="chart-left">
+          <h3>Western Australia went from second-highest to second-lowest</h3>
+          <p class="chart-subtitle">Government funding per student, 2014-15 against 2023-24, after inflation</p>
+          <div id="slope_chart" class="vis-container"></div>
+          <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="chart-right">
+          <h3>Heatmap: write the takeaway here</h3>
+          <p class="chart-subtitle">Funding per student by state and year</p>
+          <div id="heatmap" class="vis-container"></div>
+          <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SECTION 5: Is funding following the students? ========== -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2>Is funding following the students?</h2>
+        <p class="section-intro">Government schools taught <b>66.8%</b> of students in 2006 and
+          <b>62.8%</b> in 2025. Independent schools grew from 13.1% to 17.2%.</p>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="chart-left">
+          <h3>Butterfly chart: write the takeaway here</h3>
+          <p class="chart-subtitle">Share of students against share of government funding, by sector, 2024</p>
+          <div id="butterfly_chart" class="vis-container placeholder">Panel 12: butterfly chart</div>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="chart-right">
+          <h3>Treemap: write the takeaway here</h3>
+          <p class="chart-subtitle">Government funding by state, then by sector, 2024</p>
+          <div id="treemap" class="vis-container placeholder">Panel 13: treemap (state, then sector)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <p class="section-intro">Closing paragraph: what the reader should take away.</p>
+      </div>
+    </div>
+
+    <!-- ========== FOOTER: data sources, author, date, use of AI ========== -->
+    <div class="pure-g footer">
+      <div class="pure-u-1-2">
+        <div class="description-left small-font">
+          <p class="key-title">Data sources</p>
+          <p>ACARA, <a href="https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia"
+              target="_blank">National Report on Schooling in Australia</a>, school finance dataset, February 2026.</p>
+          <p>Productivity Commission, <a href="https://www.pc.gov.au/ongoing/report-on-government-services/child-care-education-and-training/school-education/"
+              target="_blank">Report on Government Services 2026</a>, Part B, Section 4, Table 4A.32.</p>
+          <p>Australian Bureau of Statistics, <a href="https://www.abs.gov.au/statistics/people/education/schools/latest-release"
+              target="_blank">Schools, 2025</a>, Table 43a.</p>
+          <p>State boundaries: ABS, via <a href="https://github.com/rowanhogan/australian-states"
+              target="_blank">rowanhogan/australian-states</a>.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="description-right small-font">
+          <p class="key-title">About</p>
+          <p>Created by Muhammad Ariez Zuhayr, student ID 34599959, in October 2026 for FIT3179 Data
+            Visualisation, Monash University.</p>
+          <p class="key-title">Use of AI</p>
+          <p>To be written: describe how generative AI was used.</p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- end page -->
+
+ 
+  <script src="js/vega_lite_vis.js"></script>
+</body>
+
+</html>

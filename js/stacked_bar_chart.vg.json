@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 5: Share of each school sector's income by source, Australia, 2024. Source: ACARA, school finance dataset, School income.",
+  "width": "container",
+  "height": 180,
+  "data": {"url": "data/school_income_2024.csv"},
+  "transform": [
+    {"filter": "datum.state == 'Australia' && datum.source != 'Total gross income'"},
+    {"calculate": "datum.source_group == 'Private' ? 'Fees and private money' : datum.source", "as": "income_source"},
+    {"aggregate": [{"op": "sum", "field": "total_aud", "as": "income"}], "groupby": ["sector", "income_source"]},
+    {"joinaggregate": [{"op": "sum", "field": "income", "as": "sector_income"}], "groupby": ["sector"]},
+    {"calculate": "datum.income / datum.sector_income", "as": "share"},
+    {"calculate": "datum.income_source == 'Australian Government' ? 1 : datum.income_source == 'State and territory government' ? 2 : 3", "as": "stack_order"}
+  ],
+  "encoding": {
+    "y": {"field": "sector", "type": "nominal", "title": null, "sort": ["Government", "Catholic", "Independent"]},
+    "x": {"field": "share", "type": "quantitative", "stack": "zero", "axis": {"format": "%", "values": [0, 0.25, 0.5, 0.75, 1]}, "title": "Share of income"},
+    "order": {"field": "stack_order", "type": "quantitative"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "income_source",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": ["Australian Government", "State and territory government", "Fees and private money"],
+            "range": ["#2f6db5", "#3e8e6e", "#c8801f"]
+          },
+          "legend": {"orient": "bottom", "direction": "vertical"}
+        },
+        "tooltip": [
+          {"field": "sector", "type": "nominal", "title": "Sector"},
+          {"field": "income_source", "type": "nominal", "title": "Source"},
+          {"field": "share", "type": "quantitative", "title": "Share of income", "format": ".1%"},
+          {"field": "income", "type": "quantitative", "title": "Income", "format": "$,.0f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": -6, "fontWeight": "bold", "fontSize": 13},
+      "encoding": {
+        "detail": {"field": "income_source", "type": "nominal"},
+        "text": {"field": "share", "type": "quantitative", "format": ".0%"},
+        "color": {
+          "condition": {"test": "datum.income_source == 'Fees and private money'", "value": "black"},
+          "value": "white"
+        },
+        "opacity": {
+          "condition": {"test": "datum.share >= 0.5", "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+}
+

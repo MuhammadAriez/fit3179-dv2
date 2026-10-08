@@ -1,0 +1,1180 @@
+year,year_end,state,state_abbr,sector,source,total_aud,per_student_aud
+2005-06,2006,Australia,Aust,All,Australian Government,7305424000,2168
+2005-06,2006,Australia,Aust,All,State and territory government,25059036000,7438
+2005-06,2006,Australia,Aust,All,Total government,32364460000,9606
+2005-06,2006,Australia,Aust,Government,Australian Government,2266721000,1004
+2005-06,2006,Australia,Aust,Government,State and territory government,23103929000,10239
+2005-06,2006,Australia,Aust,Government,Total government,25370650000,11243
+2005-06,2006,Australia,Aust,Non-government,Australian Government,5038703000,4529
+2005-06,2006,Australia,Aust,Non-government,State and territory government,1955107000,1757
+2005-06,2006,Australia,Aust,Non-government,Total government,6993810000,6286
+2006-07,2007,Australia,Aust,All,Australian Government,7673035000,2255
+2006-07,2007,Australia,Aust,All,State and territory government,26565474000,7806
+2006-07,2007,Australia,Aust,All,Total government,34238509000,10061
+2006-07,2007,Australia,Aust,Government,Australian Government,2373104000,1047
+2006-07,2007,Australia,Aust,Government,State and territory government,24550552000,10827
+2006-07,2007,Australia,Aust,Government,Total government,26923656000,11874
+2006-07,2007,Australia,Aust,Non-government,Australian Government,5299931000,4667
+2006-07,2007,Australia,Aust,Non-government,State and territory government,2014922000,1774
+2006-07,2007,Australia,Aust,Non-government,Total government,7314853000,6441
+2007-08,2008,Australia,Aust,All,Australian Government,8016816000,2333
+2007-08,2008,Australia,Aust,All,State and territory government,28408456000,8269
+2007-08,2008,Australia,Aust,All,Total government,36425272000,10602
+2007-08,2008,Australia,Aust,Government,Australian Government,2485752000,1092
+2007-08,2008,Australia,Aust,Government,State and territory government,26272069000,11546
+2007-08,2008,Australia,Aust,Government,Total government,28757821000,12639
+2007-08,2008,Australia,Aust,Non-government,Australian Government,5531064000,4767
+2007-08,2008,Australia,Aust,Non-government,State and territory government,2136387000,1841
+2007-08,2008,Australia,Aust,Non-government,Total government,7667451000,6608
+2008-09,2009,Australia,Aust,All,Australian Government,9227438000,2668
+2008-09,2009,Australia,Aust,All,State and territory government,29715852000,8592
+2008-09,2009,Australia,Aust,All,Total government,38943290000,11260
+2008-09,2009,Australia,Aust,Government,Australian Government,3440779000,1510
+2008-09,2009,Australia,Aust,Government,State and territory government,27415480000,12034
+2008-09,2009,Australia,Aust,Government,Total government,30856259000,13544
+2008-09,2009,Australia,Aust,Non-government,Australian Government,5786659000,4903
+2008-09,2009,Australia,Aust,Non-government,State and territory government,2300372000,1949
+2008-09,2009,Australia,Aust,Non-government,Total government,8087031000,6852
+2009-10,2010,Australia,Aust,All,Australian Government,10071192000,2890
+2009-10,2010,Australia,Aust,All,State and territory government,31717864000,9101
+2009-10,2010,Australia,Aust,All,Total government,41789056000,11991
+2009-10,2010,Australia,Aust,Government,Australian Government,3561513000,1557
+2009-10,2010,Australia,Aust,Government,State and territory government,29332876000,12823
+2009-10,2010,Australia,Aust,Government,Total government,32894389000,14380
+2009-10,2010,Australia,Aust,Non-government,Australian Government,6509679000,5436
+2009-10,2010,Australia,Aust,Non-government,State and territory government,2384989000,1992
+2009-10,2010,Australia,Aust,Non-government,Total government,8894668000,7428
+2010-11,2011,New South Wales,NSW,All,Australian Government,3516712000,3126
+2010-11,2011,New South Wales,NSW,All,State and territory government,10291930000,9148
+2010-11,2011,New South Wales,NSW,All,Total government,13808642000,12273
+2010-11,2011,New South Wales,NSW,Government,Australian Government,1307778000,1758
+2010-11,2011,New South Wales,NSW,Government,State and territory government,9439374000,12690
+2010-11,2011,New South Wales,NSW,Government,Total government,10747152000,14448
+2010-11,2011,New South Wales,NSW,Non-government,Australian Government,2208934000,5794
+2010-11,2011,New South Wales,NSW,Non-government,State and territory government,852556000,2236
+2010-11,2011,New South Wales,NSW,Non-government,Total government,3061490000,8030
+2010-11,2011,Victoria,Vic,All,Australian Government,2689759000,3149
+2010-11,2011,Victoria,Vic,All,State and territory government,6942667000,8127
+2010-11,2011,Victoria,Vic,All,Total government,9632426000,11276
+2010-11,2011,Victoria,Vic,Government,Australian Government,865952000,1603
+2010-11,2011,Victoria,Vic,Government,State and territory government,6399441000,11846
+2010-11,2011,Victoria,Vic,Government,Total government,7265393000,13449
+2010-11,2011,Victoria,Vic,Non-government,Australian Government,1823807000,5808
+2010-11,2011,Victoria,Vic,Non-government,State and territory government,543226000,1730
+2010-11,2011,Victoria,Vic,Non-government,Total government,2367033000,7537
+2010-11,2011,Queensland,Qld,All,Australian Government,2228311000,3045
+2010-11,2011,Queensland,Qld,All,State and territory government,7092067000,9692
+2010-11,2011,Queensland,Qld,All,Total government,9320378000,12737
+2010-11,2011,Queensland,Qld,Government,Australian Government,784608000,1601
+2010-11,2011,Queensland,Qld,Government,State and territory government,6492392000,13252
+2010-11,2011,Queensland,Qld,Government,Total government,7277000000,14853
+2010-11,2011,Queensland,Qld,Non-government,Australian Government,1443703000,5970
+2010-11,2011,Queensland,Qld,Non-government,State and territory government,599675000,2480
+2010-11,2011,Queensland,Qld,Non-government,Total government,2043378000,8450
+2010-11,2011,South Australia,SA,All,Australian Government,870214000,3367
+2010-11,2011,South Australia,SA,All,State and territory government,2442448000,9450
+2010-11,2011,South Australia,SA,All,Total government,3312662000,12817
+2010-11,2011,South Australia,SA,Government,Australian Government,300313000,1810
+2010-11,2011,South Australia,SA,Government,State and territory government,2285019000,13775
+2010-11,2011,South Australia,SA,Government,Total government,2585332000,15586
+2010-11,2011,South Australia,SA,Non-government,Australian Government,569901000,6156
+2010-11,2011,South Australia,SA,Non-government,State and territory government,157429000,1701
+2010-11,2011,South Australia,SA,Non-government,Total government,727330000,7856
+2010-11,2011,Western Australia,WA,All,Australian Government,1103490000,3049
+2010-11,2011,Western Australia,WA,All,State and territory government,4365450000,12063
+2010-11,2011,Western Australia,WA,All,Total government,5468940000,15113
+2010-11,2011,Western Australia,WA,Government,Australian Government,379144000,1608
+2010-11,2011,Western Australia,WA,Government,State and territory government,3982555000,16892
+2010-11,2011,Western Australia,WA,Government,Total government,4361699000,18500
+2010-11,2011,Western Australia,WA,Non-government,Australian Government,724346000,5744
+2010-11,2011,Western Australia,WA,Non-government,State and territory government,382895000,3036
+2010-11,2011,Western Australia,WA,Non-government,Total government,1107241000,8780
+2010-11,2011,Tasmania,Tas,All,Australian Government,257618000,3138
+2010-11,2011,Tasmania,Tas,All,State and territory government,830094000,10110
+2010-11,2011,Tasmania,Tas,All,Total government,1087712000,13248
+2010-11,2011,Tasmania,Tas,Government,Australian Government,108703000,1859
+2010-11,2011,Tasmania,Tas,Government,State and territory government,776613000,13280
+2010-11,2011,Tasmania,Tas,Government,Total government,885316000,15139
+2010-11,2011,Tasmania,Tas,Non-government,Australian Government,148915000,6303
+2010-11,2011,Tasmania,Tas,Non-government,State and territory government,53481000,2264
+2010-11,2011,Tasmania,Tas,Non-government,Total government,202396000,8567
+2010-11,2011,Northern Territory,NT,All,Australian Government,193377000,4910
+2010-11,2011,Northern Territory,NT,All,State and territory government,616334000,15649
+2010-11,2011,Northern Territory,NT,All,Total government,809711000,20559
+2010-11,2011,Northern Territory,NT,Government,Australian Government,110769000,3802
+2010-11,2011,Northern Territory,NT,Government,State and territory government,551349000,18925
+2010-11,2011,Northern Territory,NT,Government,Total government,662118000,22727
+2010-11,2011,Northern Territory,NT,Non-government,Australian Government,82608000,8058
+2010-11,2011,Northern Territory,NT,Non-government,State and territory government,64985000,6339
+2010-11,2011,Northern Territory,NT,Non-government,Total government,147593000,14397
+2010-11,2011,Australian Capital Territory,ACT,All,Australian Government,190260000,3139
+2010-11,2011,Australian Capital Territory,ACT,All,State and territory government,679067000,11202
+2010-11,2011,Australian Capital Territory,ACT,All,Total government,869327000,14340
+2010-11,2011,Australian Capital Territory,ACT,Government,Australian Government,55266000,1599
+2010-11,2011,Australian Capital Territory,ACT,Government,State and territory government,631353000,18271
+2010-11,2011,Australian Capital Territory,ACT,Government,Total government,686619000,19871
+2010-11,2011,Australian Capital Territory,ACT,Non-government,Australian Government,134994000,5179
+2010-11,2011,Australian Capital Territory,ACT,Non-government,State and territory government,47714000,1831
+2010-11,2011,Australian Capital Territory,ACT,Non-government,Total government,182708000,7009
+2010-11,2011,Australia,Aust,All,Australian Government,11049741000,3145
+2010-11,2011,Australia,Aust,All,State and territory government,33260059000,9466
+2010-11,2011,Australia,Aust,All,Total government,44309800000,12611
+2010-11,2011,Australia,Aust,Government,Australian Government,3912533000,1703
+2010-11,2011,Australia,Aust,Government,State and territory government,30558097000,13299
+2010-11,2011,Australia,Aust,Government,Total government,34470630000,15002
+2010-11,2011,Australia,Aust,Non-government,Australian Government,7137208000,5871
+2010-11,2011,Australia,Aust,Non-government,State and territory government,2701962000,2222
+2010-11,2011,Australia,Aust,Non-government,Total government,9839170000,8093
+2011-12,2012,New South Wales,NSW,All,Australian Government,3899827000,3438
+2011-12,2012,New South Wales,NSW,All,State and territory government,11122538000,9805
+2011-12,2012,New South Wales,NSW,All,Total government,15022365000,13243
+2011-12,2012,New South Wales,NSW,Government,Australian Government,1515812000,2030
+2011-12,2012,New South Wales,NSW,Government,State and territory government,10223403000,13688
+2011-12,2012,New South Wales,NSW,Government,Total government,11739215000,15718
+2011-12,2012,New South Wales,NSW,Non-government,Australian Government,2384015000,6153
+2011-12,2012,New South Wales,NSW,Non-government,State and territory government,899135000,2320
+2011-12,2012,New South Wales,NSW,Non-government,Total government,3283150000,8473
+2011-12,2012,Victoria,Vic,All,Australian Government,3024171000,3504
+2011-12,2012,Victoria,Vic,All,State and territory government,7056863000,8177
+2011-12,2012,Victoria,Vic,All,Total government,10081034000,11681
+2011-12,2012,Victoria,Vic,Government,Australian Government,1027610000,1890
+2011-12,2012,Victoria,Vic,Government,State and territory government,6476666000,11911
+2011-12,2012,Victoria,Vic,Government,Total government,7504276000,13801
+2011-12,2012,Victoria,Vic,Non-government,Australian Government,1996561000,6254
+2011-12,2012,Victoria,Vic,Non-government,State and territory government,580197000,1817
+2011-12,2012,Victoria,Vic,Non-government,Total government,2576758000,8072
+2011-12,2012,Queensland,Qld,All,Australian Government,2485208000,3344
+2011-12,2012,Queensland,Qld,All,State and territory government,7386747000,9938
+2011-12,2012,Queensland,Qld,All,Total government,9871955000,13281
+2011-12,2012,Queensland,Qld,Government,Australian Government,917217000,1848
+2011-12,2012,Queensland,Qld,Government,State and territory government,6786762000,13677
+2011-12,2012,Queensland,Qld,Government,Total government,7703979000,15526
+2011-12,2012,Queensland,Qld,Non-government,Australian Government,1567991000,6346
+2011-12,2012,Queensland,Qld,Non-government,State and territory government,599985000,2428
+2011-12,2012,Queensland,Qld,Non-government,Total government,2167976000,8774
+2011-12,2012,South Australia,SA,All,Australian Government,972373000,3744
+2011-12,2012,South Australia,SA,All,State and territory government,2530785000,9745
+2011-12,2012,South Australia,SA,All,Total government,3503158000,13489
+2011-12,2012,South Australia,SA,Government,Australian Government,346516000,2085
+2011-12,2012,South Australia,SA,Government,State and territory government,2366247000,14238
+2011-12,2012,South Australia,SA,Government,Total government,2712763000,16323
+2011-12,2012,South Australia,SA,Non-government,Australian Government,625857000,6692
+2011-12,2012,South Australia,SA,Non-government,State and territory government,164538000,1759
+2011-12,2012,South Australia,SA,Non-government,Total government,790395000,8451
+2011-12,2012,Western Australia,WA,All,Australian Government,1238597000,3349
+2011-12,2012,Western Australia,WA,All,State and territory government,4485884000,12131
+2011-12,2012,Western Australia,WA,All,Total government,5724481000,15480
+2011-12,2012,Western Australia,WA,Government,Australian Government,451789000,1872
+2011-12,2012,Western Australia,WA,Government,State and territory government,4068211000,16859
+2011-12,2012,Western Australia,WA,Government,Total government,4520000000,18731
+2011-12,2012,Western Australia,WA,Non-government,Australian Government,786808000,6124
+2011-12,2012,Western Australia,WA,Non-government,State and territory government,417673000,3251
+2011-12,2012,Western Australia,WA,Non-government,Total government,1204481000,9375
+2011-12,2012,Tasmania,Tas,All,Australian Government,290658000,3555
+2011-12,2012,Tasmania,Tas,All,State and territory government,848076000,10372
+2011-12,2012,Tasmania,Tas,All,Total government,1138734000,13926
+2011-12,2012,Tasmania,Tas,Government,Australian Government,131326000,2261
+2011-12,2012,Tasmania,Tas,Government,State and territory government,793672000,13666
+2011-12,2012,Tasmania,Tas,Government,Total government,924998000,15927
+2011-12,2012,Tasmania,Tas,Non-government,Australian Government,159332000,6725
+2011-12,2012,Tasmania,Tas,Non-government,State and territory government,54404000,2296
+2011-12,2012,Tasmania,Tas,Non-government,Total government,213736000,9021
+2011-12,2012,Northern Territory,NT,All,Australian Government,208592000,5255
+2011-12,2012,Northern Territory,NT,All,State and territory government,623603000,15711
+2011-12,2012,Northern Territory,NT,All,Total government,832195000,20967
+2011-12,2012,Northern Territory,NT,Government,Australian Government,124034000,4232
+2011-12,2012,Northern Territory,NT,Government,State and territory government,573068000,19555
+2011-12,2012,Northern Territory,NT,Government,Total government,697102000,23787
+2011-12,2012,Northern Territory,NT,Non-government,Australian Government,84558000,8142
+2011-12,2012,Northern Territory,NT,Non-government,State and territory government,50535000,4866
+2011-12,2012,Northern Territory,NT,Non-government,Total government,135093000,13008
+2011-12,2012,Australian Capital Territory,ACT,All,Australian Government,210260000,3418
+2011-12,2012,Australian Capital Territory,ACT,All,State and territory government,715627000,11633
+2011-12,2012,Australian Capital Territory,ACT,All,Total government,925887000,15051
+2011-12,2012,Australian Capital Territory,ACT,Government,Australian Government,64376000,1833
+2011-12,2012,Australian Capital Territory,ACT,Government,State and territory government,666190000,18972
+2011-12,2012,Australian Capital Territory,ACT,Government,Total government,730566000,20806
+2011-12,2012,Australian Capital Territory,ACT,Non-government,Australian Government,145884000,5526
+2011-12,2012,Australian Capital Territory,ACT,Non-government,State and territory government,49437000,1873
+2011-12,2012,Australian Capital Territory,ACT,Non-government,Total government,195321000,7398
+2011-12,2012,Australia,Aust,All,Australian Government,12329686000,3470
+2011-12,2012,Australia,Aust,All,State and territory government,34770122000,9786
+2011-12,2012,Australia,Aust,All,Total government,47099808000,13256
+2011-12,2012,Australia,Aust,Government,Australian Government,4578680000,1976
+2011-12,2012,Australia,Aust,Government,State and territory government,31954218000,13792
+2011-12,2012,Australia,Aust,Government,Total government,36532898000,15768
+2011-12,2012,Australia,Aust,Non-government,Australian Government,7751006000,6270
+2011-12,2012,Australia,Aust,Non-government,State and territory government,2815904000,2278
+2011-12,2012,Australia,Aust,Non-government,Total government,10566910000,8547
+2012-13,2013,New South Wales,NSW,All,Australian Government,4002337000,3491
+2012-13,2013,New South Wales,NSW,All,State and territory government,11035389000,9625
+2012-13,2013,New South Wales,NSW,All,Total government,15037726000,13115
+2012-13,2013,New South Wales,NSW,Government,Australian Government,1481350000,1970
+2012-13,2013,New South Wales,NSW,Government,State and territory government,10100240000,13435
+2012-13,2013,New South Wales,NSW,Government,Total government,11581590000,15405
+2012-13,2013,New South Wales,NSW,Non-government,Australian Government,2520987000,6386
+2012-13,2013,New South Wales,NSW,Non-government,State and territory government,935149000,2369
+2012-13,2013,New South Wales,NSW,Non-government,Total government,3456136000,8754
+2012-13,2013,Victoria,Vic,All,Australian Government,3083672000,3522
+2012-13,2013,Victoria,Vic,All,State and territory government,7211200000,8237
+2012-13,2013,Victoria,Vic,All,Total government,10294872000,11759
+2012-13,2013,Victoria,Vic,Government,Australian Government,1010582000,1836
+2012-13,2013,Victoria,Vic,Government,State and territory government,6579892000,11952
+2012-13,2013,Victoria,Vic,Government,Total government,7590474000,13787
+2012-13,2013,Victoria,Vic,Non-government,Australian Government,2073090000,6379
+2012-13,2013,Victoria,Vic,Non-government,State and territory government,631308000,1943
+2012-13,2013,Victoria,Vic,Non-government,Total government,2704398000,8322
+2012-13,2013,Queensland,Qld,All,Australian Government,2565036000,3387
+2012-13,2013,Queensland,Qld,All,State and territory government,7571841000,9997
+2012-13,2013,Queensland,Qld,All,Total government,10136877000,13384
+2012-13,2013,Queensland,Qld,Government,Australian Government,914923000,1811
+2012-13,2013,Queensland,Qld,Government,State and territory government,6934084000,13727
+2012-13,2013,Queensland,Qld,Government,Total government,7849007000,15538
+2012-13,2013,Queensland,Qld,Non-government,Australian Government,1650113000,6542
+2012-13,2013,Queensland,Qld,Non-government,State and territory government,637757000,2528
+2012-13,2013,Queensland,Qld,Non-government,Total government,2287870000,9070
+2012-13,2013,South Australia,SA,All,Australian Government,981134000,3753
+2012-13,2013,South Australia,SA,All,State and territory government,2533142000,9690
+2012-13,2013,South Australia,SA,All,Total government,3514276000,13444
+2012-13,2013,South Australia,SA,Government,Australian Government,341737000,2046
+2012-13,2013,South Australia,SA,Government,State and territory government,2362926000,14145
+2012-13,2013,South Australia,SA,Government,Total government,2704663000,16191
+2012-13,2013,South Australia,SA,Non-government,Australian Government,639397000,6776
+2012-13,2013,South Australia,SA,Non-government,State and territory government,170216000,1804
+2012-13,2013,South Australia,SA,Non-government,Total government,809613000,8580
+2012-13,2013,Western Australia,WA,All,Australian Government,1264907000,3326
+2012-13,2013,Western Australia,WA,All,State and territory government,4683558000,12313
+2012-13,2013,Western Australia,WA,All,Total government,5948465000,15639
+2012-13,2013,Western Australia,WA,Government,Australian Government,446128000,1786
+2012-13,2013,Western Australia,WA,Government,State and territory government,4267546000,17089
+2012-13,2013,Western Australia,WA,Government,Total government,4713674000,18875
+2012-13,2013,Western Australia,WA,Non-government,Australian Government,818779000,6268
+2012-13,2013,Western Australia,WA,Non-government,State and territory government,416012000,3185
+2012-13,2013,Western Australia,WA,Non-government,Total government,1234791000,9453
+2012-13,2013,Tasmania,Tas,All,Australian Government,286882000,3546
+2012-13,2013,Tasmania,Tas,All,State and territory government,857701000,10603
+2012-13,2013,Tasmania,Tas,All,Total government,1144583000,14149
+2012-13,2013,Tasmania,Tas,Government,Australian Government,123429000,2162
+2012-13,2013,Tasmania,Tas,Government,State and territory government,802378000,14053
+2012-13,2013,Tasmania,Tas,Government,Total government,925807000,16215
+2012-13,2013,Tasmania,Tas,Non-government,Australian Government,163453000,6869
+2012-13,2013,Tasmania,Tas,Non-government,State and territory government,55323000,2325
+2012-13,2013,Tasmania,Tas,Non-government,Total government,218776000,9193
+2012-13,2013,Northern Territory,NT,All,Australian Government,201212000,5002
+2012-13,2013,Northern Territory,NT,All,State and territory government,678433000,16866
+2012-13,2013,Northern Territory,NT,All,Total government,879645000,21868
+2012-13,2013,Northern Territory,NT,Government,Australian Government,114039000,3873
+2012-13,2013,Northern Territory,NT,Government,State and territory government,615248000,20896
+2012-13,2013,Northern Territory,NT,Government,Total government,729287000,24769
+2012-13,2013,Northern Territory,NT,Non-government,Australian Government,87173000,8086
+2012-13,2013,Northern Territory,NT,Non-government,State and territory government,63185000,5861
+2012-13,2013,Northern Territory,NT,Non-government,Total government,150358000,13947
+2012-13,2013,Australian Capital Territory,ACT,All,Australian Government,206372000,3289
+2012-13,2013,Australian Capital Territory,ACT,All,State and territory government,748562000,11930
+2012-13,2013,Australian Capital Territory,ACT,All,Total government,954934000,15219
+2012-13,2013,Australian Capital Territory,ACT,Government,Australian Government,62890000,1747
+2012-13,2013,Australian Capital Territory,ACT,Government,State and territory government,695411000,19318
+2012-13,2013,Australian Capital Territory,ACT,Government,Total government,758301000,21065
+2012-13,2013,Australian Capital Territory,ACT,Non-government,Australian Government,143482000,5364
+2012-13,2013,Australian Capital Territory,ACT,Non-government,State and territory government,53151000,1987
+2012-13,2013,Australian Capital Territory,ACT,Non-government,Total government,196633000,7352
+2012-13,2013,Australia,Aust,All,Australian Government,12591552000,3493
+2012-13,2013,Australia,Aust,All,State and territory government,35319827000,9797
+2012-13,2013,Australia,Aust,All,Total government,47911379000,13290
+2012-13,2013,Australia,Aust,Government,Australian Government,4495078000,1915
+2012-13,2013,Australia,Aust,Government,State and territory government,32357725000,13788
+2012-13,2013,Australia,Aust,Government,Total government,36852803000,15703
+2012-13,2013,Australia,Aust,Non-government,Australian Government,8096474000,6434
+2012-13,2013,Australia,Aust,Non-government,State and territory government,2962102000,2354
+2012-13,2013,Australia,Aust,Non-government,Total government,11058576000,8789
+2013-14,2014,New South Wales,NSW,All,Australian Government,4284631000,3690
+2013-14,2014,New South Wales,NSW,All,State and territory government,11934630000,10277
+2013-14,2014,New South Wales,NSW,All,Total government,16219261000,13967
+2013-14,2014,New South Wales,NSW,Government,Australian Government,1536912000,2024
+2013-14,2014,New South Wales,NSW,Government,State and territory government,10956586000,14426
+2013-14,2014,New South Wales,NSW,Government,Total government,12493498000,16449
+2013-14,2014,New South Wales,NSW,Non-government,Australian Government,2747719000,6840
+2013-14,2014,New South Wales,NSW,Non-government,State and territory government,978044000,2435
+2013-14,2014,New South Wales,NSW,Non-government,Total government,3725763000,9275
+2013-14,2014,Victoria,Vic,All,Australian Government,3351958000,3764
+2013-14,2014,Victoria,Vic,All,State and territory government,7319863000,8219
+2013-14,2014,Victoria,Vic,All,Total government,10671821000,11982
+2013-14,2014,Victoria,Vic,Government,Australian Government,1118462000,1998
+2013-14,2014,Victoria,Vic,Government,State and territory government,6676453000,11926
+2013-14,2014,Victoria,Vic,Government,Total government,7794915000,13924
+2013-14,2014,Victoria,Vic,Non-government,Australian Government,2233496000,6752
+2013-14,2014,Victoria,Vic,Non-government,State and territory government,643410000,1945
+2013-14,2014,Victoria,Vic,Non-government,Total government,2876906000,8697
+2013-14,2014,Queensland,Qld,All,Australian Government,2834816000,3681
+2013-14,2014,Queensland,Qld,All,State and territory government,7671852000,9961
+2013-14,2014,Queensland,Qld,All,Total government,10506668000,13642
+2013-14,2014,Queensland,Qld,Government,Australian Government,1034244000,2013
+2013-14,2014,Queensland,Qld,Government,State and territory government,6963264000,13550
+2013-14,2014,Queensland,Qld,Government,Total government,7997508000,15563
+2013-14,2014,Queensland,Qld,Non-government,Australian Government,1800572000,7025
+2013-14,2014,Queensland,Qld,Non-government,State and territory government,708588000,2765
+2013-14,2014,Queensland,Qld,Non-government,Total government,2509160000,9790
+2013-14,2014,South Australia,SA,All,Australian Government,1051165000,4017
+2013-14,2014,South Australia,SA,All,State and territory government,2579595000,9858
+2013-14,2014,South Australia,SA,All,Total government,3630760000,13875
+2013-14,2014,South Australia,SA,Government,Australian Government,369560000,2214
+2013-14,2014,South Australia,SA,Government,State and territory government,2405064000,14410
+2013-14,2014,South Australia,SA,Government,Total government,2774624000,16624
+2013-14,2014,South Australia,SA,Non-government,Australian Government,681605000,7193
+2013-14,2014,South Australia,SA,Non-government,State and territory government,174531000,1842
+2013-14,2014,South Australia,SA,Non-government,Total government,856136000,9034
+2013-14,2014,Western Australia,WA,All,Australian Government,1388803000,3569
+2013-14,2014,Western Australia,WA,All,State and territory government,4921244000,12648
+2013-14,2014,Western Australia,WA,All,Total government,6310047000,16218
+2013-14,2014,Western Australia,WA,Government,Australian Government,496108000,1934
+2013-14,2014,Western Australia,WA,Government,State and territory government,4497124000,17528
+2013-14,2014,Western Australia,WA,Government,Total government,4993232000,19462
+2013-14,2014,Western Australia,WA,Non-government,Australian Government,892695000,6736
+2013-14,2014,Western Australia,WA,Non-government,State and territory government,424120000,3200
+2013-14,2014,Western Australia,WA,Non-government,Total government,1316815000,9937
+2013-14,2014,Tasmania,Tas,All,Australian Government,312447000,3879
+2013-14,2014,Tasmania,Tas,All,State and territory government,870481000,10806
+2013-14,2014,Tasmania,Tas,All,Total government,1182928000,14685
+2013-14,2014,Tasmania,Tas,Government,Australian Government,134371000,2376
+2013-14,2014,Tasmania,Tas,Government,State and territory government,811591000,14349
+2013-14,2014,Tasmania,Tas,Government,Total government,945962000,16724
+2013-14,2014,Tasmania,Tas,Non-government,Australian Government,178076000,7423
+2013-14,2014,Tasmania,Tas,Non-government,State and territory government,58890000,2455
+2013-14,2014,Tasmania,Tas,Non-government,Total government,236966000,9877
+2013-14,2014,Northern Territory,NT,All,Australian Government,258045000,6353
+2013-14,2014,Northern Territory,NT,All,State and territory government,615303000,15149
+2013-14,2014,Northern Territory,NT,All,Total government,873348000,21502
+2013-14,2014,Northern Territory,NT,Government,Australian Government,138238000,4691
+2013-14,2014,Northern Territory,NT,Government,State and territory government,554425000,18815
+2013-14,2014,Northern Territory,NT,Government,Total government,692663000,23506
+2013-14,2014,Northern Territory,NT,Non-government,Australian Government,119807000,10745
+2013-14,2014,Northern Territory,NT,Non-government,State and territory government,60878000,5460
+2013-14,2014,Northern Territory,NT,Non-government,Total government,180685000,16205
+2013-14,2014,Australian Capital Territory,ACT,All,Australian Government,235505000,3683
+2013-14,2014,Australian Capital Territory,ACT,All,State and territory government,763439000,11940
+2013-14,2014,Australian Capital Territory,ACT,All,Total government,998944000,15624
+2013-14,2014,Australian Capital Territory,ACT,Government,Australian Government,71736000,1947
+2013-14,2014,Australian Capital Territory,ACT,Government,State and territory government,706014000,19164
+2013-14,2014,Australian Capital Territory,ACT,Government,Total government,777750000,21112
+2013-14,2014,Australian Capital Territory,ACT,Non-government,Australian Government,163769000,6044
+2013-14,2014,Australian Capital Territory,ACT,Non-government,State and territory government,57425000,2119
+2013-14,2014,Australian Capital Territory,ACT,Non-government,Total government,221194000,8163
+2013-14,2014,Australia,Aust,All,Australian Government,13717370000,3750
+2013-14,2014,Australia,Aust,All,State and territory government,36676407000,10027
+2013-14,2014,Australia,Aust,All,Total government,50393777000,13777
+2013-14,2014,Australia,Aust,Government,Australian Government,4899631000,2059
+2013-14,2014,Australia,Aust,Government,State and territory government,33570521000,14108
+2013-14,2014,Australia,Aust,Government,Total government,38470152000,16167
+2013-14,2014,Australia,Aust,Non-government,Australian Government,8817739000,6898
+2013-14,2014,Australia,Aust,Non-government,State and territory government,3105886000,2430
+2013-14,2014,Australia,Aust,Non-government,Total government,11923625000,9327
+2014-15,2015,New South Wales,NSW,All,Australian Government,4577769000,3896
+2014-15,2015,New South Wales,NSW,All,State and territory government,12427026000,10577
+2014-15,2015,New South Wales,NSW,All,Total government,17004795000,14473
+2014-15,2015,New South Wales,NSW,Government,Australian Government,1644501000,2142
+2014-15,2015,New South Wales,NSW,Government,State and territory government,11374727000,14814
+2014-15,2015,New South Wales,NSW,Government,Total government,13019228000,16956
+2014-15,2015,New South Wales,NSW,Non-government,Australian Government,2933268000,7205
+2014-15,2015,New South Wales,NSW,Non-government,State and territory government,1052299000,2585
+2014-15,2015,New South Wales,NSW,Non-government,Total government,3985567000,9790
+2014-15,2015,Victoria,Vic,All,Australian Government,3700728000,4081
+2014-15,2015,Victoria,Vic,All,State and territory government,7748383000,8544
+2014-15,2015,Victoria,Vic,All,Total government,11449111000,12625
+2014-15,2015,Victoria,Vic,Government,Australian Government,1255082000,2199
+2014-15,2015,Victoria,Vic,Government,State and territory government,7085884000,12413
+2014-15,2015,Victoria,Vic,Government,Total government,8340966000,14612
+2014-15,2015,Victoria,Vic,Non-government,Australian Government,2445646000,7279
+2014-15,2015,Victoria,Vic,Non-government,State and territory government,662499000,1972
+2014-15,2015,Victoria,Vic,Non-government,Total government,3108145000,9251
+2014-15,2015,Queensland,Qld,All,Australian Government,3104039000,3972
+2014-15,2015,Queensland,Qld,All,State and territory government,8001802000,10239
+2014-15,2015,Queensland,Qld,All,Total government,11105841000,14211
+2014-15,2015,Queensland,Qld,Government,Australian Government,1161125000,2226
+2014-15,2015,Queensland,Qld,Government,State and territory government,7286719000,13972
+2014-15,2015,Queensland,Qld,Government,Total government,8447844000,16198
+2014-15,2015,Queensland,Qld,Non-government,Australian Government,1942914000,7473
+2014-15,2015,Queensland,Qld,Non-government,State and territory government,715083000,2750
+2014-15,2015,Queensland,Qld,Non-government,Total government,2657997000,10223
+2014-15,2015,South Australia,SA,All,Australian Government,1090135000,4159
+2014-15,2015,South Australia,SA,All,State and territory government,2559236000,9763
+2014-15,2015,South Australia,SA,All,Total government,3649371000,13921
+2014-15,2015,South Australia,SA,Government,Australian Government,385499000,2304
+2014-15,2015,South Australia,SA,Government,State and territory government,2374684000,14193
+2014-15,2015,South Australia,SA,Government,Total government,2760183000,16497
+2014-15,2015,South Australia,SA,Non-government,Australian Government,704636000,7431
+2014-15,2015,South Australia,SA,Non-government,State and territory government,184552000,1946
+2014-15,2015,South Australia,SA,Non-government,Total government,889188000,9377
+2014-15,2015,Western Australia,WA,All,Australian Government,1499847000,3763
+2014-15,2015,Western Australia,WA,All,State and territory government,5126428000,12863
+2014-15,2015,Western Australia,WA,All,Total government,6626275000,16626
+2014-15,2015,Western Australia,WA,Government,Australian Government,520055000,1975
+2014-15,2015,Western Australia,WA,Government,State and territory government,4678746000,17770
+2014-15,2015,Western Australia,WA,Government,Total government,5198801000,19745
+2014-15,2015,Western Australia,WA,Non-government,Australian Government,979792000,7244
+2014-15,2015,Western Australia,WA,Non-government,State and territory government,447682000,3310
+2014-15,2015,Western Australia,WA,Non-government,Total government,1427474000,10554
+2014-15,2015,Tasmania,Tas,All,Australian Government,355895000,4413
+2014-15,2015,Tasmania,Tas,All,State and territory government,870591000,10794
+2014-15,2015,Tasmania,Tas,All,Total government,1226486000,15207
+2014-15,2015,Tasmania,Tas,Government,Australian Government,159753000,2824
+2014-15,2015,Tasmania,Tas,Government,State and territory government,812484000,14364
+2014-15,2015,Tasmania,Tas,Government,Total government,972237000,17188
+2014-15,2015,Tasmania,Tas,Non-government,Australian Government,196142000,8142
+2014-15,2015,Tasmania,Tas,Non-government,State and territory government,58107000,2412
+2014-15,2015,Tasmania,Tas,Non-government,Total government,254249000,10555
+2014-15,2015,Northern Territory,NT,All,Australian Government,314475000,7736
+2014-15,2015,Northern Territory,NT,All,State and territory government,596700000,14679
+2014-15,2015,Northern Territory,NT,All,Total government,911175000,22415
+2014-15,2015,Northern Territory,NT,Government,Australian Government,182858000,6265
+2014-15,2015,Northern Territory,NT,Government,State and territory government,529164000,18130
+2014-15,2015,Northern Territory,NT,Government,Total government,712022000,24394
+2014-15,2015,Northern Territory,NT,Non-government,Australian Government,131617000,11482
+2014-15,2015,Northern Territory,NT,Non-government,State and territory government,67536000,5892
+2014-15,2015,Northern Territory,NT,Non-government,Total government,199153000,17374
+2014-15,2015,Australian Capital Territory,ACT,All,Australian Government,254693000,3901
+2014-15,2015,Australian Capital Territory,ACT,All,State and territory government,760897000,11654
+2014-15,2015,Australian Capital Territory,ACT,All,Total government,1015590000,15554
+2014-15,2015,Australian Capital Territory,ACT,Government,Australian Government,78724000,2072
+2014-15,2015,Australian Capital Territory,ACT,Government,State and territory government,701536000,18461
+2014-15,2015,Australian Capital Territory,ACT,Government,Total government,780260000,20532
+2014-15,2015,Australian Capital Territory,ACT,Non-government,Australian Government,175969000,6448
+2014-15,2015,Australian Capital Territory,ACT,Non-government,State and territory government,59361000,2175
+2014-15,2015,Australian Capital Territory,ACT,Non-government,Total government,235330000,8623
+2014-15,2015,Australia,Aust,All,Australian Government,14897581000,4015
+2014-15,2015,Australia,Aust,All,State and territory government,38091063000,10265
+2014-15,2015,Australia,Aust,All,Total government,52988644000,14280
+2014-15,2015,Australia,Aust,Government,Australian Government,5387597000,2231
+2014-15,2015,Australia,Aust,Government,State and territory government,34843944000,14431
+2014-15,2015,Australia,Aust,Government,Total government,40231541000,16662
+2014-15,2015,Australia,Aust,Non-government,Australian Government,9509984000,7338
+2014-15,2015,Australia,Aust,Non-government,State and territory government,3247119000,2505
+2014-15,2015,Australia,Aust,Non-government,Total government,12757103000,9843
+2015-16,2016,New South Wales,NSW,All,Australian Government,4842278000,4076
+2015-16,2016,New South Wales,NSW,All,State and territory government,13007987000,10950
+2015-16,2016,New South Wales,NSW,All,Total government,17850265000,15027
+2015-16,2016,New South Wales,NSW,Government,Australian Government,1771232000,2282
+2015-16,2016,New South Wales,NSW,Government,State and territory government,11912671000,15346
+2015-16,2016,New South Wales,NSW,Government,Total government,13683903000,17627
+2015-16,2016,New South Wales,NSW,Non-government,Australian Government,3071046000,7461
+2015-16,2016,New South Wales,NSW,Non-government,State and territory government,1095316000,2661
+2015-16,2016,New South Wales,NSW,Non-government,Total government,4166362000,10122
+2015-16,2016,Victoria,Vic,All,Australian Government,3948891000,4274
+2015-16,2016,Victoria,Vic,All,State and territory government,8416457000,9110
+2015-16,2016,Victoria,Vic,All,Total government,12365348000,13384
+2015-16,2016,Victoria,Vic,Government,Australian Government,1374466000,2356
+2015-16,2016,Victoria,Vic,Government,State and territory government,7760571000,13301
+2015-16,2016,Victoria,Vic,Government,Total government,9135037000,15656
+2015-16,2016,Victoria,Vic,Non-government,Australian Government,2574425000,7563
+2015-16,2016,Victoria,Vic,Non-government,State and territory government,655886000,1927
+2015-16,2016,Victoria,Vic,Non-government,Total government,3230311000,9490
+2015-16,2016,Queensland,Qld,All,Australian Government,3337270000,4213
+2015-16,2016,Queensland,Qld,All,State and territory government,8355679000,10547
+2015-16,2016,Queensland,Qld,All,Total government,11692949000,14760
+2015-16,2016,Queensland,Qld,Government,Australian Government,1298080000,2451
+2015-16,2016,Queensland,Qld,Government,State and territory government,7633286000,14415
+2015-16,2016,Queensland,Qld,Government,Total government,8931366000,16867
+2015-16,2016,Queensland,Qld,Non-government,Australian Government,2039190000,7762
+2015-16,2016,Queensland,Qld,Non-government,State and territory government,722393000,2750
+2015-16,2016,Queensland,Qld,Non-government,Total government,2761583000,10512
+2015-16,2016,South Australia,SA,All,Australian Government,1141368000,4323
+2015-16,2016,South Australia,SA,All,State and territory government,2658935000,10071
+2015-16,2016,South Australia,SA,All,Total government,3800303000,14394
+2015-16,2016,South Australia,SA,Government,Australian Government,411080000,2424
+2015-16,2016,South Australia,SA,Government,State and territory government,2470447000,14566
+2015-16,2016,South Australia,SA,Government,Total government,2881527000,16990
+2015-16,2016,South Australia,SA,Non-government,Australian Government,730288000,7734
+2015-16,2016,South Australia,SA,Non-government,State and territory government,188488000,1996
+2015-16,2016,South Australia,SA,Non-government,Total government,918776000,9731
+2015-16,2016,Western Australia,WA,All,Australian Government,1592876000,3920
+2015-16,2016,Western Australia,WA,All,State and territory government,5108783000,12572
+2015-16,2016,Western Australia,WA,All,Total government,6701659000,16491
+2015-16,2016,Western Australia,WA,Government,Australian Government,564686000,2098
+2015-16,2016,Western Australia,WA,Government,State and territory government,4659091000,17306
+2015-16,2016,Western Australia,WA,Government,Total government,5223777000,19404
+2015-16,2016,Western Australia,WA,Non-government,Australian Government,1028190000,7497
+2015-16,2016,Western Australia,WA,Non-government,State and territory government,449692000,3279
+2015-16,2016,Western Australia,WA,Non-government,Total government,1477882000,10775
+2015-16,2016,Tasmania,Tas,All,Australian Government,372646000,4623
+2015-16,2016,Tasmania,Tas,All,State and territory government,872848000,10828
+2015-16,2016,Tasmania,Tas,All,Total government,1245494000,15451
+2015-16,2016,Tasmania,Tas,Government,Australian Government,166371000,2947
+2015-16,2016,Tasmania,Tas,Government,State and territory government,811278000,14372
+2015-16,2016,Tasmania,Tas,Government,Total government,977649000,17320
+2015-16,2016,Tasmania,Tas,Non-government,Australian Government,206275000,8536
+2015-16,2016,Tasmania,Tas,Non-government,State and territory government,61569000,2548
+2015-16,2016,Tasmania,Tas,Non-government,Total government,267845000,11084
+2015-16,2016,Northern Territory,NT,All,Australian Government,333279000,8166
+2015-16,2016,Northern Territory,NT,All,State and territory government,605792000,14844
+2015-16,2016,Northern Territory,NT,All,Total government,939071000,23010
+2015-16,2016,Northern Territory,NT,Government,Australian Government,184016000,6311
+2015-16,2016,Northern Territory,NT,Government,State and territory government,535074000,18352
+2015-16,2016,Northern Territory,NT,Government,Total government,719090000,24664
+2015-16,2016,Northern Territory,NT,Non-government,Australian Government,149263000,12807
+2015-16,2016,Northern Territory,NT,Non-government,State and territory government,70718000,6068
+2015-16,2016,Northern Territory,NT,Non-government,Total government,219981000,18874
+2015-16,2016,Australian Capital Territory,ACT,All,Australian Government,265383000,3971
+2015-16,2016,Australian Capital Territory,ACT,All,State and territory government,806436000,12068
+2015-16,2016,Australian Capital Territory,ACT,All,Total government,1071819000,16039
+2015-16,2016,Australian Capital Territory,ACT,Government,Australian Government,82153000,2081
+2015-16,2016,Australian Capital Territory,ACT,Government,State and territory government,745356000,18879
+2015-16,2016,Australian Capital Territory,ACT,Government,Total government,827509000,20960
+2015-16,2016,Australian Capital Territory,ACT,Non-government,Australian Government,183230000,6701
+2015-16,2016,Australian Capital Territory,ACT,Non-government,State and territory government,61080000,2234
+2015-16,2016,Australian Capital Territory,ACT,Non-government,Total government,244310000,8935
+2015-16,2016,Australia,Aust,All,Australian Government,15833991000,4208
+2015-16,2016,Australia,Aust,All,State and territory government,39832917000,10586
+2015-16,2016,Australia,Aust,All,Total government,55666908000,14795
+2015-16,2016,Australia,Aust,Government,Australian Government,5852083000,2386
+2015-16,2016,Australia,Aust,Government,State and territory government,36527775000,14890
+2015-16,2016,Australia,Aust,Government,Total government,42379858000,17275
+2015-16,2016,Australia,Aust,Non-government,Australian Government,9981908000,7623
+2015-16,2016,Australia,Aust,Non-government,State and territory government,3305142000,2524
+2015-16,2016,Australia,Aust,Non-government,Total government,13287050000,10147
+2016-17,2017,New South Wales,NSW,All,Australian Government,5210555000,4337
+2016-17,2017,New South Wales,NSW,All,State and territory government,12913926000,10750
+2016-17,2017,New South Wales,NSW,All,Total government,18124481000,15087
+2016-17,2017,New South Wales,NSW,Government,Australian Government,2050219000,2609
+2016-17,2017,New South Wales,NSW,Government,State and territory government,11768435000,14976
+2016-17,2017,New South Wales,NSW,Government,Total government,13818654000,17585
+2016-17,2017,New South Wales,NSW,Non-government,Australian Government,3160336000,7606
+2016-17,2017,New South Wales,NSW,Non-government,State and territory government,1145491000,2757
+2016-17,2017,New South Wales,NSW,Non-government,Total government,4305827000,10363
+2016-17,2017,Victoria,Vic,All,Australian Government,4404268000,4671
+2016-17,2017,Victoria,Vic,All,State and territory government,8822824000,9358
+2016-17,2017,Victoria,Vic,All,Total government,13227092000,14029
+2016-17,2017,Victoria,Vic,Government,Australian Government,1511777000,2530
+2016-17,2017,Victoria,Vic,Government,State and territory government,8130123000,13605
+2016-17,2017,Victoria,Vic,Government,Total government,9641900000,16135
+2016-17,2017,Victoria,Vic,Non-government,Australian Government,2892491000,8378
+2016-17,2017,Victoria,Vic,Non-government,State and territory government,692701000,2006
+2016-17,2017,Victoria,Vic,Non-government,Total government,3585192000,10384
+2016-17,2017,Queensland,Qld,All,Australian Government,3685967000,4591
+2016-17,2017,Queensland,Qld,All,State and territory government,8594146000,10703
+2016-17,2017,Queensland,Qld,All,Total government,12280113000,15294
+2016-17,2017,Queensland,Qld,Government,Australian Government,1499190000,2784
+2016-17,2017,Queensland,Qld,Government,State and territory government,7877937000,14630
+2016-17,2017,Queensland,Qld,Government,Total government,9377127000,17414
+2016-17,2017,Queensland,Qld,Non-government,Australian Government,2186777000,8269
+2016-17,2017,Queensland,Qld,Non-government,State and territory government,716209000,2708
+2016-17,2017,Queensland,Qld,Non-government,Total government,2902986000,10977
+2016-17,2017,South Australia,SA,All,Australian Government,1209590000,4561
+2016-17,2017,South Australia,SA,All,State and territory government,2745921000,10354
+2016-17,2017,South Australia,SA,All,Total government,3955511000,14915
+2016-17,2017,South Australia,SA,Government,Australian Government,439372000,2560
+2016-17,2017,South Australia,SA,Government,State and territory government,2552347000,14869
+2016-17,2017,South Australia,SA,Government,Total government,2991719000,17429
+2016-17,2017,South Australia,SA,Non-government,Australian Government,770218000,8233
+2016-17,2017,South Australia,SA,Non-government,State and territory government,193574000,2069
+2016-17,2017,South Australia,SA,Non-government,Total government,963792000,10302
+2016-17,2017,Western Australia,WA,All,Australian Government,1671581000,4071
+2016-17,2017,Western Australia,WA,All,State and territory government,5144461000,12530
+2016-17,2017,Western Australia,WA,All,Total government,6816042000,16602
+2016-17,2017,Western Australia,WA,Government,Australian Government,606155000,2215
+2016-17,2017,Western Australia,WA,Government,State and territory government,4687836000,17131
+2016-17,2017,Western Australia,WA,Government,Total government,5293991000,19346
+2016-17,2017,Western Australia,WA,Non-government,Australian Government,1065426000,7782
+2016-17,2017,Western Australia,WA,Non-government,State and territory government,456625000,3335
+2016-17,2017,Western Australia,WA,Non-government,Total government,1522051000,11117
+2016-17,2017,Tasmania,Tas,All,Australian Government,399981000,4956
+2016-17,2017,Tasmania,Tas,All,State and territory government,884995000,10965
+2016-17,2017,Tasmania,Tas,All,Total government,1284976000,15920
+2016-17,2017,Tasmania,Tas,Government,Australian Government,178645000,3165
+2016-17,2017,Tasmania,Tas,Government,State and territory government,817932000,14489
+2016-17,2017,Tasmania,Tas,Government,Total government,996577000,17653
+2016-17,2017,Tasmania,Tas,Non-government,Australian Government,221336000,9124
+2016-17,2017,Tasmania,Tas,Non-government,State and territory government,67063000,2764
+2016-17,2017,Tasmania,Tas,Non-government,Total government,288399000,11888
+2016-17,2017,Northern Territory,NT,All,Australian Government,359490000,8705
+2016-17,2017,Northern Territory,NT,All,State and territory government,617234000,14947
+2016-17,2017,Northern Territory,NT,All,Total government,976724000,23652
+2016-17,2017,Northern Territory,NT,Government,Australian Government,223307000,7471
+2016-17,2017,Northern Territory,NT,Government,State and territory government,536842000,17961
+2016-17,2017,Northern Territory,NT,Government,Total government,760149000,25433
+2016-17,2017,Northern Territory,NT,Non-government,Australian Government,136183000,11939
+2016-17,2017,Northern Territory,NT,Non-government,State and territory government,80392000,7048
+2016-17,2017,Northern Territory,NT,Non-government,Total government,216575000,18986
+2016-17,2017,Australian Capital Territory,ACT,All,Australian Government,276267000,4036
+2016-17,2017,Australian Capital Territory,ACT,All,State and territory government,827302000,12085
+2016-17,2017,Australian Capital Territory,ACT,All,Total government,1103569000,16120
+2016-17,2017,Australian Capital Territory,ACT,Government,Australian Government,88498000,2157
+2016-17,2017,Australian Capital Territory,ACT,Government,State and territory government,762968000,18593
+2016-17,2017,Australian Capital Territory,ACT,Government,Total government,851466000,20750
+2016-17,2017,Australian Capital Territory,ACT,Non-government,Australian Government,187769000,6847
+2016-17,2017,Australian Capital Territory,ACT,Non-government,State and territory government,64334000,2346
+2016-17,2017,Australian Capital Territory,ACT,Non-government,Total government,252103000,9193
+2016-17,2017,Australia,Aust,All,Australian Government,17217699000,4515
+2016-17,2017,Australia,Aust,All,State and territory government,40550808000,10634
+2016-17,2017,Australia,Aust,All,Total government,57768507000,15149
+2016-17,2017,Australia,Aust,Government,Australian Government,6597163000,2645
+2016-17,2017,Australia,Aust,Government,State and territory government,37134420000,14886
+2016-17,2017,Australia,Aust,Government,Total government,43731583000,17531
+2016-17,2017,Australia,Aust,Non-government,Australian Government,10620536000,8053
+2016-17,2017,Australia,Aust,Non-government,State and territory government,3416388000,2591
+2016-17,2017,Australia,Aust,Non-government,Total government,14036924000,10644
+2017-18,2018,New South Wales,NSW,All,Australian Government,5744202000,4733
+2017-18,2018,New South Wales,NSW,All,State and territory government,13993069000,11530
+2017-18,2018,New South Wales,NSW,All,Total government,19737271000,16264
+2017-18,2018,New South Wales,NSW,Government,Australian Government,2277883000,2867
+2017-18,2018,New South Wales,NSW,Government,State and territory government,12790459000,16098
+2017-18,2018,New South Wales,NSW,Government,Total government,15068342000,18965
+2017-18,2018,New South Wales,NSW,Non-government,Australian Government,3466319000,8272
+2017-18,2018,New South Wales,NSW,Non-government,State and territory government,1202610000,2870
+2017-18,2018,New South Wales,NSW,Non-government,Total government,4668929000,11142
+2017-18,2018,Victoria,Vic,All,Australian Government,4569304000,4748
+2017-18,2018,Victoria,Vic,All,State and territory government,9466571000,9837
+2017-18,2018,Victoria,Vic,All,Total government,14035875000,14585
+2017-18,2018,Victoria,Vic,Government,Australian Government,1626541000,2656
+2017-18,2018,Victoria,Vic,Government,State and territory government,8744994000,14282
+2017-18,2018,Victoria,Vic,Government,Total government,10371535000,16939
+2017-18,2018,Victoria,Vic,Non-government,Australian Government,2942763000,8407
+2017-18,2018,Victoria,Vic,Non-government,State and territory government,721577000,2061
+2017-18,2018,Victoria,Vic,Non-government,Total government,3664340000,10469
+2017-18,2018,Queensland,Qld,All,Australian Government,3952345000,4856
+2017-18,2018,Queensland,Qld,All,State and territory government,9072362000,11146
+2017-18,2018,Queensland,Qld,All,Total government,13024707000,16002
+2017-18,2018,Queensland,Qld,Government,Australian Government,1630645000,2980
+2017-18,2018,Queensland,Qld,Government,State and territory government,8258237000,15091
+2017-18,2018,Queensland,Qld,Government,Total government,9888882000,18071
+2017-18,2018,Queensland,Qld,Non-government,Australian Government,2321700000,8705
+2017-18,2018,Queensland,Qld,Non-government,State and territory government,814125000,3053
+2017-18,2018,Queensland,Qld,Non-government,Total government,3135825000,11758
+2017-18,2018,South Australia,SA,All,Australian Government,1264582000,4736
+2017-18,2018,South Australia,SA,All,State and territory government,2861675000,10717
+2017-18,2018,South Australia,SA,All,Total government,4126257000,15453
+2017-18,2018,South Australia,SA,Government,Australian Government,470862000,2716
+2017-18,2018,South Australia,SA,Government,State and territory government,2659543000,15343
+2017-18,2018,South Australia,SA,Government,Total government,3130405000,18059
+2017-18,2018,South Australia,SA,Non-government,Australian Government,793720000,8472
+2017-18,2018,South Australia,SA,Non-government,State and territory government,202132000,2158
+2017-18,2018,South Australia,SA,Non-government,Total government,995852000,10630
+2017-18,2018,Western Australia,WA,All,Australian Government,1804502000,4344
+2017-18,2018,Western Australia,WA,All,State and territory government,5201905000,12521
+2017-18,2018,Western Australia,WA,All,Total government,7006407000,16865
+2017-18,2018,Western Australia,WA,Government,Australian Government,665469000,2390
+2017-18,2018,Western Australia,WA,Government,State and territory government,4738151000,17016
+2017-18,2018,Western Australia,WA,Government,Total government,5403620000,19406
+2017-18,2018,Western Australia,WA,Non-government,Australian Government,1139034000,8315
+2017-18,2018,Western Australia,WA,Non-government,State and territory government,463753000,3385
+2017-18,2018,Western Australia,WA,Non-government,Total government,1602787000,11700
+2017-18,2018,Tasmania,Tas,All,Australian Government,428331000,5293
+2017-18,2018,Tasmania,Tas,All,State and territory government,940641000,11623
+2017-18,2018,Tasmania,Tas,All,Total government,1368972000,16916
+2017-18,2018,Tasmania,Tas,Government,Australian Government,188606000,3329
+2017-18,2018,Tasmania,Tas,Government,State and territory government,866838000,15302
+2017-18,2018,Tasmania,Tas,Government,Total government,1055444000,18632
+2017-18,2018,Tasmania,Tas,Non-government,Australian Government,239725000,9874
+2017-18,2018,Tasmania,Tas,Non-government,State and territory government,73803000,3040
+2017-18,2018,Tasmania,Tas,Non-government,Total government,313528000,12914
+2017-18,2018,Northern Territory,NT,All,Australian Government,392789000,9573
+2017-18,2018,Northern Territory,NT,All,State and territory government,616937000,15036
+2017-18,2018,Northern Territory,NT,All,Total government,1009726000,24608
+2017-18,2018,Northern Territory,NT,Government,Australian Government,234586000,7824
+2017-18,2018,Northern Territory,NT,Government,State and territory government,553865000,18472
+2017-18,2018,Northern Territory,NT,Government,Total government,788451000,26296
+2017-18,2018,Northern Territory,NT,Non-government,Australian Government,158203000,14320
+2017-18,2018,Northern Territory,NT,Non-government,State and territory government,63071000,5709
+2017-18,2018,Northern Territory,NT,Non-government,Total government,221275000,20029
+2017-18,2018,Australian Capital Territory,ACT,All,Australian Government,306526000,4372
+2017-18,2018,Australian Capital Territory,ACT,All,State and territory government,876223000,12496
+2017-18,2018,Australian Capital Territory,ACT,All,Total government,1182749000,16868
+2017-18,2018,Australian Capital Territory,ACT,Government,Australian Government,96460000,2269
+2017-18,2018,Australian Capital Territory,ACT,Government,State and territory government,808792000,19029
+2017-18,2018,Australian Capital Territory,ACT,Government,Total government,905252000,21298
+2017-18,2018,Australian Capital Territory,ACT,Non-government,Australian Government,210066000,7607
+2017-18,2018,Australian Capital Territory,ACT,Non-government,State and territory government,67431000,2442
+2017-18,2018,Australian Capital Territory,ACT,Non-government,Total government,277497000,10048
+2017-18,2018,Australia,Aust,All,Australian Government,18462581000,4778
+2017-18,2018,Australia,Aust,All,State and territory government,43029383000,11135
+2017-18,2018,Australia,Aust,All,Total government,61491964000,15912
+2017-18,2018,Australia,Aust,Government,Australian Government,7191052000,2837
+2017-18,2018,Australia,Aust,Government,State and territory government,39420879000,15551
+2017-18,2018,Australia,Aust,Government,Total government,46611931000,18387
+2017-18,2018,Australia,Aust,Non-government,Australian Government,11271530000,8479
+2017-18,2018,Australia,Aust,Non-government,State and territory government,3608504000,2714
+2017-18,2018,Australia,Aust,Non-government,Total government,14880033000,11193
+2018-19,2019,New South Wales,NSW,All,Australian Government,6142494000,5014
+2018-19,2019,New South Wales,NSW,All,State and territory government,15206953000,12413
+2018-19,2019,New South Wales,NSW,All,Total government,21349447000,17428
+2018-19,2019,New South Wales,NSW,Government,Australian Government,2434378000,3036
+2018-19,2019,New South Wales,NSW,Government,State and territory government,13949010000,17399
+2018-19,2019,New South Wales,NSW,Government,Total government,16383388000,20436
+2018-19,2019,New South Wales,NSW,Non-government,Australian Government,3708116000,8759
+2018-19,2019,New South Wales,NSW,Non-government,State and territory government,1257943000,2972
+2018-19,2019,New South Wales,NSW,Non-government,Total government,4966059000,11731
+2018-19,2019,Victoria,Vic,All,Australian Government,4907775000,5006
+2018-19,2019,Victoria,Vic,All,State and territory government,10228369000,10433
+2018-19,2019,Victoria,Vic,All,Total government,15136144000,15438
+2018-19,2019,Victoria,Vic,Government,Australian Government,1777923000,2840
+2018-19,2019,Victoria,Vic,Government,State and territory government,9475960000,15134
+2018-19,2019,Victoria,Vic,Government,Total government,11253883000,17974
+2018-19,2019,Victoria,Vic,Non-government,Australian Government,3129852000,8834
+2018-19,2019,Victoria,Vic,Non-government,State and territory government,752409000,2124
+2018-19,2019,Victoria,Vic,Non-government,Total government,3882261000,10958
+2018-19,2019,Queensland,Qld,All,Australian Government,4265478000,5161
+2018-19,2019,Queensland,Qld,All,State and territory government,9489432000,11481
+2018-19,2019,Queensland,Qld,All,Total government,13754910000,16642
+2018-19,2019,Queensland,Qld,Government,Australian Government,1748392000,3146
+2018-19,2019,Queensland,Qld,Government,State and territory government,8674011000,15608
+2018-19,2019,Queensland,Qld,Government,Total government,10422403000,18754
+2018-19,2019,Queensland,Qld,Non-government,Australian Government,2517086000,9296
+2018-19,2019,Queensland,Qld,Non-government,State and territory government,815421000,3011
+2018-19,2019,Queensland,Qld,Non-government,Total government,3332507000,12307
+2018-19,2019,South Australia,SA,All,Australian Government,1397759000,5177
+2018-19,2019,South Australia,SA,All,State and territory government,3050898000,11300
+2018-19,2019,South Australia,SA,All,Total government,4448657000,16477
+2018-19,2019,South Australia,SA,Government,Australian Government,524469000,2993
+2018-19,2019,South Australia,SA,Government,State and territory government,2804361000,16001
+2018-19,2019,South Australia,SA,Government,Total government,3328830000,18994
+2018-19,2019,South Australia,SA,Non-government,Australian Government,873290000,9218
+2018-19,2019,South Australia,SA,Non-government,State and territory government,246537000,2602
+2018-19,2019,South Australia,SA,Non-government,Total government,1119827000,11821
+2018-19,2019,Western Australia,WA,All,Australian Government,1966421000,4675
+2018-19,2019,Western Australia,WA,All,State and territory government,5205495000,12377
+2018-19,2019,Western Australia,WA,All,Total government,7171916000,17052
+2018-19,2019,Western Australia,WA,Government,Australian Government,744622000,2634
+2018-19,2019,Western Australia,WA,Government,State and territory government,4708237000,16652
+2018-19,2019,Western Australia,WA,Government,Total government,5452859000,19286
+2018-19,2019,Western Australia,WA,Non-government,Australian Government,1221799000,8864
+2018-19,2019,Western Australia,WA,Non-government,State and territory government,497258000,3607
+2018-19,2019,Western Australia,WA,Non-government,Total government,1719057000,12471
+2018-19,2019,Tasmania,Tas,All,Australian Government,459103000,5650
+2018-19,2019,Tasmania,Tas,All,State and territory government,987251000,12150
+2018-19,2019,Tasmania,Tas,All,Total government,1446354000,17800
+2018-19,2019,Tasmania,Tas,Government,Australian Government,201222000,3542
+2018-19,2019,Tasmania,Tas,Government,State and territory government,907543000,15975
+2018-19,2019,Tasmania,Tas,Government,Total government,1108765000,19517
+2018-19,2019,Tasmania,Tas,Non-government,Australian Government,257881000,10550
+2018-19,2019,Tasmania,Tas,Non-government,State and territory government,79708000,3261
+2018-19,2019,Tasmania,Tas,Non-government,Total government,337589000,13810
+2018-19,2019,Northern Territory,NT,All,Australian Government,388908000,9590
+2018-19,2019,Northern Territory,NT,All,State and territory government,636219000,15689
+2018-19,2019,Northern Territory,NT,All,Total government,1025127000,25280
+2018-19,2019,Northern Territory,NT,Government,Australian Government,219507000,7382
+2018-19,2019,Northern Territory,NT,Government,State and territory government,571318000,19213
+2018-19,2019,Northern Territory,NT,Government,Total government,790825000,26595
+2018-19,2019,Northern Territory,NT,Non-government,Australian Government,169401000,15663
+2018-19,2019,Northern Territory,NT,Non-government,State and territory government,64901000,6001
+2018-19,2019,Northern Territory,NT,Non-government,Total government,234302000,21664
+2018-19,2019,Australian Capital Territory,ACT,All,Australian Government,334328000,4667
+2018-19,2019,Australian Capital Territory,ACT,All,State and territory government,931192000,12999
+2018-19,2019,Australian Capital Territory,ACT,All,Total government,1265520000,17666
+2018-19,2019,Australian Capital Territory,ACT,Government,Australian Government,107704000,2465
+2018-19,2019,Australian Capital Territory,ACT,Government,State and territory government,859702000,19673
+2018-19,2019,Australian Capital Territory,ACT,Government,Total government,967406000,22137
+2018-19,2019,Australian Capital Territory,ACT,Non-government,Australian Government,226624000,8112
+2018-19,2019,Australian Capital Territory,ACT,Non-government,State and territory government,71490000,2559
+2018-19,2019,Australian Capital Territory,ACT,Non-government,Total government,298114000,10671
+2018-19,2019,Australia,Aust,All,Australian Government,19862266000,5072
+2018-19,2019,Australia,Aust,All,State and territory government,45735808000,11679
+2018-19,2019,Australia,Aust,All,Total government,65598074000,16751
+2018-19,2019,Australia,Aust,Government,Australian Government,7758217000,3017
+2018-19,2019,Australia,Aust,Government,State and territory government,41950142000,16312
+2018-19,2019,Australia,Aust,Government,Total government,49708359000,19328
+2018-19,2019,Australia,Aust,Non-government,Australian Government,12104049000,9005
+2018-19,2019,Australia,Aust,Non-government,State and territory government,3785666000,2816
+2018-19,2019,Australia,Aust,Non-government,Total government,15889715000,11821
+2019-20,2020,New South Wales,NSW,All,Australian Government,6926072000,5603
+2019-20,2020,New South Wales,NSW,All,State and territory government,15697188000,12698
+2019-20,2020,New South Wales,NSW,All,Total government,22623260000,18301
+2019-20,2020,New South Wales,NSW,Government,Australian Government,2644686000,3275
+2019-20,2020,New South Wales,NSW,Government,State and territory government,14425262000,17862
+2019-20,2020,New South Wales,NSW,Government,Total government,17069948000,21137
+2019-20,2020,New South Wales,NSW,Non-government,Australian Government,4281386000,9990
+2019-20,2020,New South Wales,NSW,Non-government,State and territory government,1271926000,2968
+2019-20,2020,New South Wales,NSW,Non-government,Total government,5553312000,12958
+2019-20,2020,Victoria,Vic,All,Australian Government,5420982000,5437
+2019-20,2020,Victoria,Vic,All,State and territory government,10733298000,10765
+2019-20,2020,Victoria,Vic,All,Total government,16154281000,16201
+2019-20,2020,Victoria,Vic,Government,Australian Government,1964952000,3080
+2019-20,2020,Victoria,Vic,Government,State and territory government,9943327000,15587
+2019-20,2020,Victoria,Vic,Government,Total government,11908279000,18668
+2019-20,2020,Victoria,Vic,Non-government,Australian Government,3456030000,9622
+2019-20,2020,Victoria,Vic,Non-government,State and territory government,789972000,2199
+2019-20,2020,Victoria,Vic,Non-government,Total government,4246002000,11821
+2019-20,2020,Queensland,Qld,All,Australian Government,4750201000,5621
+2019-20,2020,Queensland,Qld,All,State and territory government,10278240000,12162
+2019-20,2020,Queensland,Qld,All,Total government,15028441000,17783
+2019-20,2020,Queensland,Qld,Government,Australian Government,1881712000,3323
+2019-20,2020,Queensland,Qld,Government,State and territory government,9406399000,16609
+2019-20,2020,Queensland,Qld,Government,Total government,11288111000,19932
+2019-20,2020,Queensland,Qld,Non-government,Australian Government,2868489000,10289
+2019-20,2020,Queensland,Qld,Non-government,State and territory government,871841000,3127
+2019-20,2020,Queensland,Qld,Non-government,Total government,3740330000,13417
+2019-20,2020,South Australia,SA,All,Australian Government,1716918000,6308
+2019-20,2020,South Australia,SA,All,State and territory government,3360093000,12346
+2019-20,2020,South Australia,SA,All,Total government,5077012000,18654
+2019-20,2020,South Australia,SA,Government,Australian Government,577150000,3274
+2019-20,2020,South Australia,SA,Government,State and territory government,2914874000,16536
+2019-20,2020,South Australia,SA,Government,Total government,3492024000,19810
+2019-20,2020,South Australia,SA,Non-government,Australian Government,1139768000,11886
+2019-20,2020,South Australia,SA,Non-government,State and territory government,445219000,4643
+2019-20,2020,South Australia,SA,Non-government,Total government,1584988000,16529
+2019-20,2020,Western Australia,WA,All,Australian Government,2299447000,5392
+2019-20,2020,Western Australia,WA,All,State and territory government,5438949000,12754
+2019-20,2020,Western Australia,WA,All,Total government,7738396000,18145
+2019-20,2020,Western Australia,WA,Government,Australian Government,834611000,2904
+2019-20,2020,Western Australia,WA,Government,State and territory government,4957113000,17250
+2019-20,2020,Western Australia,WA,Government,Total government,5791724000,20155
+2019-20,2020,Western Australia,WA,Non-government,Australian Government,1464836000,10531
+2019-20,2020,Western Australia,WA,Non-government,State and territory government,481836000,3464
+2019-20,2020,Western Australia,WA,Non-government,Total government,1946672000,13995
+2019-20,2020,Tasmania,Tas,All,Australian Government,495409000,6069
+2019-20,2020,Tasmania,Tas,All,State and territory government,1054497000,12918
+2019-20,2020,Tasmania,Tas,All,Total government,1549906000,18987
+2019-20,2020,Tasmania,Tas,Government,Australian Government,211119000,3716
+2019-20,2020,Tasmania,Tas,Government,State and territory government,970920000,17091
+2019-20,2020,Tasmania,Tas,Government,Total government,1182039000,20808
+2019-20,2020,Tasmania,Tas,Non-government,Australian Government,284290000,11452
+2019-20,2020,Tasmania,Tas,Non-government,State and territory government,83577000,3367
+2019-20,2020,Tasmania,Tas,Non-government,Total government,367867000,14819
+2019-20,2020,Northern Territory,NT,All,Australian Government,437948000,10777
+2019-20,2020,Northern Territory,NT,All,State and territory government,682183000,16788
+2019-20,2020,Northern Territory,NT,All,Total government,1120131000,27565
+2019-20,2020,Northern Territory,NT,Government,Australian Government,231559000,7697
+2019-20,2020,Northern Territory,NT,Government,State and territory government,617949000,20540
+2019-20,2020,Northern Territory,NT,Government,Total government,849508000,28237
+2019-20,2020,Northern Territory,NT,Non-government,Australian Government,206389000,19563
+2019-20,2020,Northern Territory,NT,Non-government,State and territory government,64234000,6089
+2019-20,2020,Northern Territory,NT,Non-government,Total government,270623000,25651
+2019-20,2020,Australian Capital Territory,ACT,All,Australian Government,357884000,4887
+2019-20,2020,Australian Capital Territory,ACT,All,State and territory government,992121000,13547
+2019-20,2020,Australian Capital Territory,ACT,All,Total government,1350005000,18433
+2019-20,2020,Australian Capital Territory,ACT,Government,Australian Government,118557000,2642
+2019-20,2020,Australian Capital Territory,ACT,Government,State and territory government,920728000,20517
+2019-20,2020,Australian Capital Territory,ACT,Government,Total government,1039285000,23159
+2019-20,2020,Australian Capital Territory,ACT,Non-government,Australian Government,239327000,8439
+2019-20,2020,Australian Capital Territory,ACT,Non-government,State and territory government,71393000,2517
+2019-20,2020,Australian Capital Territory,ACT,Non-government,Total government,310720000,10956
+2019-20,2020,Australia,Aust,All,Australian Government,22404861000,5640
+2019-20,2020,Australia,Aust,All,State and territory government,48236570000,12143
+2019-20,2020,Australia,Aust,All,Total government,70641431000,17783
+2019-20,2020,Australia,Aust,Government,Australian Government,8464347000,3246
+2019-20,2020,Australia,Aust,Government,State and territory government,44156571000,16936
+2019-20,2020,Australia,Aust,Government,Total government,52620918000,20182
+2019-20,2020,Australia,Aust,Non-government,Australian Government,13940514000,10211
+2019-20,2020,Australia,Aust,Non-government,State and territory government,4079999000,2988
+2019-20,2020,Australia,Aust,Non-government,Total government,18020513000,13199
+2020-21,2021,New South Wales,NSW,All,Australian Government,6752693000,5437
+2020-21,2021,New South Wales,NSW,All,State and territory government,16282788000,13111
+2020-21,2021,New South Wales,NSW,All,Total government,23035481000,18549
+2020-21,2021,New South Wales,NSW,Government,Australian Government,2816735000,3495
+2020-21,2021,New South Wales,NSW,Government,State and territory government,14849724000,18428
+2020-21,2021,New South Wales,NSW,Government,Total government,17666459000,21923
+2020-21,2021,New South Wales,NSW,Non-government,Australian Government,3935958000,9026
+2020-21,2021,New South Wales,NSW,Non-government,State and territory government,1433064000,3286
+2020-21,2021,New South Wales,NSW,Non-government,Total government,5369022000,12313
+2020-21,2021,Victoria,Vic,All,Australian Government,5644191000,5603
+2020-21,2021,Victoria,Vic,All,State and territory government,11654443000,11570
+2020-21,2021,Victoria,Vic,All,Total government,17298635000,17174
+2020-21,2021,Victoria,Vic,Government,Australian Government,2095534000,3256
+2020-21,2021,Victoria,Vic,Government,State and territory government,10808543000,16792
+2020-21,2021,Victoria,Vic,Government,Total government,12904077000,20047
+2020-21,2021,Victoria,Vic,Non-government,Australian Government,3548657000,9760
+2020-21,2021,Victoria,Vic,Non-government,State and territory government,845901000,2327
+2020-21,2021,Victoria,Vic,Non-government,Total government,4394558000,12087
+2020-21,2021,Queensland,Qld,All,Australian Government,4956224000,5754
+2020-21,2021,Queensland,Qld,All,State and territory government,10259162000,11911
+2020-21,2021,Queensland,Qld,All,Total government,15215386000,17666
+2020-21,2021,Queensland,Qld,Government,Australian Government,2064978000,3602
+2020-21,2021,Queensland,Qld,Government,State and territory government,9334130000,16281
+2020-21,2021,Queensland,Qld,Government,Total government,11399108000,19883
+2020-21,2021,Queensland,Qld,Non-government,Australian Government,2891246000,10040
+2020-21,2021,Queensland,Qld,Non-government,State and territory government,925032000,3212
+2020-21,2021,Queensland,Qld,Non-government,Total government,3816278000,13252
+2020-21,2021,South Australia,SA,All,Australian Government,1415499000,5183
+2020-21,2021,South Australia,SA,All,State and territory government,3294509000,12064
+2020-21,2021,South Australia,SA,All,Total government,4710009000,17247
+2020-21,2021,South Australia,SA,Government,Australian Government,613503000,3509
+2020-21,2021,South Australia,SA,Government,State and territory government,2989995000,17103
+2020-21,2021,South Australia,SA,Government,Total government,3603498000,20612
+2020-21,2021,South Australia,SA,Non-government,Australian Government,801997000,8162
+2020-21,2021,South Australia,SA,Non-government,State and territory government,304514000,3099
+2020-21,2021,South Australia,SA,Non-government,Total government,1106511000,11261
+2020-21,2021,Western Australia,WA,All,Australian Government,2200463000,5083
+2020-21,2021,Western Australia,WA,All,State and territory government,5676822000,13113
+2020-21,2021,Western Australia,WA,All,Total government,7877284000,18196
+2020-21,2021,Western Australia,WA,Government,Australian Government,930161000,3195
+2020-21,2021,Western Australia,WA,Government,State and territory government,5191703000,17831
+2020-21,2021,Western Australia,WA,Government,Total government,6121864000,21026
+2020-21,2021,Western Australia,WA,Non-government,Australian Government,1270301000,8962
+2020-21,2021,Western Australia,WA,Non-government,State and territory government,485119000,3423
+2020-21,2021,Western Australia,WA,Non-government,Total government,1755420000,12385
+2020-21,2021,Tasmania,Tas,All,Australian Government,524204000,6420
+2020-21,2021,Tasmania,Tas,All,State and territory government,1090256000,13352
+2020-21,2021,Tasmania,Tas,All,Total government,1614460000,19772
+2020-21,2021,Tasmania,Tas,Government,Australian Government,222839000,3957
+2020-21,2021,Tasmania,Tas,Government,State and territory government,1002489000,17802
+2020-21,2021,Tasmania,Tas,Government,Total government,1225328000,21759
+2020-21,2021,Tasmania,Tas,Non-government,Australian Government,301365000,11893
+2020-21,2021,Tasmania,Tas,Non-government,State and territory government,87767000,3464
+2020-21,2021,Tasmania,Tas,Non-government,Total government,389132000,15357
+2020-21,2021,Northern Territory,NT,All,Australian Government,395096000,9735
+2020-21,2021,Northern Territory,NT,All,State and territory government,686460000,16913
+2020-21,2021,Northern Territory,NT,All,Total government,1081556000,26648
+2020-21,2021,Northern Territory,NT,Government,Australian Government,246110000,8160
+2020-21,2021,Northern Territory,NT,Government,State and territory government,619605000,20544
+2020-21,2021,Northern Territory,NT,Government,Total government,865715000,28704
+2020-21,2021,Northern Territory,NT,Non-government,Australian Government,148986000,14291
+2020-21,2021,Northern Territory,NT,Non-government,State and territory government,66855000,6413
+2020-21,2021,Northern Territory,NT,Non-government,Total government,215841000,20703
+2020-21,2021,Australian Capital Territory,ACT,All,Australian Government,360447000,4826
+2020-21,2021,Australian Capital Territory,ACT,All,State and territory government,1041163000,13940
+2020-21,2021,Australian Capital Territory,ACT,All,Total government,1401610000,18766
+2020-21,2021,Australian Capital Territory,ACT,Government,Australian Government,131290000,2865
+2020-21,2021,Australian Capital Territory,ACT,Government,State and territory government,969562000,21161
+2020-21,2021,Australian Capital Territory,ACT,Government,Total government,1100852000,24026
+2020-21,2021,Australian Capital Territory,ACT,Non-government,Australian Government,229157000,7938
+2020-21,2021,Australian Capital Territory,ACT,Non-government,State and territory government,71601000,2480
+2020-21,2021,Australian Capital Territory,ACT,Non-government,Total government,300758000,10418
+2020-21,2021,Australia,Aust,All,Australian Government,22248818000,5544
+2020-21,2021,Australia,Aust,All,State and territory government,49985603000,12455
+2020-21,2021,Australia,Aust,All,Total government,72234421000,17998
+2020-21,2021,Australia,Aust,Government,Australian Government,9121151000,3480
+2020-21,2021,Australia,Aust,Government,State and territory government,45765750000,17460
+2020-21,2021,Australia,Aust,Government,Total government,54886901000,20940
+2020-21,2021,Australia,Aust,Non-government,Australian Government,13127667000,9429
+2020-21,2021,Australia,Aust,Non-government,State and territory government,4219853000,3031
+2020-21,2021,Australia,Aust,Non-government,Total government,17347520000,12460
+2021-22,2022,New South Wales,NSW,All,Australian Government,7662668000,6169
+2021-22,2022,New South Wales,NSW,All,State and territory government,17367342000,13981
+2021-22,2022,New South Wales,NSW,All,Total government,25030010000,20150
+2021-22,2022,New South Wales,NSW,Government,Australian Government,2964607000,3723
+2021-22,2022,New South Wales,NSW,Government,State and territory government,15796271000,19835
+2021-22,2022,New South Wales,NSW,Government,Total government,18760878000,23558
+2021-22,2022,New South Wales,NSW,Non-government,Australian Government,4698061000,10538
+2021-22,2022,New South Wales,NSW,Non-government,State and territory government,1571071000,3524
+2021-22,2022,New South Wales,NSW,Non-government,Total government,6269132000,14061
+2021-22,2022,Victoria,Vic,All,Australian Government,6201382000,6128
+2021-22,2022,Victoria,Vic,All,State and territory government,12676510000,12527
+2021-22,2022,Victoria,Vic,All,Total government,18877892000,18655
+2021-22,2022,Victoria,Vic,Government,Australian Government,2298258000,3566
+2021-22,2022,Victoria,Vic,Government,State and territory government,11765817000,18258
+2021-22,2022,Victoria,Vic,Government,Total government,14064075000,21824
+2021-22,2022,Victoria,Vic,Non-government,Australian Government,3903124000,10620
+2021-22,2022,Victoria,Vic,Non-government,State and territory government,910693000,2478
+2021-22,2022,Victoria,Vic,Non-government,Total government,4813817000,13098
+2021-22,2022,Queensland,Qld,All,Australian Government,5481150000,6319
+2021-22,2022,Queensland,Qld,All,State and territory government,11239236000,12957
+2021-22,2022,Queensland,Qld,All,Total government,16720386000,19276
+2021-22,2022,Queensland,Qld,Government,Australian Government,2173649000,3801
+2021-22,2022,Queensland,Qld,Government,State and territory government,10212526000,17860
+2021-22,2022,Queensland,Qld,Government,Total government,12386175000,21661
+2021-22,2022,Queensland,Qld,Non-government,Australian Government,3307501000,11189
+2021-22,2022,Queensland,Qld,Non-government,State and territory government,1026710000,3473
+2021-22,2022,Queensland,Qld,Non-government,Total government,4334211000,14662
+2021-22,2022,South Australia,SA,All,Australian Government,1792203000,6536
+2021-22,2022,South Australia,SA,All,State and territory government,3413282000,12448
+2021-22,2022,South Australia,SA,All,Total government,5205485000,18984
+2021-22,2022,South Australia,SA,Government,Australian Government,653692000,3785
+2021-22,2022,South Australia,SA,Government,State and territory government,3072330000,17787
+2021-22,2022,South Australia,SA,Government,Total government,3726022000,21572
+2021-22,2022,South Australia,SA,Non-government,Australian Government,1138511000,11220
+2021-22,2022,South Australia,SA,Non-government,State and territory government,340952000,3360
+2021-22,2022,South Australia,SA,Non-government,Total government,1479463000,14580
+2021-22,2022,Western Australia,WA,All,Australian Government,2580913000,5892
+2021-22,2022,Western Australia,WA,All,State and territory government,5884769000,13434
+2021-22,2022,Western Australia,WA,All,Total government,8465682000,19326
+2021-22,2022,Western Australia,WA,Government,Australian Government,1026222000,3507
+2021-22,2022,Western Australia,WA,Government,State and territory government,5394672000,18435
+2021-22,2022,Western Australia,WA,Government,Total government,6420894000,21942
+2021-22,2022,Western Australia,WA,Non-government,Australian Government,1554691000,10692
+2021-22,2022,Western Australia,WA,Non-government,State and territory government,490097000,3371
+2021-22,2022,Western Australia,WA,Non-government,Total government,2044788000,14063
+2021-22,2022,Tasmania,Tas,All,Australian Government,567228000,6968
+2021-22,2022,Tasmania,Tas,All,State and territory government,1193313000,14660
+2021-22,2022,Tasmania,Tas,All,Total government,1760541000,21628
+2021-22,2022,Tasmania,Tas,Government,Australian Government,228907000,4124
+2021-22,2022,Tasmania,Tas,Government,State and territory government,1100837000,19831
+2021-22,2022,Tasmania,Tas,Government,Total government,1329744000,23954
+2021-22,2022,Tasmania,Tas,Non-government,Australian Government,338322000,13069
+2021-22,2022,Tasmania,Tas,Non-government,State and territory government,92475000,3572
+2021-22,2022,Tasmania,Tas,Non-government,Total government,430797000,16641
+2021-22,2022,Northern Territory,NT,All,Australian Government,449580000,11177
+2021-22,2022,Northern Territory,NT,All,State and territory government,712511000,17714
+2021-22,2022,Northern Territory,NT,All,Total government,1162091000,28892
+2021-22,2022,Northern Territory,NT,Government,Australian Government,248981000,8393
+2021-22,2022,Northern Territory,NT,Government,State and territory government,651266000,21953
+2021-22,2022,Northern Territory,NT,Government,Total government,900247000,30346
+2021-22,2022,Northern Territory,NT,Non-government,Australian Government,200599000,19004
+2021-22,2022,Northern Territory,NT,Non-government,State and territory government,61245000,5802
+2021-22,2022,Northern Territory,NT,Non-government,Total government,261844000,24806
+2021-22,2022,Australian Capital Territory,ACT,All,Australian Government,389390000,5154
+2021-22,2022,Australian Capital Territory,ACT,All,State and territory government,1076575000,14251
+2021-22,2022,Australian Capital Territory,ACT,All,Total government,1465965000,19405
+2021-22,2022,Australian Capital Territory,ACT,Government,Australian Government,143798000,3117
+2021-22,2022,Australian Capital Territory,ACT,Government,State and territory government,1007067000,21826
+2021-22,2022,Australian Capital Territory,ACT,Government,Total government,1150865000,24943
+2021-22,2022,Australian Capital Territory,ACT,Non-government,Australian Government,245592000,8352
+2021-22,2022,Australian Capital Territory,ACT,Non-government,State and territory government,69509000,2364
+2021-22,2022,Australian Capital Territory,ACT,Non-government,Total government,315100000,10716
+2021-22,2022,Australia,Aust,All,Australian Government,25124515000,6233
+2021-22,2022,Australia,Aust,All,State and territory government,53563538000,13288
+2021-22,2022,Australia,Aust,All,Total government,78688053000,19521
+2021-22,2022,Australia,Aust,Government,Australian Government,9738114000,3732
+2021-22,2022,Australia,Aust,Government,State and territory government,49000786000,18779
+2021-22,2022,Australia,Aust,Government,Total government,58738900000,22511
+2021-22,2022,Australia,Aust,Non-government,Australian Government,15386401000,10823
+2021-22,2022,Australia,Aust,Non-government,State and territory government,4562752000,3209
+2021-22,2022,Australia,Aust,Non-government,Total government,19949153000,14032
+2022-23,2023,New South Wales,NSW,All,Australian Government,8154613000,6550
+2022-23,2023,New South Wales,NSW,All,State and territory government,19527755000,15685
+2022-23,2023,New South Wales,NSW,All,Total government,27682368000,22235
+2022-23,2023,New South Wales,NSW,Government,Australian Government,3097285000,3929
+2022-23,2023,New South Wales,NSW,Government,State and territory government,17952446000,22772
+2022-23,2023,New South Wales,NSW,Government,Total government,21049731000,26701
+2022-23,2023,New South Wales,NSW,Non-government,Australian Government,5057328000,11075
+2022-23,2023,New South Wales,NSW,Non-government,State and territory government,1575309000,3450
+2022-23,2023,New South Wales,NSW,Non-government,Total government,6632637000,14524
+2022-23,2023,Victoria,Vic,All,Australian Government,6720335000,6561
+2022-23,2023,Victoria,Vic,All,State and territory government,13722515000,13398
+2022-23,2023,Victoria,Vic,All,Total government,20442850000,19959
+2022-23,2023,Victoria,Vic,Government,Australian Government,2482609000,3819
+2022-23,2023,Victoria,Vic,Government,State and territory government,12760710000,19628
+2022-23,2023,Victoria,Vic,Government,Total government,15243319000,23447
+2022-23,2023,Victoria,Vic,Non-government,Australian Government,4237726000,11327
+2022-23,2023,Victoria,Vic,Non-government,State and territory government,961805000,2571
+2022-23,2023,Victoria,Vic,Non-government,Total government,5199531000,13898
+2022-23,2023,Queensland,Qld,All,Australian Government,5913467000,6779
+2022-23,2023,Queensland,Qld,All,State and territory government,12666418000,14520
+2022-23,2023,Queensland,Qld,All,Total government,18579886000,21299
+2022-23,2023,Queensland,Qld,Government,Australian Government,2309020000,4057
+2022-23,2023,Queensland,Qld,Government,State and territory government,11605009000,20391
+2022-23,2023,Queensland,Qld,Government,Total government,13914029000,24448
+2022-23,2023,Queensland,Qld,Non-government,Australian Government,3604447000,11887
+2022-23,2023,Queensland,Qld,Non-government,State and territory government,1061410000,3500
+2022-23,2023,Queensland,Qld,Non-government,Total government,4665857000,15387
+2022-23,2023,South Australia,SA,All,Australian Government,1976294000,7168
+2022-23,2023,South Australia,SA,All,State and territory government,3355869000,12172
+2022-23,2023,South Australia,SA,All,Total government,5332163000,19341
+2022-23,2023,South Australia,SA,Government,Australian Government,707368000,4118
+2022-23,2023,South Australia,SA,Government,State and territory government,3232193000,18818
+2022-23,2023,South Australia,SA,Government,Total government,3939561000,22936
+2022-23,2023,South Australia,SA,Non-government,Australian Government,1268926000,12209
+2022-23,2023,South Australia,SA,Non-government,State and territory government,123676000,1190
+2022-23,2023,South Australia,SA,Non-government,Total government,1392602000,13399
+2022-23,2023,Western Australia,WA,All,Australian Government,2829658000,6364
+2022-23,2023,Western Australia,WA,All,State and territory government,6406119000,14408
+2022-23,2023,Western Australia,WA,All,Total government,9235777000,20772
+2022-23,2023,Western Australia,WA,Government,Australian Government,1125607000,3809
+2022-23,2023,Western Australia,WA,Government,State and territory government,5901587000,19970
+2022-23,2023,Western Australia,WA,Government,Total government,7027194000,23779
+2022-23,2023,Western Australia,WA,Non-government,Australian Government,1704051000,11429
+2022-23,2023,Western Australia,WA,Non-government,State and territory government,504532000,3384
+2022-23,2023,Western Australia,WA,Non-government,Total government,2208583000,14812
+2022-23,2023,Tasmania,Tas,All,Australian Government,604247000,7453
+2022-23,2023,Tasmania,Tas,All,State and territory government,1267481000,15634
+2022-23,2023,Tasmania,Tas,All,Total government,1871728000,23088
+2022-23,2023,Tasmania,Tas,Government,Australian Government,238247000,4358
+2022-23,2023,Tasmania,Tas,Government,State and territory government,1173271000,21463
+2022-23,2023,Tasmania,Tas,Government,Total government,1411518000,25821
+2022-23,2023,Tasmania,Tas,Non-government,Australian Government,366000000,13862
+2022-23,2023,Tasmania,Tas,Non-government,State and territory government,94210000,3568
+2022-23,2023,Tasmania,Tas,Non-government,Total government,460210000,17430
+2022-23,2023,Northern Territory,NT,All,Australian Government,462209000,11594
+2022-23,2023,Northern Territory,NT,All,State and territory government,736356000,18471
+2022-23,2023,Northern Territory,NT,All,Total government,1198564000,30066
+2022-23,2023,Northern Territory,NT,Government,Australian Government,237836000,8149
+2022-23,2023,Northern Territory,NT,Government,State and territory government,674733000,23119
+2022-23,2023,Northern Territory,NT,Government,Total government,912569000,31268
+2022-23,2023,Northern Territory,NT,Non-government,Australian Government,224372000,21009
+2022-23,2023,Northern Territory,NT,Non-government,State and territory government,61623000,5770
+2022-23,2023,Northern Territory,NT,Non-government,Total government,285995000,26779
+2022-23,2023,Australian Capital Territory,ACT,All,Australian Government,414366000,5437
+2022-23,2023,Australian Capital Territory,ACT,All,State and territory government,1174521000,15413
+2022-23,2023,Australian Capital Territory,ACT,All,Total government,1588887000,20850
+2022-23,2023,Australian Capital Territory,ACT,Government,Australian Government,155412000,3368
+2022-23,2023,Australian Capital Territory,ACT,Government,State and territory government,1104928000,23943
+2022-23,2023,Australian Capital Territory,ACT,Government,Total government,1260340000,27311
+2022-23,2023,Australian Capital Territory,ACT,Non-government,Australian Government,258954000,8615
+2022-23,2023,Australian Capital Territory,ACT,Non-government,State and territory government,69593000,2315
+2022-23,2023,Australian Capital Territory,ACT,Non-government,Total government,328547000,10931
+2022-23,2023,Australia,Aust,All,Australian Government,27075188000,6670
+2022-23,2023,Australia,Aust,All,State and territory government,58857034000,14500
+2022-23,2023,Australia,Aust,All,Total government,85932223000,21170
+2022-23,2023,Australia,Aust,Government,Australian Government,10353385000,3975
+2022-23,2023,Australia,Aust,Government,State and territory government,54404876000,20886
+2022-23,2023,Australia,Aust,Government,Total government,64758261000,24860
+2022-23,2023,Australia,Aust,Non-government,Australian Government,16721804000,11499
+2022-23,2023,Australia,Aust,Non-government,State and territory government,4452158000,3062
+2022-23,2023,Australia,Aust,Non-government,Total government,21173962000,14561
+2023-24,2024,New South Wales,NSW,All,Australian Government,8729534000,6973
+2023-24,2024,New South Wales,NSW,All,State and territory government,20094475000,16052
+2023-24,2024,New South Wales,NSW,All,Total government,28824010000,23026
+2023-24,2024,New South Wales,NSW,Government,Australian Government,3310851000,4228
+2023-24,2024,New South Wales,NSW,Government,State and territory government,18578728000,23725
+2023-24,2024,New South Wales,NSW,Government,Total government,21889579000,27953
+2023-24,2024,New South Wales,NSW,Non-government,Australian Government,5418683000,11560
+2023-24,2024,New South Wales,NSW,Non-government,State and territory government,1515747000,3234
+2023-24,2024,New South Wales,NSW,Non-government,Total government,6934431000,14794
+2023-24,2024,Victoria,Vic,All,Australian Government,7309034000,7011
+2023-24,2024,Victoria,Vic,All,State and territory government,14284678000,13703
+2023-24,2024,Victoria,Vic,All,Total government,21593712000,20715
+2023-24,2024,Victoria,Vic,Government,Australian Government,2721659000,4130
+2023-24,2024,Victoria,Vic,Government,State and territory government,13261167000,20125
+2023-24,2024,Victoria,Vic,Government,Total government,15982826000,24255
+2023-24,2024,Victoria,Vic,Non-government,Australian Government,4587375000,11962
+2023-24,2024,Victoria,Vic,Non-government,State and territory government,1023511000,2669
+2023-24,2024,Victoria,Vic,Non-government,Total government,5610886000,14631
+2023-24,2024,Queensland,Qld,All,Australian Government,6369403000,7249
+2023-24,2024,Queensland,Qld,All,State and territory government,13532921000,15403
+2023-24,2024,Queensland,Qld,All,Total government,19902324000,22652
+2023-24,2024,Queensland,Qld,Government,Australian Government,2493914000,4396
+2023-24,2024,Queensland,Qld,Government,State and territory government,12410576000,21876
+2023-24,2024,Queensland,Qld,Government,Total government,14904490000,26272
+2023-24,2024,Queensland,Qld,Non-government,Australian Government,3875489000,12450
+2023-24,2024,Queensland,Qld,Non-government,State and territory government,1122345000,3606
+2023-24,2024,Queensland,Qld,Non-government,Total government,4997834000,16055
+2023-24,2024,South Australia,SA,All,Australian Government,2141041000,7662
+2023-24,2024,South Australia,SA,All,State and territory government,3873644000,13862
+2023-24,2024,South Australia,SA,All,Total government,6014685000,21524
+2023-24,2024,South Australia,SA,Government,Australian Government,753102000,4353
+2023-24,2024,South Australia,SA,Government,State and territory government,3511613000,20297
+2023-24,2024,South Australia,SA,Government,Total government,4264715000,24650
+2023-24,2024,South Australia,SA,Non-government,Australian Government,1387938000,13042
+2023-24,2024,South Australia,SA,Non-government,State and territory government,362031000,3402
+2023-24,2024,South Australia,SA,Non-government,Total government,1749970000,16443
+2023-24,2024,Western Australia,WA,All,Australian Government,3039043000,6690
+2023-24,2024,Western Australia,WA,All,State and territory government,6728054000,14811
+2023-24,2024,Western Australia,WA,All,Total government,9767098000,21500
+2023-24,2024,Western Australia,WA,Government,Australian Government,1226111000,4078
+2023-24,2024,Western Australia,WA,Government,State and territory government,6203710000,20632
+2023-24,2024,Western Australia,WA,Government,Total government,7429821000,24709
+2023-24,2024,Western Australia,WA,Non-government,Australian Government,1812933000,11804
+2023-24,2024,Western Australia,WA,Non-government,State and territory government,524344000,3414
+2023-24,2024,Western Australia,WA,Non-government,Total government,2337277000,15218
+2023-24,2024,Tasmania,Tas,All,Australian Government,651760000,8085
+2023-24,2024,Tasmania,Tas,All,State and territory government,1354840000,16806
+2023-24,2024,Tasmania,Tas,All,Total government,2006600000,24891
+2023-24,2024,Tasmania,Tas,Government,Australian Government,247836000,4619
+2023-24,2024,Tasmania,Tas,Government,State and territory government,1253211000,23356
+2023-24,2024,Tasmania,Tas,Government,Total government,1501047000,27975
+2023-24,2024,Tasmania,Tas,Non-government,Australian Government,403924000,14984
+2023-24,2024,Tasmania,Tas,Non-government,State and territory government,101629000,3770
+2023-24,2024,Tasmania,Tas,Non-government,Total government,505553000,18754
+2023-24,2024,Northern Territory,NT,All,Australian Government,485177000,12191
+2023-24,2024,Northern Territory,NT,All,State and territory government,742420000,18654
+2023-24,2024,Northern Territory,NT,All,Total government,1227598000,30845
+2023-24,2024,Northern Territory,NT,Government,Australian Government,253788000,8787
+2023-24,2024,Northern Territory,NT,Government,State and territory government,676842000,23435
+2023-24,2024,Northern Territory,NT,Government,Total government,930630000,32222
+2023-24,2024,Northern Territory,NT,Non-government,Australian Government,231390000,21193
+2023-24,2024,Northern Territory,NT,Non-government,State and territory government,65578000,6006
+2023-24,2024,Northern Territory,NT,Non-government,Total government,296968000,27200
+2023-24,2024,Australian Capital Territory,ACT,All,Australian Government,433745000,5652
+2023-24,2024,Australian Capital Territory,ACT,All,State and territory government,1270043000,16549
+2023-24,2024,Australian Capital Territory,ACT,All,Total government,1703788000,22200
+2023-24,2024,Australian Capital Territory,ACT,Government,Australian Government,163863000,3562
+2023-24,2024,Australian Capital Territory,ACT,Government,State and territory government,1199399000,26072
+2023-24,2024,Australian Capital Territory,ACT,Government,Total government,1363262000,29635
+2023-24,2024,Australian Capital Territory,ACT,Non-government,Australian Government,269881000,8778
+2023-24,2024,Australian Capital Territory,ACT,Non-government,State and territory government,70645000,2298
+2023-24,2024,Australian Capital Territory,ACT,Non-government,Total government,340526000,11076
+2023-24,2024,Australia,Aust,All,Australian Government,29158736000,7105
+2023-24,2024,Australia,Aust,All,State and territory government,61881077000,15079
+2023-24,2024,Australia,Aust,All,Total government,91039813000,22185
+2023-24,2024,Australia,Aust,Government,Australian Government,11171124000,4277
+2023-24,2024,Australia,Aust,Government,State and territory government,57095246000,21862
+2023-24,2024,Australia,Aust,Government,Total government,68266370000,26140
+2023-24,2024,Australia,Aust,Non-government,Australian Government,17987612000,12055
+2023-24,2024,Australia,Aust,Non-government,State and territory government,4785831000,3207
+2023-24,2024,Australia,Aust,Non-government,Total government,22773443000,15262

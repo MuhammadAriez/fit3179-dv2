@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 7: Full-time equivalent students by state and territory, all schools and non-government schools, 2025. Source: ABS, Schools 2025, Table 43a.",
+  "width": "container",
+  "height": 420,
+  "projection": {"type": "conicEqualArea", "parallels": [-18, -36], "rotate": [-132, 0]},
+  "layer": [
+    {
+      "data": {"url": "data/geo/aus_states.topojson", "format": {"type": "topojson", "feature": "states"}},
+      "mark": {"type": "geoshape", "fill": "#eceef2", "stroke": "white", "strokeWidth": 1.5}
+    },
+    {
+      "data": {"url": "data/states.csv", "format": {"parse": {"students_2025": "number", "nongov_students_2025": "number"}}},
+      "transform": [
+        {"calculate": "datum.nongov_students_2025 / datum.students_2025", "as": "nongov_share"},
+        {"fold": ["students_2025", "nongov_students_2025"], "as": ["group", "students"]},
+        {"calculate": "datum.group == 'students_2025' ? 'All students' : 'Non-government school students'", "as": "student_group"}
+      ],
+      "mark": {"type": "circle", "opacity": 1},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "students",
+          "type": "quantitative",
+          "title": "Students",
+          "scale": {"range": [0, 4000]},
+          "legend": {"orient": "bottom", "direction": "horizontal", "values": [100000, 500000, 1000000], "format": ",.0f", "symbolFillColor": "#3a3f4b", "symbolStrokeWidth": 0}
+        },
+        "color": {
+          "field": "student_group",
+          "type": "nominal",
+          "title": null,
+          "scale": {"domain": ["All students", "Non-government school students"], "range": ["#3a3f4b", "#b9bec8"]},
+          "legend": {"orient": "bottom", "direction": "vertical"}
+        },
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State or territory"},
+          {"field": "student_group", "type": "nominal", "title": "Circle"},
+          {"field": "students", "type": "quantitative", "title": "Students", "format": ",.0f"},
+          {"field": "nongov_share", "type": "quantitative", "title": "Non-government share", "format": ".0%"}
+        ]
+      }
+    },
+    {
+      "data": {"url": "data/states.csv"},
+      "transform": [{"filter": "datum.state_abbr == 'NSW' || datum.state_abbr == 'Vic' || datum.state_abbr == 'Qld'"}],
+      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12, "color": "#1f2430"},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "state_abbr", "type": "nominal"}
+      }
+    }
+  ],
+  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+}

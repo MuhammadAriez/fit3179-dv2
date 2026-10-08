@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 10: Government recurrent funding per student, all schools, by state and territory, 2014-15 and 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "width": "container",
+  "height": 300,
+  "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
+  "transform": [
+    {"filter": "datum.sector == 'All' && datum.source == 'Total government' && (datum.year == '2014-15' || datum.year == '2023-24')"},
+    {"filter": "datum.state_abbr != 'Aust'"},
+    {"calculate": "datum.state_abbr + ' ' + format(datum.per_student_real_2023_24_aud, '$,.0f')", "as": "label"}
+  ],
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}},
+    "y": {"field": "per_student_real_2023_24_aud", "type": "quantitative", "scale": {"zero": false}, "axis": {"format": "$,.0f"}, "title": "Funding per student"},
+    "detail": {"field": "state_abbr", "type": "nominal"},
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State or territory"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "per_student_real_2023_24_aud", "type": "quantitative", "title": "Funding per student", "format": "$,.0f"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "#c9cdd6", "strokeWidth": 2, "point": {"color": "#c9cdd6", "size": 60}}
+    },
+    {
+      "transform": [{"filter": "datum.state_abbr == 'WA'"}],
+      "mark": {"type": "line", "color": "#5b3c94", "strokeWidth": 4, "point": {"color": "#5b3c94", "size": 100}}
+    },
+    {
+      "transform": [{"filter": "datum.state_abbr == 'WA' && datum.year == '2014-15'"}],
+      "mark": {"type": "text", "align": "right", "dx": -10, "fontWeight": "bold", "fontSize": 13, "color": "#5b3c94"},
+      "encoding": {"text": {"field": "label", "type": "nominal"}}
+    },
+    {
+      "transform": [{"filter": "datum.state_abbr == 'WA' && datum.year == '2023-24'"}],
+      "mark": {"type": "text", "align": "left", "dx": 10, "fontWeight": "bold", "fontSize": 13, "color": "#5b3c94"},
+      "encoding": {"text": {"field": "label", "type": "nominal"}}
+    }
+  ],
+  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+}

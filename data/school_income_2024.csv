@@ -1,0 +1,136 @@
+year,state,state_abbr,sector,source,source_group,total_aud,per_student_aud
+2024,New South Wales,NSW,Catholic,Australian Government,Government,3040597827,13168
+2024,New South Wales,NSW,Catholic,Fees and parent contributions,Private,818670815,3546
+2024,New South Wales,NSW,Catholic,Other private sources,Private,173390696,751
+2024,New South Wales,NSW,Catholic,State and territory government,Government,799147714,3461
+2024,New South Wales,NSW,Catholic,Total gross income,Total,4831807052,20926
+2024,New South Wales,NSW,Government,Australian Government,Government,3394492124,4350
+2024,New South Wales,NSW,Government,Fees and parent contributions,Private,332624116,426
+2024,New South Wales,NSW,Government,Other private sources,Private,197543873,253
+2024,New South Wales,NSW,Government,State and territory government,Government,12396890432,15887
+2024,New South Wales,NSW,Government,Total gross income,Total,16321550545,20916
+2024,New South Wales,NSW,Independent,Australian Government,Government,2561746358,10368
+2024,New South Wales,NSW,Independent,Fees and parent contributions,Private,3740891298,15141
+2024,New South Wales,NSW,Independent,Other private sources,Private,474108740,1919
+2024,New South Wales,NSW,Independent,State and territory government,Government,730400249,2956
+2024,New South Wales,NSW,Independent,Total gross income,Total,7507146645,30384
+2024,Victoria,Vic,Catholic,Australian Government,Government,2874232516,13340
+2024,Victoria,Vic,Catholic,Fees and parent contributions,Private,1132307068,5255
+2024,Victoria,Vic,Catholic,Other private sources,Private,161875977,751
+2024,Victoria,Vic,Catholic,State and territory government,Government,664587933,3085
+2024,Victoria,Vic,Catholic,Total gross income,Total,4833003494,22432
+2024,Victoria,Vic,Government,Australian Government,Government,2558904249,3864
+2024,Victoria,Vic,Government,Fees and parent contributions,Private,410332426,620
+2024,Victoria,Vic,Government,Other private sources,Private,233203319,352
+2024,Victoria,Vic,Government,State and territory government,Government,9479233236,14314
+2024,Victoria,Vic,Government,Total gross income,Total,12681673229,19150
+2024,Victoria,Vic,Independent,Australian Government,Government,1851287669,10529
+2024,Victoria,Vic,Independent,Fees and parent contributions,Private,2915560474,16583
+2024,Victoria,Vic,Independent,Other private sources,Private,260136338,1480
+2024,Victoria,Vic,Independent,State and territory government,Government,424356508,2414
+2024,Victoria,Vic,Independent,Total gross income,Total,5451340989,31005
+2024,Queensland,Qld,Catholic,Australian Government,Government,2137036238,13161
+2024,Queensland,Qld,Catholic,Fees and parent contributions,Private,862131749,5309
+2024,Queensland,Qld,Catholic,Other private sources,Private,159606704,983
+2024,Queensland,Qld,Catholic,State and territory government,Government,518833934,3195
+2024,Queensland,Qld,Catholic,Total gross income,Total,3677608625,22649
+2024,Queensland,Qld,Government,Australian Government,Government,2531182162,4453
+2024,Queensland,Qld,Government,Fees and parent contributions,Private,274938398,484
+2024,Queensland,Qld,Government,Other private sources,Private,242597188,427
+2024,Queensland,Qld,Government,State and territory government,Government,8413135397,14801
+2024,Queensland,Qld,Government,Total gross income,Total,11461853145,20164
+2024,Queensland,Qld,Independent,Australian Government,Government,1873885357,12018
+2024,Queensland,Qld,Independent,Fees and parent contributions,Private,1583588743,10156
+2024,Queensland,Qld,Independent,Other private sources,Private,168876895,1083
+2024,Queensland,Qld,Independent,State and territory government,Government,448312692,2875
+2024,Queensland,Qld,Independent,Total gross income,Total,4074663687,26132
+2024,South Australia,SA,Catholic,Australian Government,Government,738979652,14136
+2024,South Australia,SA,Catholic,Fees and parent contributions,Private,263724784,5045
+2024,South Australia,SA,Catholic,Other private sources,Private,33662878,644
+2024,South Australia,SA,Catholic,State and territory government,Government,200486167,3835
+2024,South Australia,SA,Catholic,Total gross income,Total,1236853481,23659
+2024,South Australia,SA,Government,Australian Government,Government,776427320,4447
+2024,South Australia,SA,Government,Fees and parent contributions,Private,119786419,686
+2024,South Australia,SA,Government,Other private sources,Private,28393857,163
+2024,South Australia,SA,Government,State and territory government,Government,2769895944,15865
+2024,South Australia,SA,Government,Total gross income,Total,3694503540,21161
+2024,South Australia,SA,Independent,Australian Government,Government,683067845,12039
+2024,South Australia,SA,Independent,Fees and parent contributions,Private,555898674,9797
+2024,South Australia,SA,Independent,Other private sources,Private,63140334,1113
+2024,South Australia,SA,Independent,State and territory government,Government,184145450,3245
+2024,South Australia,SA,Independent,Total gross income,Total,1486252303,26194
+2024,Western Australia,WA,Catholic,Australian Government,Government,875409283,12629
+2024,Western Australia,WA,Catholic,Fees and parent contributions,Private,334001600,4818
+2024,Western Australia,WA,Catholic,Other private sources,Private,47512437,685
+2024,Western Australia,WA,Catholic,State and territory government,Government,199108402,2872
+2024,Western Australia,WA,Catholic,Total gross income,Total,1456031722,21005
+2024,Western Australia,WA,Government,Australian Government,Government,1323773573,4178
+2024,Western Australia,WA,Government,Fees and parent contributions,Private,116129297,367
+2024,Western Australia,WA,Government,Other private sources,Private,74962268,237
+2024,Western Australia,WA,Government,State and territory government,Government,4870105094,15372
+2024,Western Australia,WA,Government,Total gross income,Total,6384970233,20154
+2024,Western Australia,WA,Independent,Australian Government,Government,1006905079,11186
+2024,Western Australia,WA,Independent,Fees and parent contributions,Private,912564220,10138
+2024,Western Australia,WA,Independent,Other private sources,Private,95183078,1057
+2024,Western Australia,WA,Independent,State and territory government,Government,260110726,2890
+2024,Western Australia,WA,Independent,Total gross income,Total,2274763103,25270
+2024,Tasmania,Tas,Catholic,Australian Government,Government,255155715,16047
+2024,Tasmania,Tas,Catholic,Fees and parent contributions,Private,53836726,3386
+2024,Tasmania,Tas,Catholic,Other private sources,Private,25262558,1589
+2024,Tasmania,Tas,Catholic,State and territory government,Government,65072442,4092
+2024,Tasmania,Tas,Catholic,Total gross income,Total,399327441,25114
+2024,Tasmania,Tas,Government,Australian Government,Government,257645641,4636
+2024,Tasmania,Tas,Government,Fees and parent contributions,Private,17409503,313
+2024,Tasmania,Tas,Government,Other private sources,Private,11567487,208
+2024,Tasmania,Tas,Government,State and territory government,Government,950498188,17104
+2024,Tasmania,Tas,Government,Total gross income,Total,1237120819,22261
+2024,Tasmania,Tas,Independent,Australian Government,Government,154509223,13552
+2024,Tasmania,Tas,Independent,Fees and parent contributions,Private,115773362,10154
+2024,Tasmania,Tas,Independent,Other private sources,Private,20513388,1799
+2024,Tasmania,Tas,Independent,State and territory government,Government,39865308,3496
+2024,Tasmania,Tas,Independent,Total gross income,Total,330661281,29002
+2024,Northern Territory,NT,Catholic,Australian Government,Government,120908789,23485
+2024,Northern Territory,NT,Catholic,Fees and parent contributions,Private,15796135,3068
+2024,Northern Territory,NT,Catholic,Other private sources,Private,9547874,1855
+2024,Northern Territory,NT,Catholic,State and territory government,Government,19405154,3769
+2024,Northern Territory,NT,Catholic,Total gross income,Total,165657952,32177
+2024,Northern Territory,NT,Government,Australian Government,Government,251251997,8752
+2024,Northern Territory,NT,Government,Fees and parent contributions,Private,4826881,168
+2024,Northern Territory,NT,Government,Other private sources,Private,17261203,601
+2024,Northern Territory,NT,Government,State and territory government,Government,578570598,20154
+2024,Northern Territory,NT,Government,Total gross income,Total,851910679,29676
+2024,Northern Territory,NT,Independent,Australian Government,Government,109989030,19419
+2024,Northern Territory,NT,Independent,Fees and parent contributions,Private,43816139,7736
+2024,Northern Territory,NT,Independent,Other private sources,Private,10760530,1900
+2024,Northern Territory,NT,Independent,State and territory government,Government,21962154,3877
+2024,Northern Territory,NT,Independent,Total gross income,Total,186527853,32932
+2024,Australian Capital Territory,ACT,Catholic,Australian Government,Government,166643986,11096
+2024,Australian Capital Territory,ACT,Catholic,Fees and parent contributions,Private,85948902,5723
+2024,Australian Capital Territory,ACT,Catholic,Other private sources,Private,20504672,1365
+2024,Australian Capital Territory,ACT,Catholic,State and territory government,Government,38647348,2573
+2024,Australian Capital Territory,ACT,Catholic,Total gross income,Total,311744908,20757
+2024,Australian Capital Territory,ACT,Government,Australian Government,Government,172132374,3741
+2024,Australian Capital Territory,ACT,Government,Fees and parent contributions,Private,19683639,428
+2024,Australian Capital Territory,ACT,Government,Other private sources,Private,15176014,330
+2024,Australian Capital Territory,ACT,Government,State and territory government,Government,782255880,17001
+2024,Australian Capital Territory,ACT,Government,Total gross income,Total,989247906,21499
+2024,Australian Capital Territory,ACT,Independent,Australian Government,Government,103805915,6798
+2024,Australian Capital Territory,ACT,Independent,Fees and parent contributions,Private,243029704,15915
+2024,Australian Capital Territory,ACT,Independent,Other private sources,Private,25673621,1681
+2024,Australian Capital Territory,ACT,Independent,State and territory government,Government,24660264,1615
+2024,Australian Capital Territory,ACT,Independent,Total gross income,Total,397169504,26009
+2024,Australia,Aust,Catholic,Australian Government,Government,10208964006,13321
+2024,Australia,Aust,Catholic,Fees and parent contributions,Private,3566417779,4653
+2024,Australia,Aust,Catholic,Other private sources,Private,631363796,824
+2024,Australia,Aust,Catholic,State and territory government,Government,2505289094,3269
+2024,Australia,Aust,Catholic,Total gross income,Total,16912034675,22067
+2024,Australia,Aust,Government,Australian Government,Government,11265809441,4279
+2024,Australia,Aust,Government,Fees and parent contributions,Private,1295730678,492
+2024,Australia,Aust,Government,Other private sources,Private,820705209,312
+2024,Australia,Aust,Government,State and territory government,Government,40240584768,15285
+2024,Australia,Aust,Government,Total gross income,Total,53622830096,20368
+2024,Australia,Aust,Independent,Australian Government,Government,8345196476,11011
+2024,Australia,Aust,Independent,Fees and parent contributions,Private,10111122614,13341
+2024,Australia,Aust,Independent,Other private sources,Private,1118392924,1476
+2024,Australia,Aust,Independent,State and territory government,Government,2133813351,2815
+2024,Australia,Aust,Independent,Total gross income,Total,21708525365,28642

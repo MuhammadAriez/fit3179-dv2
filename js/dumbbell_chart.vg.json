@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 4: Australian Government and state government income per student, by school sector, Australia, 2024. Source: ACARA, school finance dataset, School income.",
+  "width": "container",
+  "height": 180,
+  "data": {"url": "data/school_income_2024.csv", "format": {"parse": {"per_student_aud": "number"}}},
+  "transform": [
+    {"filter": "datum.state == 'Australia' && datum.source_group == 'Government'"},
+    {"joinaggregate": [{"op": "max", "field": "per_student_aud", "as": "sector_max"}], "groupby": ["sector"]}
+  ],
+  "encoding": {
+    "y": {"field": "sector", "type": "nominal", "title": null, "sort": ["Government", "Catholic", "Independent"]},
+    "x": {"field": "per_student_aud", "type": "quantitative", "axis": {"format": "$,.0f", "values": [0, 4000, 8000, 12000, 16000]}, "title": "Income per student"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "#c9cdd6", "strokeWidth": 3},
+      "encoding": {
+        "detail": {"field": "sector", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 150, "opacity": 1},
+      "encoding": {
+        "color": {
+          "field": "source",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": ["Australian Government", "State and territory government"],
+            "range": ["#2f6db5", "#3e8e6e"]
+          },
+          "legend": {"orient": "bottom", "direction": "vertical"}
+        },
+        "tooltip": [
+          {"field": "sector", "type": "nominal", "title": "Sector"},
+          {"field": "source", "type": "nominal", "title": "Source"},
+          {"field": "per_student_aud", "type": "quantitative", "title": "Per student", "format": "$,.0f"}
+        ]
+      }
+    },
+    {
+  "mark": {"type": "text", "dy": -16, "fontWeight": "bold", "fontSize": 13},
+  "encoding": {
+    "text": {"field": "per_student_aud", "type": "quantitative", "format": "$,.0f"},
+    "opacity": {
+      "condition": {"test": "datum.per_student_aud == datum.sector_max", "value": 1},
+      "value": 0
+    }
+  }
+}
+  ],
+  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+}

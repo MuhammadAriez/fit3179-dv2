@@ -1,0 +1,541 @@
+year,state,state_abbr,sector,fte_students
+2006,New South Wales,NSW,Catholic,239438.4
+2006,New South Wales,NSW,Government,740415.0
+2006,New South Wales,NSW,Independent,130462.2
+2006,Victoria,Vic,Catholic,182669.0
+2006,Victoria,Vic,Government,537646.0
+2006,Victoria,Vic,Independent,111312.0
+2006,Queensland,Qld,Catholic,113148.3
+2006,Queensland,Qld,Government,456739.1
+2006,Queensland,Qld,Independent,89677.8
+2006,South Australia,SA,Catholic,46230.4
+2006,South Australia,SA,Government,166821.5
+2006,South Australia,SA,Independent,40176.2
+2006,Western Australia,WA,Catholic,62808.0
+2006,Western Australia,WA,Government,230858.5
+2006,Western Australia,WA,Independent,49804.2
+2006,Tasmania,Tas,Catholic,13680.8
+2006,Tasmania,Tas,Government,60976.5
+2006,Tasmania,Tas,Independent,8778.4
+2006,Northern Territory,NT,Catholic,4485.0
+2006,Northern Territory,NT,Government,28962.8
+2006,Northern Territory,NT,Independent,4610.1
+2006,Australian Capital Territory,ACT,Catholic,17212.6
+2006,Australian Capital Territory,ACT,Government,35107.9
+2006,Australian Capital Territory,ACT,Independent,7323.1
+2006,Australia,Aust,Catholic,679672.5
+2006,Australia,Aust,Government,2257527.3
+2006,Australia,Aust,Independent,442144.0
+2007,New South Wales,NSW,Catholic,239464.4
+2007,New South Wales,NSW,Government,738635.7
+2007,New South Wales,NSW,Independent,132357.5
+2007,Victoria,Vic,Catholic,183820.5
+2007,Victoria,Vic,Government,537142.2
+2007,Victoria,Vic,Independent,114436.6
+2007,Queensland,Qld,Catholic,121628.8
+2007,Queensland,Qld,Government,480829.4
+2007,Queensland,Qld,Independent,97562.0
+2007,South Australia,SA,Catholic,46715.7
+2007,South Australia,SA,Government,166896.0
+2007,South Australia,SA,Independent,41181.7
+2007,Western Australia,WA,Catholic,63737.7
+2007,Western Australia,WA,Government,230189.4
+2007,Western Australia,WA,Independent,51505.3
+2007,Tasmania,Tas,Catholic,13883.6
+2007,Tasmania,Tas,Government,59865.3
+2007,Tasmania,Tas,Independent,9062.8
+2007,Northern Territory,NT,Catholic,4693.4
+2007,Northern Territory,NT,Government,29236.8
+2007,Northern Territory,NT,Independent,4679.4
+2007,Australian Capital Territory,ACT,Catholic,17298.0
+2007,Australian Capital Territory,ACT,Government,34640.3
+2007,Australian Capital Territory,ACT,Independent,7553.3
+2007,Australia,Aust,Catholic,691242.1
+2007,Australia,Aust,Government,2277435.1
+2007,Australia,Aust,Independent,458338.6
+2008,New South Wales,NSW,Catholic,238878.6
+2008,New South Wales,NSW,Government,735778.7
+2008,New South Wales,NSW,Independent,135292.2
+2008,Victoria,Vic,Catholic,185798.4
+2008,Victoria,Vic,Government,536444.6
+2008,Victoria,Vic,Independent,117661.9
+2008,Queensland,Qld,Catholic,124710.4
+2008,Queensland,Qld,Government,481799.6
+2008,Queensland,Qld,Independent,102102.6
+2008,South Australia,SA,Catholic,47052.9
+2008,South Australia,SA,Government,165304.7
+2008,South Australia,SA,Independent,42353.8
+2008,Western Australia,WA,Catholic,64420.4
+2008,Western Australia,WA,Government,231438.0
+2008,Western Australia,WA,Independent,54492.0
+2008,Tasmania,Tas,Catholic,14067.4
+2008,Tasmania,Tas,Government,59137.8
+2008,Tasmania,Tas,Independent,9260.7
+2008,Northern Territory,NT,Catholic,4806.0
+2008,Northern Territory,NT,Government,29318.4
+2008,Northern Territory,NT,Independent,5092.6
+2008,Australian Capital Territory,ACT,Catholic,17279.5
+2008,Australian Capital Territory,ACT,Government,34030.6
+2008,Australian Capital Territory,ACT,Independent,7951.8
+2008,Australia,Aust,Catholic,697013.6
+2008,Australia,Aust,Government,2273252.4
+2008,Australia,Aust,Independent,474207.6
+2009,New South Wales,NSW,Catholic,239395.6
+2009,New South Wales,NSW,Government,736646.8
+2009,New South Wales,NSW,Independent,136126.4
+2009,Victoria,Vic,Catholic,187967.0
+2009,Victoria,Vic,Government,538684.7
+2009,Victoria,Vic,Independent,119283.1
+2009,Queensland,Qld,Catholic,128251.0
+2009,Queensland,Qld,Government,486803.2
+2009,Queensland,Qld,Independent,105317.6
+2009,South Australia,SA,Catholic,47268.8
+2009,South Australia,SA,Government,165562.9
+2009,South Australia,SA,Independent,43956.7
+2009,Western Australia,WA,Catholic,65390.6
+2009,Western Australia,WA,Government,233940.6
+2009,Western Australia,WA,Independent,57188.3
+2009,Tasmania,Tas,Catholic,14172.0
+2009,Tasmania,Tas,Government,58659.9
+2009,Tasmania,Tas,Independent,9260.8
+2009,Northern Territory,NT,Catholic,4739.0
+2009,Northern Territory,NT,Government,28613.2
+2009,Northern Territory,NT,Independent,5280.6
+2009,Australian Capital Territory,ACT,Catholic,17320.9
+2009,Australian Capital Territory,ACT,Government,34330.5
+2009,Australian Capital Territory,ACT,Independent,8224.9
+2009,Australia,Aust,Catholic,704504.9
+2009,Australia,Aust,Government,2283241.8
+2009,Australia,Aust,Independent,484638.4
+2010,New South Wales,NSW,Catholic,240992.1
+2010,New South Wales,NSW,Government,742141.2
+2010,New South Wales,NSW,Independent,137296.4
+2010,Victoria,Vic,Catholic,190553.1
+2010,Victoria,Vic,Government,539227.1
+2010,Victoria,Vic,Independent,121071.5
+2010,Queensland,Qld,Catholic,131799.8
+2010,Queensland,Qld,Government,488062.7
+2010,Queensland,Qld,Independent,107532.3
+2010,South Australia,SA,Catholic,47300.1
+2010,South Australia,SA,Government,165854.8
+2010,South Australia,SA,Independent,44832.4
+2010,Western Australia,WA,Catholic,66383.2
+2010,Western Australia,WA,Government,234408.8
+2010,Western Australia,WA,Independent,58341.3
+2010,Tasmania,Tas,Catholic,14463.8
+2010,Tasmania,Tas,Government,58509.0
+2010,Tasmania,Tas,Independent,9078.8
+2010,Northern Territory,NT,Catholic,4745.0
+2010,Northern Territory,NT,Government,29102.3
+2010,Northern Territory,NT,Independent,5505.1
+2010,Australian Capital Territory,ACT,Catholic,17386.4
+2010,Australian Capital Territory,ACT,Government,34492.1
+2010,Australian Capital Territory,ACT,Independent,8488.0
+2010,Australia,Aust,Catholic,713623.5
+2010,Australia,Aust,Government,2291798.0
+2010,Australia,Aust,Independent,492145.8
+2011,New South Wales,NSW,Catholic,243996.9
+2011,New South Wales,NSW,Government,745540.3
+2011,New South Wales,NSW,Independent,140212.0
+2011,Victoria,Vic,Catholic,193757.2
+2011,Victoria,Vic,Government,541212.1
+2011,Victoria,Vic,Independent,122702.7
+2011,Queensland,Qld,Catholic,135038.6
+2011,Queensland,Qld,Government,491779.7
+2011,Queensland,Qld,Independent,109295.6
+2011,South Australia,SA,Catholic,48146.9
+2011,South Australia,SA,Government,165899.3
+2011,South Australia,SA,Independent,44876.1
+2011,Western Australia,WA,Catholic,66966.2
+2011,Western Australia,WA,Government,237118.4
+2011,Western Australia,WA,Independent,60527.6
+2011,Tasmania,Tas,Catholic,14603.8
+2011,Tasmania,Tas,Government,58451.1
+2011,Tasmania,Tas,Independent,9102.3
+2011,Northern Territory,NT,Catholic,4561.0
+2011,Northern Territory,NT,Government,29164.6
+2011,Northern Territory,NT,Independent,5692.2
+2011,Australian Capital Territory,ACT,Catholic,17248.3
+2011,Australian Capital Territory,ACT,Government,34616.0
+2011,Australian Capital Territory,ACT,Independent,9010.0
+2011,Australia,Aust,Catholic,724318.9
+2011,Australia,Aust,Government,2303781.5
+2011,Australia,Aust,Independent,501418.5
+2012,New South Wales,NSW,Catholic,247443.3
+2012,New South Wales,NSW,Government,748234.1
+2012,New South Wales,NSW,Independent,143312.9
+2012,Victoria,Vic,Catholic,197841.4
+2012,Victoria,Vic,Government,546310.5
+2012,Victoria,Vic,Independent,124168.4
+2012,Queensland,Qld,Catholic,138262.9
+2012,Queensland,Qld,Government,500625.8
+2012,Queensland,Qld,Independent,111578.0
+2012,South Australia,SA,Catholic,48375.5
+2012,South Australia,SA,Government,166479.0
+2012,South Australia,SA,Independent,45646.2
+2012,Western Australia,WA,Catholic,67694.8
+2012,Western Australia,WA,Government,245505.1
+2012,Western Australia,WA,Independent,61775.3
+2012,Tasmania,Tas,Catholic,14625.4
+2012,Tasmania,Tas,Government,57703.4
+2012,Tasmania,Tas,Independent,9052.3
+2012,Northern Territory,NT,Catholic,4629.1
+2012,Northern Territory,NT,Government,29445.7
+2012,Northern Territory,NT,Independent,5888.1
+2012,Australian Capital Territory,ACT,Catholic,17486.0
+2012,Australian Capital Territory,ACT,Government,35611.8
+2012,Australian Capital Territory,ACT,Independent,9057.7
+2012,Australia,Aust,Catholic,736358.4
+2012,Australia,Aust,Government,2329915.4
+2012,Australia,Aust,Independent,510478.9
+2013,New South Wales,NSW,Catholic,251369.8
+2013,New South Wales,NSW,Government,755345.7
+2013,New South Wales,NSW,Independent,147443.5
+2013,Victoria,Vic,Catholic,201803.5
+2013,Victoria,Vic,Government,554782.1
+2013,Victoria,Vic,Independent,126110.7
+2013,Queensland,Qld,Catholic,141048.1
+2013,Queensland,Qld,Government,509671.2
+2013,Queensland,Qld,Independent,113584.6
+2013,South Australia,SA,Catholic,48651.0
+2013,South Australia,SA,Government,167614.2
+2013,South Australia,SA,Independent,46046.2
+2013,Western Australia,WA,Catholic,68550.7
+2013,Western Australia,WA,Government,253953.1
+2013,Western Australia,WA,Independent,63240.1
+2013,Tasmania,Tas,Catholic,14777.5
+2013,Tasmania,Tas,Government,56490.5
+2013,Tasmania,Tas,Independent,9137.9
+2013,Northern Territory,NT,Catholic,4812.9
+2013,Northern Territory,NT,Government,29440.9
+2013,Northern Territory,NT,Independent,6231.7
+2013,Australian Capital Territory,ACT,Catholic,17794.9
+2013,Australian Capital Territory,ACT,Government,36383.2
+2013,Australian Capital Territory,ACT,Independent,9154.6
+2013,Australia,Aust,Catholic,748808.4
+2013,Australia,Aust,Government,2363680.9
+2013,Australia,Aust,Independent,520949.3
+2014,New South Wales,NSW,Catholic,253981.9
+2014,New South Wales,NSW,Government,763697.7
+2014,New South Wales,NSW,Independent,150641.2
+2014,Victoria,Vic,Catholic,204847.6
+2014,Victoria,Vic,Government,564863.4
+2014,Victoria,Vic,Independent,128837.0
+2014,Queensland,Qld,Catholic,142950.1
+2014,Queensland,Qld,Government,518079.5
+2014,Queensland,Qld,Independent,115004.3
+2014,South Australia,SA,Catholic,48482.1
+2014,South Australia,SA,Government,166191.2
+2014,South Australia,SA,Independent,46349.6
+2014,Western Australia,WA,Catholic,69360.1
+2014,Western Australia,WA,Government,259182.4
+2014,Western Australia,WA,Independent,63890.4
+2014,Tasmania,Tas,Catholic,14828.4
+2014,Tasmania,Tas,Government,56634.1
+2014,Tasmania,Tas,Independent,9238.2
+2014,Northern Territory,NT,Catholic,5054.2
+2014,Northern Territory,NT,Government,29494.1
+2014,Northern Territory,NT,Independent,6200.9
+2014,Australian Capital Territory,ACT,Catholic,17993.8
+2014,Australian Capital Territory,ACT,Government,37296.5
+2014,Australian Capital Territory,ACT,Independent,9250.4
+2014,Australia,Aust,Catholic,757498.2
+2014,Australia,Aust,Government,2395438.9
+2014,Australia,Aust,Independent,529412.0
+2015,New South Wales,NSW,Catholic,255625.1
+2015,New South Wales,NSW,Government,771978.1
+2015,New South Wales,NSW,Independent,154002.1
+2015,Victoria,Vic,Catholic,206450.5
+2015,Victoria,Vic,Government,576832.3
+2015,Victoria,Vic,Independent,131834.6
+2015,Queensland,Qld,Catholic,145460.3
+2015,Queensland,Qld,Government,524963.0
+2015,Queensland,Qld,Independent,116571.2
+2015,South Australia,SA,Catholic,47835.7
+2015,South Australia,SA,Government,168439.0
+2015,South Australia,SA,Independent,46987.7
+2015,Western Australia,WA,Catholic,71813.7
+2015,Western Australia,WA,Government,267414.1
+2015,Western Australia,WA,Independent,65430.8
+2015,Tasmania,Tas,Catholic,14900.9
+2015,Tasmania,Tas,Government,56495.3
+2015,Tasmania,Tas,Independent,9210.2
+2015,Northern Territory,NT,Catholic,5134.0
+2015,Northern Territory,NT,Government,28881.8
+2015,Northern Territory,NT,Independent,6537.0
+2015,Australian Capital Territory,ACT,Catholic,18063.5
+2015,Australian Capital Territory,ACT,Government,38706.0
+2015,Australian Capital Territory,ACT,Independent,9275.0
+2015,Australia,Aust,Catholic,765283.7
+2015,Australia,Aust,Government,2433709.6
+2015,Australia,Aust,Independent,539848.6
+2016,New South Wales,NSW,Catholic,256002.9
+2016,New South Wales,NSW,Government,780599.9
+2016,New South Wales,NSW,Independent,157584.8
+2016,Victoria,Vic,Catholic,207871.8
+2016,Victoria,Vic,Government,590105.0
+2016,Victoria,Vic,Independent,134631.6
+2016,Queensland,Qld,Catholic,145960.7
+2016,Queensland,Qld,Government,534080.7
+2016,Queensland,Qld,Independent,117416.4
+2016,South Australia,SA,Catholic,46806.2
+2016,South Australia,SA,Government,170772.7
+2016,South Australia,SA,Independent,47212.4
+2016,Western Australia,WA,Catholic,72125.0
+2016,Western Australia,WA,Government,271022.3
+2016,Western Australia,WA,Independent,64935.6
+2016,Tasmania,Tas,Catholic,15032.8
+2016,Tasmania,Tas,Government,56398.9
+2016,Tasmania,Tas,Independent,9184.2
+2016,Northern Territory,NT,Catholic,5185.8
+2016,Northern Territory,NT,Government,29430.2
+2016,Northern Territory,NT,Independent,6453.1
+2016,Australian Capital Territory,ACT,Catholic,17835.0
+2016,Australian Capital Territory,ACT,Government,40255.2
+2016,Australian Capital Territory,ACT,Independent,9513.2
+2016,Australia,Aust,Catholic,766820.2
+2016,Australia,Aust,Government,2472664.9
+2016,Australia,Aust,Independent,546931.3
+2017,New South Wales,NSW,Catholic,255876.4
+2017,New South Wales,NSW,Government,791039.8
+2017,New South Wales,NSW,Independent,161553.9
+2017,Victoria,Vic,Catholic,208617.1
+2017,Victoria,Vic,Government,605071.4
+2017,Victoria,Vic,Independent,139374.3
+2017,Queensland,Qld,Catholic,146585.8
+2017,Queensland,Qld,Government,542878.4
+2017,Queensland,Qld,Independent,118942.1
+2017,South Australia,SA,Catholic,45769.1
+2017,South Australia,SA,Government,172534.3
+2017,South Australia,SA,Independent,47325.1
+2017,Western Australia,WA,Catholic,72035.7
+2017,Western Australia,WA,Government,276285.9
+2017,Western Australia,WA,Independent,64716.2
+2017,Tasmania,Tas,Catholic,15030.7
+2017,Tasmania,Tas,Government,56506.3
+2017,Tasmania,Tas,Independent,9271.7
+2017,Northern Territory,NT,Catholic,4960.5
+2017,Northern Territory,NT,Government,30347.1
+2017,Northern Territory,NT,Independent,6214.5
+2017,Australian Capital Territory,ACT,Catholic,17774.9
+2017,Australian Capital Territory,ACT,Government,41814.5
+2017,Australian Capital Territory,ACT,Independent,9723.6
+2017,Australia,Aust,Catholic,766650.2
+2017,Australia,Aust,Government,2516477.7
+2017,Australia,Aust,Independent,557121.4
+2018,New South Wales,NSW,Catholic,254912.8
+2018,New South Wales,NSW,Government,798022.2
+2018,New South Wales,NSW,Independent,165756.9
+2018,Victoria,Vic,Catholic,208717.0
+2018,Victoria,Vic,Government,619533.9
+2018,Victoria,Vic,Independent,143353.0
+2018,Queensland,Qld,Catholic,147125.1
+2018,Queensland,Qld,Government,551598.2
+2018,Queensland,Qld,Independent,120745.8
+2018,South Australia,SA,Catholic,45447.3
+2018,South Australia,SA,Government,174143.5
+2018,South Australia,SA,Independent,48827.4
+2018,Western Australia,WA,Catholic,71848.7
+2018,Western Australia,WA,Government,280624.7
+2018,Western Australia,WA,Independent,65385.6
+2018,Tasmania,Tas,Catholic,14874.8
+2018,Tasmania,Tas,Government,56789.7
+2018,Tasmania,Tas,Independent,9381.5
+2018,Northern Territory,NT,Catholic,4793.9
+2018,Northern Territory,NT,Government,29620.5
+2018,Northern Territory,NT,Independent,6127.3
+2018,Australian Capital Territory,ACT,Catholic,17792.4
+2018,Australian Capital Territory,ACT,Government,43191.6
+2018,Australian Capital Territory,ACT,Independent,9940.1
+2018,Australia,Aust,Catholic,765512.0
+2018,Australia,Aust,Government,2553524.3
+2018,Australia,Aust,Independent,569517.6
+2019,New South Wales,NSW,Catholic,255413.9
+2019,New South Wales,NSW,Government,805672.8
+2019,New South Wales,NSW,Independent,170577.1
+2019,Victoria,Vic,Catholic,209517.2
+2019,Victoria,Vic,Government,632714.8
+2019,Victoria,Vic,Independent,147005.8
+2019,Queensland,Qld,Catholic,149131.2
+2019,Queensland,Qld,Government,559878.3
+2019,Queensland,Qld,Independent,124554.9
+2019,South Australia,SA,Catholic,45720.2
+2019,South Australia,SA,Government,176370.5
+2019,South Australia,SA,Independent,49476.4
+2019,Western Australia,WA,Catholic,72162.6
+2019,Western Australia,WA,Government,284850.5
+2019,Western Australia,WA,Independent,66291.8
+2019,Tasmania,Tas,Catholic,14921.7
+2019,Tasmania,Tas,Government,56829.6
+2019,Tasmania,Tas,Independent,9711.4
+2019,Northern Territory,NT,Catholic,4845.8
+2019,Northern Territory,NT,Government,29850.3
+2019,Northern Territory,NT,Independent,5864.4
+2019,Australian Capital Territory,ACT,Catholic,17778.5
+2019,Australian Capital Territory,ACT,Government,44209.3
+2019,Australian Capital Territory,ACT,Independent,10361.9
+2019,Australia,Aust,Catholic,769491.1
+2019,Australia,Aust,Government,2590376.1
+2019,Australia,Aust,Independent,583843.7
+2020,New South Wales,NSW,Catholic,257058.6
+2020,New South Wales,NSW,Government,810076.8
+2020,New South Wales,NSW,Independent,174096.6
+2020,Victoria,Vic,Catholic,210911.2
+2020,Victoria,Vic,Government,643114.6
+2020,Victoria,Vic,Independent,150926.0
+2020,Queensland,Qld,Catholic,153740.3
+2020,Queensland,Qld,Government,572807.6
+2020,Queensland,Qld,Independent,130138.3
+2020,South Australia,SA,Catholic,46386.2
+2020,South Australia,SA,Government,176173.1
+2020,South Australia,SA,Independent,50196.7
+2020,Western Australia,WA,Catholic,72291.7
+2020,Western Australia,WA,Government,289876.3
+2020,Western Australia,WA,Independent,67459.2
+2020,Tasmania,Tas,Catholic,15045.1
+2020,Tasmania,Tas,Government,56785.8
+2020,Tasmania,Tas,Independent,9969.3
+2020,Northern Territory,NT,Catholic,4786.4
+2020,Northern Territory,NT,Government,30319.2
+2020,Northern Territory,NT,Independent,5604.0
+2020,Australian Capital Territory,ACT,Catholic,18176.8
+2020,Australian Capital Territory,ACT,Government,45544.6
+2020,Australian Capital Territory,ACT,Independent,10402.2
+2020,Australia,Aust,Catholic,778396.3
+2020,Australia,Aust,Government,2624698.0
+2020,Australia,Aust,Independent,598792.3
+2021,New South Wales,NSW,Catholic,259690.1
+2021,New South Wales,NSW,Government,802182.4
+2021,New South Wales,NSW,Independent,181277.2
+2021,Victoria,Vic,Catholic,210963.5
+2021,Victoria,Vic,Government,644237.9
+2021,Victoria,Vic,Independent,154377.3
+2021,Queensland,Qld,Catholic,156063.4
+2021,Queensland,Qld,Government,573832.2
+2021,Queensland,Qld,Independent,135992.1
+2021,South Australia,SA,Catholic,48265.2
+2021,South Australia,SA,Government,173471.1
+2021,South Australia,SA,Independent,51679.1
+2021,Western Australia,WA,Catholic,73379.0
+2021,Western Australia,WA,Government,292450.1
+2021,Western Australia,WA,Independent,70350.2
+2021,Tasmania,Tas,Catholic,15254.7
+2021,Tasmania,Tas,Government,55839.1
+2021,Tasmania,Tas,Independent,10409.7
+2021,Northern Territory,NT,Catholic,4844.4
+2021,Northern Territory,NT,Government,30002.4
+2021,Northern Territory,NT,Independent,5617.0
+2021,Australian Capital Territory,ACT,Catholic,18534.5
+2021,Australian Capital Territory,ACT,Government,46092.4
+2021,Australian Capital Territory,ACT,Independent,10626.9
+2021,Australia,Aust,Catholic,786994.8
+2021,Australia,Aust,Government,2618107.6
+2021,Australia,Aust,Independent,620329.5
+2022,New South Wales,NSW,Catholic,262861.1
+2022,New South Wales,NSW,Government,790848.7
+2022,New South Wales,NSW,Independent,187854.4
+2022,Victoria,Vic,Catholic,210844.4
+2022,Victoria,Vic,Government,644598.0
+2022,Victoria,Vic,Independent,158850.8
+2022,Queensland,Qld,Catholic,157936.4
+2022,Queensland,Qld,Government,570109.7
+2022,Queensland,Qld,Independent,141218.3
+2022,South Australia,SA,Catholic,50291.5
+2022,South Australia,SA,Government,171982.7
+2022,South Australia,SA,Independent,52711.3
+2022,Western Australia,WA,Catholic,74326.4
+2022,Western Australia,WA,Government,292818.4
+2022,Western Australia,WA,Independent,72751.1
+2022,Tasmania,Tas,Catholic,15407.1
+2022,Tasmania,Tas,Government,55185.1
+2022,Tasmania,Tas,Independent,10704.8
+2022,Northern Territory,NT,Catholic,4787.4
+2022,Northern Territory,NT,Government,29330.5
+2022,Northern Territory,NT,Independent,5863.0
+2022,Australian Capital Territory,ACT,Catholic,18748.8
+2022,Australian Capital Territory,ACT,Government,46188.2
+2022,Australian Capital Territory,ACT,Independent,10896.7
+2022,Australia,Aust,Catholic,795203.1
+2022,Australia,Aust,Government,2601061.3
+2022,Australia,Aust,Independent,640850.4
+2023,New South Wales,NSW,Catholic,267252.7
+2023,New South Wales,NSW,Government,785847.4
+2023,New South Wales,NSW,Independent,195355.8
+2023,Victoria,Vic,Catholic,212777.4
+2023,Victoria,Vic,Government,655653.3
+2023,Victoria,Vic,Independent,165780.2
+2023,Queensland,Qld,Catholic,160259.3
+2023,Queensland,Qld,Government,568725.2
+2023,Queensland,Qld,Independent,147039.2
+2023,South Australia,SA,Catholic,51175.1
+2023,South Australia,SA,Government,171543.4
+2023,South Australia,SA,Independent,53690.6
+2023,Western Australia,WA,Catholic,75351.0
+2023,Western Australia,WA,Government,298232.9
+2023,Western Australia,WA,Independent,75779.4
+2023,Tasmania,Tas,Catholic,15602.4
+2023,Tasmania,Tas,Government,54146.5
+2023,Tasmania,Tas,Independent,11093.6
+2023,Northern Territory,NT,Catholic,4812.0
+2023,Northern Territory,NT,Government,29038.6
+2023,Northern Territory,NT,Independent,5898.0
+2023,Australian Capital Territory,ACT,Catholic,18950.6
+2023,Australian Capital Territory,ACT,Government,46108.6
+2023,Australian Capital Territory,ACT,Independent,11517.3
+2023,Australia,Aust,Catholic,806180.5
+2023,Australia,Aust,Government,2609295.9
+2023,Australia,Aust,Independent,666154.1
+2024,New South Wales,NSW,Catholic,271776.9
+2024,New South Wales,NSW,Government,780336.4
+2024,New South Wales,NSW,Independent,203071.0
+2024,Victoria,Vic,Catholic,215761.4
+2024,Victoria,Vic,Government,662241.6
+2024,Victoria,Vic,Independent,172670.3
+2024,Queensland,Qld,Catholic,162638.2
+2024,Queensland,Qld,Government,566517.4
+2024,Queensland,Qld,Independent,152635.2
+2024,South Australia,SA,Catholic,52958.2
+2024,South Australia,SA,Government,174483.5
+2024,South Australia,SA,Independent,55022.3
+2024,Western Australia,WA,Catholic,76707.9
+2024,Western Australia,WA,Government,303142.5
+2024,Western Australia,WA,Independent,79337.2
+2024,Tasmania,Tas,Catholic,15902.5
+2024,Tasmania,Tas,Government,53166.6
+2024,Tasmania,Tas,Independent,11316.9
+2024,Northern Territory,NT,Catholic,5148.4
+2024,Northern Territory,NT,Government,28723.8
+2024,Northern Territory,NT,Independent,5978.0
+2024,Australian Capital Territory,ACT,Catholic,19167.0
+2024,Australian Capital Territory,ACT,Government,45896.2
+2024,Australian Capital Territory,ACT,Independent,11852.4
+2024,Australia,Aust,Catholic,820060.5
+2024,Australia,Aust,Government,2614508.0
+2024,Australia,Aust,Independent,691883.3
+2025,New South Wales,NSW,Catholic,274735.3
+2025,New South Wales,NSW,Government,773377.3
+2025,New South Wales,NSW,Independent,208944.6
+2025,Victoria,Vic,Catholic,218152.4
+2025,Victoria,Vic,Government,665682.9
+2025,Victoria,Vic,Independent,178786.8
+2025,Queensland,Qld,Catholic,164881.1
+2025,Queensland,Qld,Government,563023.0
+2025,Queensland,Qld,Independent,159812.2
+2025,South Australia,SA,Catholic,54811.2
+2025,South Australia,SA,Government,172875.4
+2025,South Australia,SA,Independent,56240.1
+2025,Western Australia,WA,Catholic,77800.2
+2025,Western Australia,WA,Government,306176.7
+2025,Western Australia,WA,Independent,82087.3
+2025,Tasmania,Tas,Catholic,16119.3
+2025,Tasmania,Tas,Government,52245.9
+2025,Tasmania,Tas,Independent,11643.7
+2025,Northern Territory,NT,Catholic,5343.0
+2025,Northern Territory,NT,Government,28612.4
+2025,Northern Territory,NT,Independent,5911.0
+2025,Australian Capital Territory,ACT,Catholic,19692.0
+2025,Australian Capital Territory,ACT,Government,46104.7
+2025,Australian Capital Territory,ACT,Independent,11960.3
+2025,Australia,Aust,Catholic,831534.5
+2025,Australia,Aust,Government,2608098.3
+2025,Australia,Aust,Independent,715386.0

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Panel 9: Government recurrent funding per student, all schools, by state and territory, in 2014-15, 2018-19 and 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "width": 280,
+  "height": 240,
+  "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
+  "transform": [
+    {"filter": "datum.sector == 'All' && datum.source == 'Total government' && datum.state_abbr != 'Aust' && (datum.year == '2014-15' || datum.year == '2018-19' || datum.year == '2023-24')"},
+    {
+      "lookup": "state",
+      "from": {
+        "data": {"url": "data/geo/aus_states.topojson", "format": {"type": "topojson", "feature": "states"}},
+        "key": "properties.STATE_NAME"
+      },
+      "as": "geo"
+    }
+  ],
+  "projection": {"type": "conicEqualArea", "parallels": [-18, -36], "rotate": [-132, 0]},
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
+  "encoding": {
+    "shape": {"field": "geo", "type": "geojson"},
+    "color": {
+      "field": "per_student_real_2023_24_aud",
+      "type": "quantitative",
+      "title": "Funding per student",
+      "scale": {"domain": [15000, 32000], "range": ["#e7e1f2", "#5b3c94"]},
+      "legend": {"orient": "bottom", "direction": "horizontal", "format": "$,.0f", "gradientLength": 260}
+    },
+    "column": {"field": "year", "type": "ordinal", "title": null, "header": {"labelFontSize": 15, "labelFontWeight": "bold"}},
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State or territory"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "per_student_real_2023_24_aud", "type": "quantitative", "title": "Funding per student", "format": "$,.0f"}
+    ]
+  },
+  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+}
