@@ -1,4 +1,4 @@
-/* ---------- Fonts (Week 5) ----------
+/* ---------- Fonts  ----------
    All text uses Atkinson Hyperlegible, a sans-serif typeface designed to be
    easy to read for people with low vision. Headings use Fraunces, a serif typeface designed for display. Both are available from Google Fonts. */
 body * {
@@ -192,4 +192,32 @@ h3 {
 .small-font {
   font-size: 14px;
   color: #4a5263;
+}
+
+/* ---------- Key numbers ---------- */
+
+.stats {
+  display: flex;
+  gap: 48px;
+}
+
+.stat-tile {
+  flex: 1;
+  border: 1px solid #dcdfe5;
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+
+.stat-number {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: #4a5263;
+  margin: 0;
 }

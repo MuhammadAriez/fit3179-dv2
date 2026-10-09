@@ -1,37 +1,146 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 9: Government recurrent funding per student, all schools, by state and territory, in 2014-15, 2018-19 and 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
-  "width": 280,
-  "height": 240,
+  "description": "Panel 9: Government recurrent funding per student, all schools, by state and territory, in 2014-15, 2018-19 and 2023-24, in 2023-24 dollars, with a linked line chart for every year. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
   "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
   "transform": [
-    {"filter": "datum.sector == 'All' && datum.source == 'Total government' && datum.state_abbr != 'Aust' && (datum.year == '2014-15' || datum.year == '2018-19' || datum.year == '2023-24')"},
+    {"filter": "datum.sector == 'All' && datum.source == 'Total government'"}
+  ],
+  "spacing": 40,
+  "resolve": {"legend": {"color": "independent"}},
+  "vconcat": [
     {
-      "lookup": "state",
-      "from": {
-        "data": {"url": "data/geo/aus_states.topojson", "format": {"type": "topojson", "feature": "states"}},
-        "key": "properties.STATE_NAME"
+      "width": 280,
+      "height": 240,
+      "transform": [
+        {"filter": "datum.state_abbr != 'Aust' && (datum.year == '2014-15' || datum.year == '2018-19' || datum.year == '2023-24')"},
+        {
+          "lookup": "state",
+          "from": {
+            "data": {"url": "data/geo/aus_states.topojson", "format": {"type": "topojson", "feature": "states"}},
+            "key": "properties.STATE_NAME"
+          },
+          "as": "geo"
+        }
+      ],
+      "params": [
+        {
+          "name": "pick",
+          "value": [{"state": "Western Australia"}],
+          "select": {"type": "point", "fields": ["state"], "on": "click", "clear": false, "toggle": false}
+        },
+        {
+          "name": "hover",
+          "select": {"type": "point", "fields": ["state"], "on": "mouseover", "clear": "mouseout"}
+        }
+      ],
+      "projection": {"type": "conicEqualArea", "parallels": [-18, -36], "rotate": [-132, 0]},
+      "mark": {"type": "geoshape", "cursor": "pointer"},
+      "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "per_student_real_2023_24_aud",
+          "type": "quantitative",
+          "title": "Funding per student",
+          "scale": {"domain": [15000, 32000], "range": ["#e7e1f2", "#5b3c94"]},
+          "legend": {"orient": "bottom", "direction": "horizontal", "format": "$,.0f", "gradientLength": 260}
+        },
+        "stroke": {
+          "condition": [
+            {"param": "pick", "empty": false, "value": "#1f2430"},
+            {"param": "hover", "empty": false, "value": "#1f2430"}
+          ],
+          "value": "white"
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "pick", "empty": false, "value": 2.5},
+            {"param": "hover", "empty": false, "value": 1.5}
+          ],
+          "value": 1
+        },
+        "column": {"field": "year", "type": "ordinal", "title": null, "header": {"labelFontSize": 15, "labelFontWeight": "bold"}},
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State or territory"},
+          {"field": "year", "type": "ordinal", "title": "Year"},
+          {"field": "per_student_real_2023_24_aud", "type": "quantitative", "title": "Funding per student", "format": "$,.0f"}
+        ]
+      }
+    },
+    {
+      "width": 860,
+      "height": 220,
+      "title": {
+        "text": {"expr": "'Funding per student each year: ' + pick.state[0] + ' against Australia'"},
+        "subtitle": "Click a state on any map to change it",
+        "anchor": "start",
+        "fontSize": 14,
+        "subtitleFontSize": 12,
+        "subtitleColor": "#4a5263"
       },
-      "as": "geo"
+      "transform": [
+        {"filter": {"or": [{"param": "pick", "empty": false}, "datum.state_abbr == 'Aust'"]}},
+        {"calculate": "datum.state_abbr == 'Aust' ? 'Australia' : 'Selected state'", "as": "line"},
+        {"window": [{"op": "first_value", "field": "per_student_real_2023_24_aud", "as": "start_value"}], "sort": [{"field": "year"}], "groupby": ["state"], "frame": [null, null]},
+        {"calculate": "datum.per_student_real_2023_24_aud / datum.start_value - 1", "as": "change"}
+      ],
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}}
+      },
+      "layer": [
+        {
+          "data": {"values": [{}]},
+          "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#7a8294"},
+          "encoding": {"x": {"datum": "2019-20"}}
+        },
+        {
+          "data": {"values": [{}]},
+          "mark": {"type": "text", "align": "left", "baseline": "top", "dx": 6, "fontSize": 12, "color": "#4a5263"},
+          "encoding": {"x": {"datum": "2019-20"}, "y": {"value": 0}, "text": {"value": ["2019-20: some COVID-19 funding", "was paid early"]}}
+        },
+        {
+          "mark": {"type": "line", "point": true},
+          "encoding": {
+            "y": {"field": "per_student_real_2023_24_aud", "type": "quantitative", "title": "Funding per student", "scale": {"domain": [15000, 36000]}, "axis": {"format": "$,.0f", "values": [15000, 20000, 25000, 30000, 35000]}},
+            "color": {
+              "field": "line",
+              "type": "nominal",
+              "title": null,
+              "scale": {"domain": ["Selected state", "Australia"], "range": ["#5b3c94", "#9aa0ac"]},
+              "legend": {"orient": "bottom", "direction": "horizontal", "symbolType": "stroke", "symbolStrokeWidth": 2}
+            },
+            "strokeDash": {
+              "field": "line",
+              "type": "nominal",
+              "scale": {"domain": ["Selected state", "Australia"], "range": [[1, 0], [5, 4]]},
+              "legend": null
+            },
+            "tooltip": [
+              {"field": "state", "type": "nominal", "title": "State or territory"},
+              {"field": "year", "type": "ordinal", "title": "Year"},
+              {"field": "per_student_real_2023_24_aud", "type": "quantitative", "title": "Funding per student", "format": "$,.0f"}
+            ]
+          }
+        },
+        {
+          "transform": [{"filter": "datum.year == '2023-24' && datum.line == 'Selected state'"}],
+          "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 24, "fontWeight": "bold", "color": "#5b3c94"},
+          "encoding": {
+            "x": {"datum": "2014-15"},
+            "y": {"value": 0},
+            "text": {"field": "change", "type": "quantitative", "format": "+.0%"}
+          }
+        },
+        {
+          "data": {"values": [{}]},
+          "mark": {"type": "text", "align": "left", "baseline": "top", "dy": 30, "fontSize": 12, "color": "#4a5263"},
+          "encoding": {
+            "x": {"datum": "2014-15"},
+            "y": {"value": 0},
+            "text": {"value": "since 2014-15, after inflation"}
+          }
+        }
+      ]
     }
   ],
-  "projection": {"type": "conicEqualArea", "parallels": [-18, -36], "rotate": [-132, 0]},
-  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
-  "encoding": {
-    "shape": {"field": "geo", "type": "geojson"},
-    "color": {
-      "field": "per_student_real_2023_24_aud",
-      "type": "quantitative",
-      "title": "Funding per student",
-      "scale": {"domain": [15000, 32000], "range": ["#e7e1f2", "#5b3c94"]},
-      "legend": {"orient": "bottom", "direction": "horizontal", "format": "$,.0f", "gradientLength": 260}
-    },
-    "column": {"field": "year", "type": "ordinal", "title": null, "header": {"labelFontSize": 15, "labelFontWeight": "bold"}},
-    "tooltip": [
-      {"field": "state", "type": "nominal", "title": "State or territory"},
-      {"field": "year", "type": "ordinal", "title": "Year"},
-      {"field": "per_student_real_2023_24_aud", "type": "quantitative", "title": "Funding per student", "format": "$,.0f"}
-    ]
-  },
   "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
 }
