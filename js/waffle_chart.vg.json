@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Panel 1: Every 100 full-time equivalent students in Australia in 2025, by school sector. Source: ABS, Schools 2025, Table 43a.",
-  "width": 300,
-  "height": 300,
+  "width": 260,
+  "height": 260,
   "data": {"url": "data/enrolments.csv", "format": {"parse": {"fte_students": "number"}}},
   "transform": [
     {"filter": "datum.year == 2025 && datum.state == 'Australia'"},

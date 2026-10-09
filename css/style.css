@@ -221,3 +221,13 @@ h3 {
   color: #4a5263;
   margin: 0;
 }
+
+
+/* ---------- Notes beside charts ---------- */
+
+.chart-note {
+  font-size: 15px;
+  color: #4a5263;
+  border-left: 3px solid #dcdfe5;
+  padding-left: 12px;
+}
