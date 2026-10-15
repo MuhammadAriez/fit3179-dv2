@@ -1,13 +1,20 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 5: Share of each school sector's income by source, Australia, 2024. Source: ACARA, school finance dataset, School income.",
+  "description": "Panel 5: Share of each school sector's income by source, Australia, 2009 to 2024, with a year slider. Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income.",
   "width": "container",
   "height": 180,
-  "data": {"url": "data/school_income_2024.csv"},
+  "data": {"url": "data/school_income_trend.csv", "format": {"parse": {"year": "number"}}},
+  "params": [
+    {
+      "name": "year_pick",
+      "value": 2024,
+      "bind": {"input": "range", "min": 2009, "max": 2024, "step": 1, "name": "Year: "}
+    }
+  ],
   "transform": [
-    {"filter": "datum.state == 'Australia' && datum.source != 'Total gross income'"},
+    {"filter": "datum.year == year_pick && datum.state == 'Australia' && datum.source != 'Total gross income'"},
     {"calculate": "datum.source_group == 'Private' ? 'Fees and private money' : datum.source", "as": "income_source"},
-    {"aggregate": [{"op": "sum", "field": "total_aud", "as": "income"}], "groupby": ["sector", "income_source"]},
+    {"aggregate": [{"op": "sum", "field": "total_aud", "as": "income"}], "groupby": ["year", "sector", "income_source"]},
     {"joinaggregate": [{"op": "sum", "field": "income", "as": "sector_income"}], "groupby": ["sector"]},
     {"calculate": "datum.income / datum.sector_income", "as": "share"},
     {"calculate": "datum.income_source == 'Australian Government' ? 1 : datum.income_source == 'State and territory government' ? 2 : 3", "as": "stack_order"}
@@ -32,6 +39,7 @@
           "legend": {"orient": "bottom", "direction": "vertical"}
         },
         "tooltip": [
+          {"field": "year", "type": "ordinal", "title": "Year"},
           {"field": "sector", "type": "nominal", "title": "Sector"},
           {"field": "income_source", "type": "nominal", "title": "Source"},
           {"field": "share", "type": "quantitative", "title": "Share of income", "format": ".1%"},

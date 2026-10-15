@@ -36,9 +36,9 @@
         },
         "tooltip": [
           {"field": "state", "type": "nominal", "title": "State or territory"},
-          {"field": "student_group", "type": "nominal", "title": "Circle"},
+          {"field": "student_group", "type": "nominal", "title": "Group"},
           {"field": "students", "type": "quantitative", "title": "Students", "format": ",.0f"},
-          {"field": "nongov_share", "type": "quantitative", "title": "Non-government share", "format": ".0%"}
+          {"field": "nongov_share", "type": "quantitative", "title": "Non-government share", "format": ".1%"}
         ]
       }
     },

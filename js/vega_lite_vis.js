@@ -71,3 +71,8 @@ vegaEmbed("#treemap", vg_treemap, embedOptions).then(function (result) {
 var vg_sankey = "js/sankey_diagram.vg.json";
 vegaEmbed("#sankey_diagram", vg_sankey, embedOptions).then(function (result) {
 }).catch(console.error);
+
+// Panel 14: hexagon bin map
+var vg_bin_map = "js/bin_map.vg.json";
+vegaEmbed("#bin_map", vg_bin_map, embedOptions).then(function (result) {
+}).catch(console.error);

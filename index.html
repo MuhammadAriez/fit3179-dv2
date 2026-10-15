@@ -69,6 +69,7 @@
         <span class="key-item"><span class="key-chip private-chip"></span>Fees and private money</span>
         <span class="key-item"><span class="key-chip funding-chip"></span>Funding per student, low to high</span>
         <span class="key-item"><span class="key-chip sector-chip"></span>School sector: government, Catholic, independent (dark to light)</span>
+        <span class="key-item"><span class="key-chip schools-chip"></span>Number of schools, few to many</span>
       </div>
     </div>
 
@@ -139,8 +140,10 @@
       <div class="pure-u-1-2">
         <div class="chart-right">
           <h3>Independent schools raise half their income privately</h3>
-          <p class="chart-subtitle">Share of each sector's income by source, 2024</p>
+          <p class="chart-subtitle">Share of each sector's income by source. Drag the slider to change the year.</p>
           <div id="stacked_bar_chart" class="vis-container"></div>
+          <p class="chart-note">In 2009, independent schools raised 59% of their income from fees and other
+            private sources. By 2024 it was 52%.</p>
           <p class = "chart-source">Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024.</p>
         </div>
       </div>
@@ -176,11 +179,25 @@
     </div>
 
     <div class="pure-g">
-      <div class="pure-u-1-1">
-        <h3>In every state, government schools receive more public money per student</h3>
-        <p class="chart-subtitle">Extra government funding per government-school student, compared with a non-government-school student, 2023-24</p>
-        <div id="lollipop_chart" class="vis-container"></div>
-        <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
+      <div class="pure-u-1-2">
+        <div class="chart-left">
+          <h3>Eight in ten schools in remote Australia are government schools</h3>
+          <p class="chart-subtitle">Number of schools in each hexagon (about 110 km across), 2025</p>
+          <div id="bin_map" class="vis-container"></div>
+          <p class="chart-note">Choose Catholic or Independent and most of the inland empties: 61% of Catholic
+            and 68% of independent schools are in major cities, against 51% of government schools.</p>
+          <p class="chart-source">Source: Australian Curriculum, Assessment and Reporting Authority, School Location 2025.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="chart-right">
+          <h3>In every state, government schools receive more public money per student</h3>
+          <p class="chart-subtitle">Extra government funding per government-school student, compared with a non-government-school student, 2023-24</p>
+          <div id="lollipop_chart" class="vis-container"></div>
+          <p class="chart-note">The gap is widest in the Australian Capital Territory ($18,559 per student)
+            and narrowest in the Northern Territory ($5,024).</p>
+          <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
+        </div>
       </div>
     </div>
 
@@ -278,6 +295,8 @@
               target="_blank">Report on Government Services 2026</a>, Part B, Section 4, Table 4A.32.</p>
           <p>Australian Bureau of Statistics, <a href="https://www.abs.gov.au/statistics/people/education/schools/latest-release"
               target="_blank">Schools, 2025</a>, Table 43a.</p>
+          <p>Australian Curriculum, Assessment and Reporting Authority, <a href="https://acara.edu.au/contact-us/acara-data-access"
+              target="_blank">School Location 2025</a>, used under the My School terms of use.</p>
           <p>State boundaries: Australian Bureau of Statistics, via <a href="https://github.com/rowanhogan/australian-states"
               target="_blank">rowanhogan/australian-states</a>.</p>
         </div>
@@ -288,7 +307,11 @@
           <p>Created by Muhammad Ariez Zuhayr, student ID 34599959, in October 2026 for FIT3179 Data
             Visualisation, Monash University.</p>
           <p class="key-title">Use of AI</p>
-          <p>To be written: describe how generative AI was used.</p>
+          <p>I used Claude (Anthropic) as a tutor and coding assistant. It found and cleaned the data
+            (build_data.py and build_schools.py), set up the page layout and CSS, and explained each chart step
+            by step while I typed and tested most of the chart specifications myself. In the final week it also
+            edited files directly: the intro restyle, the year slider, the hexagon bin map and several fixes.
+            I checked every change, and the figures were checked against the original sources.</p>
         </div>
       </div>
     </div>

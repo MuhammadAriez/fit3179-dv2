@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Panel 10: Government recurrent funding per student, all schools, by state and territory, 2014-15 and 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
   "width": "container",
-  "height": 300,
+  "height": 380,
   "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
   "transform": [
     {"filter": "datum.sector == 'All' && datum.source == 'Total government' && (datum.year == '2014-15' || datum.year == '2023-24')"},

@@ -87,7 +87,7 @@
           "x2": {"field": "x1"},
           "y2": {"field": "y1"},
           "fill": {"scale": "color", "field": "sector"},
-          "tooltip": {"signal": "{'State or territory': datum.state, 'Sector': datum.sector, 'Government funding': format(datum.funding, '$,.0f'), 'Share of the state total': format(datum.funding / datum.state_total, '.0%')}"}
+          "tooltip": {"signal": "{'State or territory': datum.state, 'Sector': datum.sector, 'Government funding': format(datum.funding, '$,.0f'), 'Share of the state total': format(datum.funding / datum.state_total, '.1%')}"}
         }
       }
     },

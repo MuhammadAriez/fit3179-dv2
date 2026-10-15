@@ -7,8 +7,9 @@ downloads; `build_data.py` turns them into the small CSVs below and checks the
 results against published figures. Rebuild with:
 
     python data/build_data.py
+    python data/build_schools.py
 
-Total size of what the page loads: about 230 KB.
+Total size of what the page loads: about 450 KB.
 
 ## Sources
 
@@ -18,6 +19,7 @@ Total size of what the page loads: about 230 KB.
 | 2 | Productivity Commission | *Report on Government Services 2026*, Part B Section 4 School education, Table 4A.32 — real government recurrent expenditure per FTE student, 2023-24 dollars | Change over time, inflation-adjusted | https://www.pc.gov.au/ongoing/report-on-government-services/child-care-education-and-training/school-education/ |
 | 3 | Australian Bureau of Statistics | *Schools, 2025*, Table 43a Full-time equivalent (FTE) students, 2006–2025 | Enrolments by state and sector | https://www.abs.gov.au/statistics/people/education/schools/latest-release |
 | 4 | Australian Bureau of Statistics | *Schools, 2025*, Table 90a Key information by states and territories | Cross-check only (headcounts) | same page as 3 |
+| 6 | ACARA | *School Location 2025* (ACARA Data Access Program), one row per school with sector, latitude and longitude; used under the My School terms of use | Hexagon bin map | https://acara.edu.au/contact-us/acara-data-access |
 | 5 | ABS ASGS state boundaries, via github.com/rowanhogan/australian-states | `states.geojson`, simplified to 10% with mapshaper and converted to TopoJSON | All maps | https://github.com/rowanhogan/australian-states |
 
 The ABS and the Productivity Commission publish under Creative Commons
@@ -32,7 +34,8 @@ every source in the page footer either way.
 | `gov_funding_real.csv` | 810 | financial year (2014-15 – 2023-24) × state × sector × source | `per_student_real_2023_24_aud` | 6 choropleth · 8 lollipop · 9 small multiples · 10 slope · 11 heatmap |
 | `gov_funding_nominal.csv` | 1,179 | financial year (2005-06 – 2023-24) × state × sector × source | `total_aud`, `per_student_aud` | 3 flow map |
 | `school_income_2024.csv` | 135 | state × sector × source, calendar 2024 | `total_aud`, `per_student_aud`, `source_group` | 2 Sankey · 4 dumbbell · 5 stacked bar · 12 butterfly · 13 treemap |
-| `school_income_trend.csv` | 240 | calendar year (2009–2024) × sector × source, Australia | as above | spare |
+| `school_income_trend.csv` | 240 | calendar year (2009–2024) × sector × source, Australia | as above | 5 stacked bar (year slider) |
+| `schools_2025.csv` | 11,034 | one row per school location, 2025 (five island schools outside the map dropped) | `sector`, `lon`, `lat` | 14 hexagon bin map |
 | `states.csv` | 8 | state (one row each, so a `lookup` is safe) | `state_abbr`, `lon`, `lat`, `funding_per_student_2014_15` / `_2018_19` / `_2023_24` (all schools, 2023-24 dollars), `cwlth_funding_2023_24`, `students_2025`, `nongov_students_2025` | 6 choropleth · 3 flow map · 7 symbol map · 9 small multiples |
 | `geo/aus_states.topojson` | 8 shapes | state | `STATE_NAME`, `STATE_CODE` | all maps |
 | `geo/state_points.csv` | 8 | state | `lon`, `lat` (a point guaranteed inside each state) | 3 flow map · 7 symbol map |

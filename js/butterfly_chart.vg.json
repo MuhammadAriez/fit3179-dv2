@@ -6,7 +6,7 @@
     {
       "title": {"text": "Share of students", "fontSize": 13},
       "width": 180,
-      "height": 150,
+      "height": 300,
       "data": {"url": "data/enrolments.csv", "format": {"parse": {"fte_students": "number"}}},
       "transform": [
         {"filter": "datum.year == 2024 && datum.state == 'Australia'"},
@@ -38,7 +38,7 @@
     {
       "title": {"text": "Share of government funding", "fontSize": 13},
       "width": 180,
-      "height": 150,
+      "height": 300,
       "data": {"url": "data/school_income_2024.csv", "format": {"parse": {"total_aud": "number"}}},
       "transform": [
         {"filter": "datum.state == 'Australia' && datum.source_group == 'Government'"},

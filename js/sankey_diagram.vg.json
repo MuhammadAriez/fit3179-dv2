@@ -82,7 +82,7 @@
           "stroke": {"scale": "source_color", "field": "income_source"},
           "strokeWidth": {"scale": "y", "field": "amount"},
           "strokeOpacity": {"value": 0.4},
-          "tooltip": {"signal": "{'From': datum.income_source, 'To': datum.sector + ' schools', 'Amount': format(datum.amount, '$,.0f'), 'Share of sector income': format(datum.amount / datum.sector_total, '.0%')}"}
+          "tooltip": {"signal": "{'From': datum.income_source, 'To': datum.sector + ' schools', 'Amount': format(datum.amount, '$,.0f'), 'Share of sector income': format(datum.amount / datum.sector_total, '.1%')}"}
         },
         "hover": {
           "strokeOpacity": {"value": 0.75}

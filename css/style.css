@@ -169,6 +169,10 @@ h3 {
   width: 48px;
   background: linear-gradient(to right, #e7e1f2, #5b3c94);
 }
+.schools-chip {
+  width: 48px;
+  background: linear-gradient(to right, #f6e0d9, #6e2214);
+}
 .sector-chip {
   width: 48px;
   background: linear-gradient(to right, #3a3f4b 0%, #3a3f4b 33%, #7b8291 33%, #7b8291 66%, #b9bec8 66%, #b9bec8 100%);
@@ -222,4 +226,23 @@ h3 {
   color: #4a5263;
   border-left: 3px solid #dcdfe5;
   padding-left: 12px;
+}
+
+/* ---------- Dropdowns and sliders ---------- */
+
+.vega-bind {
+  font-size: 15px;
+  color: #4a5263;
+  margin-top: 8px;
+}
+
+.vega-bind-name {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.vega-bind select,
+.vega-bind input {
+  font-size: 15px;
+  vertical-align: middle;
 }

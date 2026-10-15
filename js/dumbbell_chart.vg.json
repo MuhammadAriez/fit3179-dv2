@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Panel 4: Australian Government and state government income per student, by school sector, Australia, 2024. Source: ACARA, school finance dataset, School income.",
   "width": "container",
-  "height": 180,
+  "height": 240,
   "data": {"url": "data/school_income_2024.csv", "format": {"parse": {"per_student_aud": "number"}}},
   "transform": [
     {"filter": "datum.state == 'Australia' && datum.source_group == 'Government'"},
@@ -35,7 +35,7 @@
         "tooltip": [
           {"field": "sector", "type": "nominal", "title": "Sector"},
           {"field": "source", "type": "nominal", "title": "Source"},
-          {"field": "per_student_aud", "type": "quantitative", "title": "Per student", "format": "$,.0f"}
+          {"field": "per_student_aud", "type": "quantitative", "title": "Income per student", "format": "$,.0f"}
         ]
       }
     },
