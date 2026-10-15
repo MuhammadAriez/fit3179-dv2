@@ -1,7 +1,4 @@
-/* ---------- Fonts  ----------
-   All text uses Atkinson Hyperlegible, a sans-serif typeface designed to be
-   easy to read for people with low vision. Headings use Libre Franklin, a revival of Franklin Gothic,
-   the classic newspaper headline typeface. Both are available from Google Fonts. */
+/* ---------- Fonts ---------- */
 body * {
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
