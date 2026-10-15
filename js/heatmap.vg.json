@@ -10,7 +10,7 @@
   "mark": {"type": "rect", "stroke": "white", "strokeWidth": 2},
   "encoding": {
     "x": {"field": "year", "type": "ordinal", "title": null, "axis": {"labelAngle": -45}},
-    "y": {"field": "state_abbr", "type": "nominal", "title": null, "sort": ["NT", "Tas", "NSW", "Qld", "ACT", "SA", "WA", "Vic"]},
+    "y": {"field": "state", "type": "nominal", "title": null, "sort": ["Northern Territory", "Tasmania", "New South Wales", "Queensland", "Australian Capital Territory", "South Australia", "Western Australia", "Victoria"]},
     "color": {
       "field": "per_student_real_2023_24_aud",
       "type": "quantitative",

@@ -45,11 +45,21 @@
     {
       "data": {"url": "data/states.csv"},
       "transform": [{"filter": "datum.state_abbr == 'NSW' || datum.state_abbr == 'Vic' || datum.state_abbr == 'Qld'"}],
+      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12, "color": "white", "stroke": "white", "strokeWidth": 4, "strokeJoin": "round"},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "state", "type": "nominal"}
+      }
+    },
+    {
+      "data": {"url": "data/states.csv"},
+      "transform": [{"filter": "datum.state_abbr == 'NSW' || datum.state_abbr == 'Vic' || datum.state_abbr == 'Qld'"}],
       "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12, "color": "#1f2430"},
       "encoding": {
         "longitude": {"field": "lon", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "state_abbr", "type": "nominal"}
+        "text": {"field": "state", "type": "nominal"}
       }
     }
   ],

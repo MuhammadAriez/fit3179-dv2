@@ -1,13 +1,14 @@
 /* ---------- Fonts  ----------
    All text uses Atkinson Hyperlegible, a sans-serif typeface designed to be
-   easy to read for people with low vision. Headings use Fraunces, a serif typeface designed for display. Both are available from Google Fonts. */
+   easy to read for people with low vision. Headings use Libre Franklin, a revival of Franklin Gothic,
+   the classic newspaper headline typeface. Both are available from Google Fonts. */
 body * {
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 h1,
 h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 /* ---------- Page ---------- */
@@ -24,12 +25,12 @@ body {
 .page {
   max-width: 1100px;
   margin: auto;
-  padding: 50px;
+  padding: 40px 50px;
 }
 
 /* Space between every row of the grid  */
 .pure-g {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 
@@ -41,14 +42,17 @@ p {
 
 h1 {
   font-size: 46px;
-  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
   margin: 0 0 8px 0;
 }
 
 h2 {
-  font-size: 32px;
-  font-weight: 500;
-  margin: 48px 0 16px 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin: 24px 0 0 0;
 }
 
 h3 {
@@ -56,23 +60,16 @@ h3 {
   margin: 0 0 4px 0;
 }
 
-.kicker {
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #7a8294;
-}
-
 .subtitle {
-  font-size: 22px;
+  font-size: 21px;
   color: #4a5263;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
 }
 
 .byline {
   font-size: 14px;
   color: #7a8294;
+  margin: 0;
 }
 
 .section-intro {
@@ -143,16 +140,14 @@ h3 {
 .colour-key {
   border-top: 1px solid #dcdfe5;
   border-bottom: 1px solid #dcdfe5;
-  padding: 16px 0;
+  padding: 12px 0;
 }
 
 .key-title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #7a8294;
-  margin: 0 0 8px 0;
+  color: #1f2430;
+  margin: 0 0 4px 0;
 }
 
 .key-item {
@@ -203,17 +198,17 @@ h3 {
 
 .stat-tile {
   flex: 1;
-  border: 1px solid #dcdfe5;
-  border-radius: 6px;
-  padding: 16px 20px;
+  border-top: 3px solid #1f2430;
+  padding: 10px 0 0 0;
 }
 
 .stat-number {
-  font-family: 'Fraunces', serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
   line-height: 1.1;
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
 }
 
 .stat-label {

@@ -44,12 +44,15 @@
     },
     {
       "data": {"url": "data/states.csv"},
-      "transform": [{"filter": "datum.state_abbr != 'ACT'"}],
-      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12},
+      "transform": [
+        {"filter": "datum.state_abbr != 'ACT'"},
+        {"calculate": "datum.state_abbr == 'NT' || datum.state_abbr == 'Vic' ? datum.state + ' ' + format(datum.funding_per_student_2023_24, '$,.0f') : datum.state", "as": "label"}
+      ],
+      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12, "lineBreak": " "},
       "encoding": {
         "longitude": {"field": "lon", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "state_abbr", "type": "nominal"},
+        "text": {"field": "label", "type": "nominal"},
         "color": {
           "condition": {"test": "datum.funding_per_student_2023_24 >= 25000", "value": "white"},
           "value": "black"
@@ -59,28 +62,11 @@
     {
       "data": {"url": "data/states.csv"},
       "transform": [{"filter": "datum.state_abbr == 'ACT'"}],
-      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12, "dx": 30, "dy": 4},
+      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 12, "align": "left", "dx": 18, "dy": 4, "lineBreak": " "},
       "encoding": {
         "longitude": {"field": "lon", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "state_abbr", "type": "nominal"}
-      }
-    },
-    {
-      "data": {"url": "data/states.csv"},
-      "mark": {"type": "text", "fontSize": 12, "dy": 15},
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "funding_per_student_2023_24", "type": "quantitative", "format": "$,.0f"},
-        "color": {
-          "condition": {"test": "datum.funding_per_student_2023_24 >= 25000", "value": "white"},
-          "value": "black"
-        },
-        "opacity": {
-          "condition": {"test": "datum.state_abbr == 'NT' || datum.state_abbr == 'Vic'", "value": 1},
-          "value": 0
-        }
+        "text": {"field": "state", "type": "nominal"}
       }
     }
   ],

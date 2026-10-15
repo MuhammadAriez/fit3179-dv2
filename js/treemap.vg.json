@@ -27,7 +27,10 @@
     {
       "name": "states",
       "source": "funding",
-      "transform": [{"type": "filter", "expr": "datum.depth == 1"}]
+      "transform": [
+        {"type": "filter", "expr": "datum.depth == 1"},
+        {"type": "lookup", "from": "funding", "key": "state_abbr", "fields": ["key"], "values": ["state"], "as": ["state_name"]}
+      ]
     },
     {
       "name": "sectors",
@@ -67,7 +70,7 @@
         "update": {
           "x": {"field": "x0", "offset": 4},
           "y": {"field": "y0", "offset": 12},
-          "text": {"field": "key"},
+          "text": {"signal": "datum.x1 - datum.x0 > length(datum.state_name) * 7 + 8 ? datum.state_name : datum.key"},
           "fontWeight": {"value": "bold"},
           "fontSize": {"value": 11},
           "fill": {"value": "#1f2430"}
@@ -84,7 +87,7 @@
           "x2": {"field": "x1"},
           "y2": {"field": "y1"},
           "fill": {"scale": "color", "field": "sector"},
-          "tooltip": {"signal": "{'State': datum.state, 'Sector': datum.sector, 'Government funding': format(datum.funding, '$,.0f'), 'Share of the state total': format(datum.funding / datum.state_total, '.0%')}"}
+          "tooltip": {"signal": "{'State or territory': datum.state, 'Sector': datum.sector, 'Government funding': format(datum.funding, '$,.0f'), 'Share of the state total': format(datum.funding / datum.state_total, '.0%')}"}
         }
       }
     },
@@ -96,15 +99,11 @@
         "update": {
           "x": {"field": "x0", "offset": 5},
           "y": {"field": "y0", "offset": 15},
-          "text": {"signal": "[datum.sector, format(datum.funding / 1e9, '$.1f') + ' billion']"},
+          "text": {"signal": "datum.x1 - datum.x0 > 70 && datum.y1 - datum.y0 > 36 ? [datum.sector, format(datum.funding / 1e9, '$.1f') + ' billion'] : ''"},
           "fontSize": {"value": 11},
           "fill": [
             {"test": "datum.sector == 'Independent'", "value": "#1f2430"},
             {"value": "white"}
-          ],
-          "opacity": [
-            {"test": "datum.x1 - datum.x0 > 70 && datum.y1 - datum.y0 > 36", "value": 1},
-            {"value": 0}
           ]
         }
       }

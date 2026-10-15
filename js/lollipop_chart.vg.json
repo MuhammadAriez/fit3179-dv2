@@ -24,7 +24,7 @@
     {
       "transform": [{"filter": "datum.state_abbr != 'Aust'"}],
       "encoding": {
-        "y": {"field": "state_abbr", "type": "nominal", "title": null, "sort": "-x"},
+        "y": {"field": "state", "type": "nominal", "title": null, "sort": ["Northern Territory", "Tasmania", "New South Wales", "Queensland", "Australian Capital Territory", "South Australia", "Western Australia", "Victoria"]},
         "x": {"field": "gap", "type": "quantitative", "axis": {"format": "$,.0f", "values": [0, 5000, 10000, 15000, 20000]}, "title": "Extra government funding per government-school student"},
         "tooltip": [
           {"field": "state", "type": "nominal", "title": "State or territory"},
