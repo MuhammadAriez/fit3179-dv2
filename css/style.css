@@ -175,7 +175,7 @@ h3 {
 }
 .sector-chip {
   width: 48px;
-  background: linear-gradient(to right, #3a3f4b 0%, #3a3f4b 33%, #7b8291 33%, #7b8291 66%, #b9bec8 66%, #b9bec8 100%);
+  background: linear-gradient(to right, #22262e 0%, #22262e 33%, #646b7a 33%, #646b7a 66%, #b3b9c4 66%, #b3b9c4 100%);
 } 
 
 /* ---------- Footer  ---------- */
@@ -245,4 +245,77 @@ h3 {
 .vega-bind input {
   font-size: 15px;
   vertical-align: middle;
+}
+
+/* ---------- Figure labels ---------- */
+
+.figure-label {
+  display: flex;
+  justify-content: space-between;
+  max-width: none;
+  border-top: 2px solid #1f2430;
+  padding-top: 6px;
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #7a8294;
+}
+
+/* ---------- Callouts ---------- */
+
+.callout {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background-color: #f4f5f8;
+  border-left: 3px solid #1f2430;
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+
+.callout-number {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+.callout-text {
+  font-size: 15px;
+  color: #4a5263;
+  margin: 0;
+}
+
+/* ---------- Try this ---------- */
+
+.try-this {
+  font-size: 14px;
+  color: #4a5263;
+  margin: 8px 0;
+}
+
+/* ---------- Pill buttons ---------- */
+
+.vega-bind-radio input {
+  position: absolute;
+  opacity: 0;
+}
+
+.vega-bind-radio label {
+  display: inline-block;
+  padding: 3px 12px;
+  margin: 0 6px 6px 0;
+  border: 1px solid #c9cdd6;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.vega-bind-radio label:has(input:checked) {
+  background-color: #1f2430;
+  border-color: #1f2430;
+  color: white;
 }

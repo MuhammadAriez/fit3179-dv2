@@ -68,8 +68,9 @@
         <span class="key-item"><span class="key-chip state-chip"></span>State and territory government money</span>
         <span class="key-item"><span class="key-chip private-chip"></span>Fees and private money</span>
         <span class="key-item"><span class="key-chip funding-chip"></span>Funding per student, low to high</span>
-        <span class="key-item"><span class="key-chip sector-chip"></span>School sector: government, Catholic, independent (dark to light)</span>
+        <span class="key-item"><span class="key-chip sector-chip"></span>School sector, from most to least public money: government, Catholic, independent (dark to light)</span>
         <span class="key-item"><span class="key-chip schools-chip"></span>Number of schools, few to many</span>
+        <p class="chart-source">Hover over any chart for exact values.</p>
       </div>
     </div>
 
@@ -97,20 +98,22 @@
       </div>
       <div class="pure-u-1-2">
         <div class="chart-right">
+          <p class="figure-label"><span>Figure 1 · Pictogram</span><span>2025 · Australia</span></p>
           <h3>Six in ten students attend a government school</h3>
           <p class="chart-subtitle">Every 100 students in 2025, by school sector</p>
           <div id="waffle_chart" class="vis-container"></div>
-          <p class="chart-source">Source: Australian Bureau of Statistics, Schools 2025, Table 43a (full-time equivalent students).</p>
+          <p class="chart-source">Each figure is one student in every 100. Source: Australian Bureau of Statistics, Schools 2025, Table 43a (full-time equivalent students).</p>
         </div>
       </div>
     </div>
 
     <div class="pure-g">
       <div class="pure-u-1-1">
+        <p class="figure-label"><span>Figure 2 · Sankey diagram</span><span>2024 · Australia</span></p>
         <h3>Each sector is paid for by a different source</h3>
         <p class="chart-subtitle">Where school income came from in 2024, and which sector it went to</p>
         <div id="sankey_diagram" class="vis-container"></div>
-        <p class="chart-source">Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024.</p>
+        <p class="chart-source">The width of each flow shows the amount of money. Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024.</p>
       </div>
     </div>
 
@@ -130,20 +133,27 @@
     <div class="pure-g">
       <div class="pure-u-1-2">
         <div class="chart-left">
+          <p class="figure-label"><span>Figure 3 · Dumbbell chart</span><span>2024 · Australia</span></p>
           <h3>Catholic schools lean on Canberra; government schools on their state</h3>
           <p class="chart-subtitle">Government income per student by source, 2024</p>
           <div id="dumbbell_chart" class="vis-container"></div>
+          <div class="callout">
+            <p class="callout-number">25%</p>
+            <p class="callout-text">By 2034 the Australian Government will pay 25% of the national funding standard
+              (an estimate of what each government school needs), up from 20%. In the Northern Territory it rises
+              to 40% by 2029.</p>
+          </div>
           <p class="chart-source">Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024.</p>
         </div>
       </div>
       <div class="pure-u-1-2">
         <div class="chart-right">
+          <p class="figure-label"><span>Figure 4 · 100% stacked bar chart</span><span>2009 to 2024 · Australia</span></p>
           <h3>Independent schools raise half their income privately</h3>
           <p class="chart-subtitle">Share of each sector's income by source. Drag the slider to change the year.</p>
           <div id="stacked_bar_chart" class="vis-container"></div>
-          <p class="chart-note">In 2009, independent schools raised 59% of their income from fees and other
-            private sources. By 2024 it was 52%.</p>
-          <p class = "chart-source">Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024.</p>
+          <p class="try-this"><b>Try this:</b> drag the slider back to 2009. Independent schools then raised 59% of their income privately, against 52% in 2024.</p>
+          <p class="chart-source">Each bar adds up to 100% of that sector's income. Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024.</p>
         </div>
       </div>
     </div>
@@ -160,19 +170,28 @@
     <div class="pure-g">
       <div class="pure-u-1-2">
         <div class="chart-left">
+          <p class="figure-label"><span>Figure 5 · Choropleth map</span><span>2023-24 · States and territories</span></p>
           <h3>The Northern Territory spends the most per student</h3>
           <p class="chart-subtitle">Government recurrent funding per student, all schools, 2023-24</p>
           <div id="choropleth_map" class="vis-container"></div>
+          <div class="callout">
+            <p class="callout-number">66%</p>
+            <p class="callout-text">of Northern Territory schools are remote or very remote, against 6% nationally. The
+              funding standard pays extra for remote schools and Aboriginal and Torres Strait Islander students.</p>
+          </div>
           <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026,
             Table 4A.32.</p>
         </div>
       </div>
       <div class="pure-u-1-2">
         <div class="chart-right">
+          <p class="figure-label"><span>Figure 6 · Proportional symbol map</span><span>2025 · States and territories</span></p>
           <h3>Most students live in the three eastern states</h3>
           <p class="chart-subtitle">All students and non-government students, 2025</p>
           <div id="symbol_map" class="vis-container"></div>
-          <p class="chart-source">Source: Australian Bureau of Statistics, Schools 2025, Table 43a (full-time equivalent students).</p>
+          <p class="chart-note">New South Wales, Victoria and Queensland teach 77% of students. The non-government
+            share is highest in the Australian Capital Territory (41%) and lowest in the Northern Territory (28%).</p>
+          <p class="chart-source">Circle area shows the number of students. Source: Australian Bureau of Statistics, Schools 2025, Table 43a (full-time equivalent students).</p>
         </div>
       </div>
     </div>
@@ -180,21 +199,25 @@
     <div class="pure-g">
       <div class="pure-u-1-2">
         <div class="chart-left">
+          <p class="figure-label"><span>Figure 7 · Hexagon bin map</span><span>2025 · Australia</span></p>
           <h3>Eight in ten schools in remote Australia are government schools</h3>
           <p class="chart-subtitle">Number of schools in each hexagon (about 110 km across), 2025</p>
           <div id="bin_map" class="vis-container"></div>
-          <p class="chart-note">Choose Catholic or Independent and most of the inland empties: 61% of Catholic
-            and 68% of independent schools are in major cities, against 51% of government schools.</p>
+          <p class="try-this"><b>Try this:</b> choose Catholic or Independent and the inland empties. 61% of Catholic and 68% of independent schools are in major cities, against 51% of government schools.</p>
           <p class="chart-source">Source: Australian Curriculum, Assessment and Reporting Authority, School Location 2025.</p>
         </div>
       </div>
       <div class="pure-u-1-2">
         <div class="chart-right">
+          <p class="figure-label"><span>Figure 8 · Lollipop chart</span><span>2023-24 · States and territories</span></p>
           <h3>In every state, government schools receive more public money per student</h3>
           <p class="chart-subtitle">Extra government funding per government-school student, compared with a non-government-school student, 2023-24</p>
           <div id="lollipop_chart" class="vis-container"></div>
-          <p class="chart-note">The gap is widest in the Australian Capital Territory ($18,559 per student)
-            and narrowest in the Northern Territory ($5,024).</p>
+          <div class="callout">
+            <p class="callout-number">20%</p>
+            <p class="callout-text">Non-government schools in the wealthiest communities get only 20% of the base public
+              funding. Australian Capital Territory households earned $2,373 a week in 2021, against $1,746 nationally.</p>
+          </div>
           <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
         </div>
       </div>
@@ -213,24 +236,29 @@
 
     <div class="pure-g">
       <div class="pure-u-1-1">
+        <p class="figure-label"><span>Figure 9 · Small-multiple maps and line chart</span><span>2014-15 to 2023-24 · States and territories</span></p>
         <h3>Every state now spends more per student than a decade ago</h3>
         <p class="chart-subtitle">Government funding per student, after inflation</p>
         <div id="small_multiple_maps" class="vis-container"></div>
-        <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
+        <p class="try-this"><b>Try this:</b> click Victoria on any map, then the Northern Territory, and compare their lines with Australia.</p>
+        <p class="chart-source">The vertical axis starts at $15,000 so the differences between states are easier to see. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
       </div>
     </div>
 
     <div class="pure-g">
       <div class="pure-u-1-2">
         <div class="chart-left">
+          <p class="figure-label"><span>Figure 10 · Slope chart</span><span>2014-15 and 2023-24 · States and territories</span></p>
           <h3>Western Australia went from second-highest to second-lowest</h3>
           <p class="chart-subtitle">Government funding per student, 2014-15 against 2023-24, after inflation</p>
           <div id="slope_chart" class="vis-container"></div>
-          <p class="chart-source">Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
+          <p class="try-this"><b>Try this:</b> click any grey line to highlight that state.</p>
+          <p class="chart-source">The vertical axis starts at $15,000 so the differences between states are easier to see. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.</p>
         </div>
       </div>
       <div class="pure-u-1-2">
         <div class="chart-right">
+          <p class="figure-label"><span>Figure 11 · Heatmap</span><span>2014-15 to 2023-24 · States and territories</span></p>
           <h3>Victoria has funded the least per student in nine of the last ten years</h3>
           <p class="chart-subtitle">Government funding per student by state and year, after inflation</p>
           <div id="heatmap" class="vis-container"></div>
@@ -251,6 +279,7 @@
     <div class="pure-g">
       <div class="pure-u-1-2">
         <div class="chart-left">
+          <p class="figure-label"><span>Figure 12 · Butterfly chart</span><span>2024 · Australia</span></p>
           <h3>Government schools teach 63% of students but get 69% of government funding</h3>
           <p class="chart-subtitle">Share of students against share of government funding, by sector, 2024</p>
           <div id="butterfly_chart" class="vis-container"></div>
@@ -260,11 +289,12 @@
       </div>
       <div class="pure-u-1-2">
         <div class="chart-right">
+          <p class="figure-label"><span>Figure 13 · Treemap</span><span>2024 · States and territories</span></p>
           <h3>In every state, government schools get the biggest slice of government money</h3>
           <p class="chart-subtitle">Government funding by state, then by sector, 2024</p>
           <div id="treemap" class="vis-container"></div>
           <p class="chart-note">WA is Western Australia, NT is the Northern Territory and ACT is the Australian Capital Territory. Their boxes are too small for the full name.</p>
-          <p class="chart-source">Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024 (Australian Government plus state and territory funding).</p>
+          <p class="chart-source">Box area shows the amount of government funding. Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income 2024 (Australian Government plus state and territory funding).</p>
         </div>
       </div>
     </div>
@@ -296,6 +326,12 @@
               target="_blank">Schools, 2025</a>, Table 43a.</p>
           <p>Australian Curriculum, Assessment and Reporting Authority, <a href="https://acara.edu.au/contact-us/acara-data-access"
               target="_blank">School Location 2025</a>, used under the My School terms of use.</p>
+          <p>Department of Education, <a href="https://www.education.gov.au/download/19438/better-and-fairer-schools-funding-and-reform-bill-2024-provisions/41849/document/pdf"
+              target="_blank">Australian Government response on the Better and Fairer Schools Bill 2024</a>, August 2025.</p>
+          <p>Association of Independent Schools of Western Australia, <a href="https://ais.wa.edu.au/sites/default/files/news_files/WA%20-%202024%20SRS%20Funding%20Model%20Explainer%202024%20-%20FINAL%20August%202024%2020241105.pdf"
+              target="_blank">Schooling Resource Standard funding model explainer</a>, 2024.</p>
+          <p>Australian Bureau of Statistics, <a href="https://www.abs.gov.au/census/find-census-data/quickstats/2021/8"
+              target="_blank">2021 Census QuickStats, Australian Capital Territory</a>.</p>
           <p>State boundaries: Australian Bureau of Statistics, via <a href="https://github.com/rowanhogan/australian-states"
               target="_blank">rowanhogan/australian-states</a>.</p>
         </div>

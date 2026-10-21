@@ -21,7 +21,7 @@
         {
           "mark": {"type": "bar"},
           "encoding": {
-            "color": {"field": "sector", "type": "nominal", "scale": {"domain": ["Government", "Catholic", "Independent"], "range": ["#3a3f4b", "#7b8291", "#b9bec8"]}, "legend": null},
+            "color": {"field": "sector", "type": "nominal", "scale": {"domain": ["Government", "Catholic", "Independent"], "range": ["#22262e", "#646b7a", "#b3b9c4"]}, "legend": null},
             "tooltip": [
               {"field": "sector", "type": "nominal", "title": "Sector"},
               {"field": "share", "type": "quantitative", "title": "Share of students", "format": ".1%"},
@@ -54,7 +54,7 @@
         {
           "mark": {"type": "bar"},
           "encoding": {
-            "color": {"field": "sector", "type": "nominal", "scale": {"domain": ["Government", "Catholic", "Independent"], "range": ["#3a3f4b", "#7b8291", "#b9bec8"]}, "legend": null},
+            "color": {"field": "sector", "type": "nominal", "scale": {"domain": ["Government", "Catholic", "Independent"], "range": ["#22262e", "#646b7a", "#b3b9c4"]}, "legend": null},
             "tooltip": [
               {"field": "sector", "type": "nominal", "title": "Sector"},
               {"field": "share", "type": "quantitative", "title": "Share of government funding", "format": ".1%"},

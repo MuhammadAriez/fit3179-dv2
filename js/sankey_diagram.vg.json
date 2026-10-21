@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "Panel 2: School income in Australia in 2024, from each source (Australian Government, state and territory governments, fees and private money) to each school sector. Source: ACARA, school finance dataset, school income 2024.",
-  "width": 900,
+  "description": "Panel 2: School income in Australia in 2024, from each source (Australian Government, state and territory governments, fees and private money) to each school sector, with each sector's main source labelled. Source: ACARA, school finance dataset, school income 2024.",
+  "width": 1100,
   "height": 340,
   "autosize": "none",
   "signals": [
     {"name": "gap", "value": 16},
-    {"name": "leftX", "value": 210},
-    {"name": "rightX", "value": 730}
+    {"name": "leftX", "value": 250},
+    {"name": "rightX", "value": 830}
   ],
   "data": [
     {
@@ -44,10 +44,20 @@
       ]
     },
     {
+      "name": "main_sources",
+      "source": "flows",
+      "transform": [
+        {"type": "window", "groupby": ["sector"], "sort": {"field": "amount", "order": "descending"}, "ops": ["rank"], "as": ["rank"]},
+        {"type": "filter", "expr": "datum.rank == 1"},
+        {"type": "formula", "expr": "format(datum.amount / datum.sector_total, '.0%') + (datum.income_source == 'State and territory government' ? ' from the state or territory' : datum.income_source == 'Australian Government' ? ' from the Australian Government' : ' from fees and private money')", "as": "main_text"}
+      ]
+    },
+    {
       "name": "sector_nodes",
       "source": "flows",
       "transform": [
-        {"type": "aggregate", "groupby": ["sector", "sector_order"], "fields": ["t0", "t1", "amount"], "ops": ["min", "max", "sum"], "as": ["y0", "y1", "total"]}
+        {"type": "aggregate", "groupby": ["sector", "sector_order"], "fields": ["t0", "t1", "amount"], "ops": ["min", "max", "sum"], "as": ["y0", "y1", "total"]},
+        {"type": "lookup", "from": "main_sources", "key": "sector", "fields": ["sector"], "values": ["income_source", "main_text"], "as": ["main_source", "main_text"]}
       ]
     }
   ],
@@ -69,7 +79,7 @@
       "name": "sector_color",
       "type": "ordinal",
       "domain": ["Government", "Catholic", "Independent"],
-      "range": ["#3a3f4b", "#7b8291", "#b9bec8"]
+      "range": ["#22262e", "#646b7a", "#b3b9c4"]
     }
   ],
   "marks": [
@@ -125,7 +135,7 @@
           "text": {"signal": "[datum.income_source, format(datum.total / 1e9, '$.1f') + ' billion']"},
           "align": {"value": "right"},
           "baseline": {"value": "middle"},
-          "fontSize": {"value": 12},
+          "fontSize": {"value": 13},
           "fill": {"value": "#1f2430"}
         }
       }
@@ -136,12 +146,28 @@
       "encode": {
         "update": {
           "x": {"signal": "rightX + 22"},
-          "y": {"signal": "scale('y', (datum.y0 + datum.y1) / 2) + datum.sector_order * gap"},
+          "y": {"signal": "scale('y', (datum.y0 + datum.y1) / 2) + datum.sector_order * gap - 10"},
           "text": {"signal": "[datum.sector + ' schools', format(datum.total / 1e9, '$.1f') + ' billion']"},
           "align": {"value": "left"},
           "baseline": {"value": "middle"},
-          "fontSize": {"value": 12},
+          "fontSize": {"value": 13},
           "fill": {"value": "#1f2430"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "sector_nodes"},
+      "encode": {
+        "update": {
+          "x": {"signal": "rightX + 22"},
+          "y": {"signal": "scale('y', (datum.y0 + datum.y1) / 2) + datum.sector_order * gap + 21"},
+          "text": {"field": "main_text"},
+          "align": {"value": "left"},
+          "baseline": {"value": "middle"},
+          "fontSize": {"value": 13},
+          "fontWeight": {"value": "bold"},
+          "fill": {"scale": "source_color", "field": "main_source"}
         }
       }
     }

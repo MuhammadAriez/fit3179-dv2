@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 10: Government recurrent funding per student, all schools, by state and territory, 2014-15 and 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "description": "Panel 10: Government recurrent funding per student, all schools, by state and territory, 2014-15 and 2023-24, in 2023-24 dollars. Click a line to highlight a state. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
   "width": "container",
   "height": 380,
   "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
@@ -11,7 +11,7 @@
   ],
   "encoding": {
     "x": {"field": "year", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}},
-    "y": {"field": "per_student_real_2023_24_aud", "type": "quantitative", "scale": {"zero": false}, "axis": {"format": "$,.0f"}, "title": "Funding per student"},
+    "y": {"field": "per_student_real_2023_24_aud", "type": "quantitative", "scale": {"domain": [15000, 35000]}, "axis": {"format": "$,.0f", "values": [15000, 20000, 25000, 30000, 35000]}, "title": "Funding per student"},
     "detail": {"field": "state_abbr", "type": "nominal"},
     "tooltip": [
       {"field": "state", "type": "nominal", "title": "State or territory"},
@@ -21,20 +21,28 @@
   },
   "layer": [
     {
-      "mark": {"type": "line", "color": "#c9cdd6", "strokeWidth": 2, "point": {"color": "#c9cdd6", "size": 60}}
+      "params": [
+        {
+          "name": "pick_state",
+          "value": [{"state_abbr": "WA"}],
+          "select": {"type": "point", "fields": ["state_abbr"], "on": "click[event.item && event.item.datum && event.item.datum.state_abbr]", "clear": false, "toggle": false}
+        }
+      ],
+      "mark": {"type": "line", "color": "#c9cdd6", "strokeWidth": 3, "cursor": "pointer", "point": {"color": "#c9cdd6", "size": 80, "cursor": "pointer"}}
     },
     {
-      "transform": [{"filter": "datum.state_abbr == 'WA'"}],
+      "transform": [{"filter": {"param": "pick_state", "empty": false}}],
       "mark": {"type": "line", "color": "#5b3c94", "strokeWidth": 4, "point": {"color": "#5b3c94", "size": 100}}
     },
     {
-      "transform": [{"filter": "datum.state_abbr == 'WA' && datum.year == '2014-15'"}],
+      "transform": [{"filter": {"param": "pick_state", "empty": false}}, {"filter": "datum.year == '2014-15'"}],
       "mark": {"type": "text", "align": "right", "dx": -10, "fontWeight": "bold", "fontSize": 13, "color": "#5b3c94"},
       "encoding": {"text": {"field": "value_label", "type": "nominal"}}
     },
     {
       "transform": [
-        {"filter": "datum.state_abbr == 'WA' && datum.year == '2023-24'"},
+        {"filter": {"param": "pick_state", "empty": false}},
+        {"filter": "datum.year == '2023-24'"},
         {"calculate": "[datum.state, datum.value_label]", "as": "label"}
       ],
       "mark": {"type": "text", "align": "left", "dx": 10, "fontWeight": "bold", "fontSize": 13, "color": "#5b3c94"},

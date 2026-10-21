@@ -1,35 +1,207 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 1: Every 100 full-time equivalent students in Australia in 2025, by school sector. Source: ABS, Schools 2025, Table 43a.",
-  "width": 260,
-  "height": 260,
-  "data": {"url": "data/enrolments.csv", "format": {"parse": {"fte_students": "number"}}},
-  "transform": [
-    {"filter": "datum.year == 2025 && datum.state == 'Australia'"},
-    {"joinaggregate": [{"op": "sum", "field": "fte_students", "as": "total"}]},
-    {"calculate": "round(datum.fte_students / datum.total * 100)", "as": "squares"},
-    {"calculate": "datum.sector == 'Government' ? 1 : datum.sector == 'Catholic' ? 2 : 3", "as": "sector_order"},
-    {"calculate": "sequence(0, datum.squares)", "as": "square_list"},
-    {"flatten": ["square_list"]},
-    {"window": [{"op": "row_number", "as": "position"}], "sort": [{"field": "sector_order"}, {"field": "square_list"}]},
-    {"calculate": "(datum.position - 1) % 10", "as": "col"},
-    {"calculate": "floor((datum.position - 1) / 10)", "as": "row"}
-  ],
-    "mark": {"type": "rect", "stroke": "white", "strokeWidth": 3},
-  "encoding": {
-    "x": {"field": "col", "type": "ordinal", "axis": null},
-    "y": {"field": "row", "type": "ordinal", "axis": null},
-    "color": {
-      "field": "sector",
-      "type": "nominal",
-      "title": null,
-      "scale": {"domain": ["Government", "Catholic", "Independent"], "range": ["#3a3f4b", "#7b8291", "#b9bec8"]},
-      "legend": {"orient": "bottom", "direction": "horizontal"}
-    },
-    "tooltip": [
-      {"field": "sector", "type": "nominal", "title": "Sector"},
-      {"field": "squares", "type": "quantitative", "title": "Students out of every 100"}
-    ]
+  "description": "Panel 1 (pictogram): Every 100 full-time equivalent students in Australia in 2025, by school sector. Hover over a sector to show only its students. Source: ABS, Schools 2025, Table 43a.",
+  "width": 500,
+  "height": 150,
+  "data": {
+    "url": "data/enrolments.csv",
+    "format": {
+      "parse": {
+        "fte_students": "number"
+      }
+    }
   },
-  "config": {"font": "Atkinson Hyperlegible", "view": {"stroke": null}}
+  "transform": [
+    {
+      "filter": "datum.year == 2025 && datum.state == 'Australia'"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "fte_students",
+          "as": "total"
+        }
+      ]
+    },
+    {
+      "calculate": "round(datum.fte_students / datum.total * 100)",
+      "as": "squares"
+    },
+    {
+      "calculate": "datum.sector == 'Government' ? 1 : datum.sector == 'Catholic' ? 2 : 3",
+      "as": "sector_order"
+    },
+    {
+      "calculate": "sequence(0, datum.squares)",
+      "as": "square_list"
+    },
+    {
+      "flatten": [
+        "square_list"
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "position"
+        }
+      ],
+      "sort": [
+        {
+          "field": "sector_order"
+        },
+        {
+          "field": "square_list"
+        }
+      ]
+    },
+    {
+      "calculate": "floor((datum.position - 1) / 5)",
+      "as": "col"
+    },
+    {
+      "calculate": "(datum.position - 1) % 5",
+      "as": "row"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    }
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "pick_sector",
+          "select": {
+            "type": "point",
+            "fields": [
+              "sector"
+            ],
+            "on": "mouseover",
+            "clear": "mouseout",
+            "nearest": true
+          },
+          "bind": {
+            "legend": "mouseover"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 520,
+        "shape": "M0,-0.96 A0.3,0.3 0 1,1 0,-0.36 A0.3,0.3 0 1,1 0,-0.96 Z M-0.42,-0.24 L0.42,-0.24 Q0.58,-0.24 0.58,-0.08 L0.58,0.42 L0.34,0.42 L0.34,1 L-0.34,1 L-0.34,0.42 L-0.58,0.42 L-0.58,-0.08 Q-0.58,-0.24 -0.42,-0.24 Z"
+      },
+      "encoding": {
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "title": "School sector (darkest = most public money)",
+          "scale": {
+            "domain": [
+              "Government",
+              "Catholic",
+              "Independent"
+            ],
+            "range": [
+              "#22262e",
+              "#646b7a",
+              "#b3b9c4"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "symbolType": "M0,-0.96 A0.3,0.3 0 1,1 0,-0.36 A0.3,0.3 0 1,1 0,-0.96 Z M-0.42,-0.24 L0.42,-0.24 Q0.58,-0.24 0.58,-0.08 L0.58,0.42 L0.34,0.42 L0.34,1 L-0.34,1 L-0.34,0.42 L-0.58,0.42 L-0.58,-0.08 Q-0.58,-0.24 -0.42,-0.24 Z",
+            "symbolSize": 150,
+            "labelFontSize": 13,
+            "titleFontSize": 12,
+            "titleLimit": 500
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "pick_sector",
+            "value": 1
+          },
+          "value": 0.12
+        },
+        "tooltip": [
+          {
+            "field": "sector",
+            "type": "nominal",
+            "title": "Sector"
+          },
+          {
+            "field": "squares",
+            "type": "quantitative",
+            "title": "Students out of every 100"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "min",
+              "field": "col",
+              "as": "first_col"
+            },
+            {
+              "op": "max",
+              "field": "squares",
+              "as": "count"
+            }
+          ],
+          "groupby": [
+            "sector"
+          ]
+        },
+        {
+          "calculate": "datum.sector + ' ' + datum.count",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -7,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#1f2430"
+      },
+      "encoding": {
+        "x": {
+          "field": "first_col",
+          "type": "ordinal"
+        },
+        "y": {
+          "value": -12
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Atkinson Hyperlegible",
+    "view": {
+      "stroke": null
+    }
+  }
 }

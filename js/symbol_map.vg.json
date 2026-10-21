@@ -25,13 +25,13 @@
           "type": "quantitative",
           "title": "Students",
           "scale": {"range": [0, 4000]},
-          "legend": {"orient": "bottom", "direction": "horizontal", "values": [100000, 500000, 1000000], "format": ",.0f", "symbolFillColor": "#3a3f4b", "symbolStrokeWidth": 0}
+          "legend": {"orient": "bottom", "direction": "horizontal", "values": [100000, 500000, 1000000], "format": ",.0f", "symbolFillColor": "#22262e", "symbolStrokeWidth": 0}
         },
         "color": {
           "field": "student_group",
           "type": "nominal",
           "title": null,
-          "scale": {"domain": ["All students", "Non-government school students"], "range": ["#3a3f4b", "#b9bec8"]},
+          "scale": {"domain": ["All students", "Non-government school students"], "range": ["#22262e", "#b3b9c4"]},
           "legend": {"orient": "bottom", "direction": "vertical"}
         },
         "tooltip": [

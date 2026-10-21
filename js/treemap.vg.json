@@ -43,7 +43,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": ["Government", "Catholic", "Independent"],
-      "range": ["#3a3f4b", "#7b8291", "#b9bec8"]
+      "range": ["#22262e", "#646b7a", "#b3b9c4"]
     }
   ],
   "legends": [

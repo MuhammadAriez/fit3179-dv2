@@ -7,7 +7,7 @@
     {
       "name": "sector",
       "value": "All schools",
-      "bind": {"input": "select", "options": ["All schools", "Government", "Catholic", "Independent"], "name": "Show: "}
+      "bind": {"input": "radio", "options": ["All schools", "Government", "Catholic", "Independent"], "name": "Show: "}
     },
     {"name": "hexRadius", "value": 7},
     {"name": "hexWidth", "update": "sqrt(3) * hexRadius"}
