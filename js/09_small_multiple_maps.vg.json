@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 9: Government recurrent funding per student, all schools, by state and territory, in 2014-15, 2018-19 and 2023-24, in 2023-24 dollars, with a linked line chart for every year. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "description": "Figure 9: Government recurrent funding per student, all schools, by state and territory, in 2014-15, 2018-19 and 2023-24, in 2023-24 dollars, with a linked line chart for every year. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
   "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
   "transform": [
     {"filter": "datum.sector == 'All' && datum.source == 'Total government'"}
@@ -9,7 +9,7 @@
   "resolve": {"legend": {"color": "independent"}},
   "vconcat": [
     {
-      "width": 280,
+      "width": 255,
       "height": 240,
       "transform": [
         {"filter": "datum.state_abbr != 'Aust' && (datum.year == '2014-15' || datum.year == '2018-19' || datum.year == '2023-24')"},
@@ -67,7 +67,7 @@
       }
     },
     {
-      "width": 860,
+      "width": 790,
       "height": 220,
       "title": {
         "text": {"expr": "'Funding per student each year: ' + pick.state[0] + ' against Australia'"},

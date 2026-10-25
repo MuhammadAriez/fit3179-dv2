@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 8: How much more government funding each government-school student receives than each non-government-school student, by state and territory, 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "description": "Figure 8: How much more government funding each government-school student receives than each non-government-school student, by state and territory, 2023-24, in 2023-24 dollars. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
   "width": "container",
   "height": 420,
   "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
@@ -25,7 +25,7 @@
       "transform": [{"filter": "datum.state_abbr != 'Aust'"}],
       "encoding": {
         "y": {"field": "state", "type": "nominal", "title": null, "sort": "-x"},
-        "x": {"field": "gap", "type": "quantitative", "axis": {"format": "$,.0f", "values": [0, 5000, 10000, 15000, 20000]}, "title": "Extra government funding per government-school student"},
+        "x": {"field": "gap", "type": "quantitative", "scale": {"domain": [0, 22000]}, "axis": {"format": "$,.0f", "values": [0, 10000, 20000]}, "title": "Extra government funding per government-school student"},
         "tooltip": [
           {"field": "state", "type": "nominal", "title": "State or territory"},
           {"field": "Government", "type": "quantitative", "title": "Per government-school student", "format": "$,.0f"},
@@ -37,7 +37,7 @@
         {"mark": {"type": "rule", "color": "#c9cdd6", "strokeWidth": 3}, "encoding": {"x2": {"datum": 0}}},
         {"mark": {"type": "point", "filled": true, "size": 120, "opacity": 1, "color": "#5b3c94"}},
         {
-          "mark": {"type": "text", "align": "left", "dx": 10, "fontWeight": "bold", "fontSize": 12, "color": "#5b3c94"},
+          "mark": {"type": "text", "align": "center", "dy": -14, "fontWeight": "bold", "fontSize": 12, "color": "#5b3c94"},
           "encoding": {
             "text": {"field": "gap", "type": "quantitative", "format": "$,.0f"},
             "opacity": {"condition": {"test": "datum.state_abbr == 'ACT' || datum.state_abbr == 'NT'", "value": 1}, "value": 0}

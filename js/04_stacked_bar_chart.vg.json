@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 5: Share of each school sector's income by source, Australia, 2009 to 2024, with a year slider. Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income.",
+  "description": "Figure 4: Share of each school sector's income by source, Australia, 2009 to 2024, with a year slider. Source: Australian Curriculum, Assessment and Reporting Authority, school finance dataset, school income.",
   "width": "container",
   "height": 180,
   "data": {"url": "data/school_income_trend.csv", "format": {"parse": {"year": "number"}}},

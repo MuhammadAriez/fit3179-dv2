@@ -25,6 +25,13 @@ body {
   padding: 40px 50px;
 }
 
+/* Smaller laptop screens */
+@media (max-width: 1100px) {
+  .page {
+    padding: 32px 24px;
+  }
+}
+
 /* Space between every row of the grid  */
 .pure-g {
   margin-bottom: 32px;

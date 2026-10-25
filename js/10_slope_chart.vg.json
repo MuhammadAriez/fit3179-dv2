@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 10: Government recurrent funding per student, all schools, by state and territory, 2014-15 and 2023-24, in 2023-24 dollars. Click a line to highlight a state. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "description": "Figure 10: Government recurrent funding per student, all schools, by state and territory, 2014-15 and 2023-24, in 2023-24 dollars. Click a line to highlight a state. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
   "width": "container",
   "height": 380,
   "data": {"url": "data/gov_funding_real.csv", "format": {"parse": {"per_student_real_2023_24_aud": "number"}}},
@@ -10,7 +10,7 @@
     {"calculate": "format(datum.per_student_real_2023_24_aud, '$,.0f')", "as": "value_label"}
   ],
   "encoding": {
-    "x": {"field": "year", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}},
+    "x": {"field": "year", "type": "ordinal", "title": null, "scale": {"padding": 0.8, "align": 0.3}, "axis": {"labelAngle": 0}},
     "y": {"field": "per_student_real_2023_24_aud", "type": "quantitative", "scale": {"domain": [15000, 35000]}, "axis": {"format": "$,.0f", "values": [15000, 20000, 25000, 30000, 35000]}, "title": "Funding per student"},
     "detail": {"field": "state_abbr", "type": "nominal"},
     "tooltip": [
@@ -43,7 +43,7 @@
       "transform": [
         {"filter": {"param": "pick_state", "empty": false}},
         {"filter": "datum.year == '2023-24'"},
-        {"calculate": "[datum.state, datum.value_label]", "as": "label"}
+        {"calculate": "[datum.state_abbr == 'ACT' ? 'ACT' : datum.state, datum.value_label]", "as": "label"}
       ],
       "mark": {"type": "text", "align": "left", "dx": 10, "fontWeight": "bold", "fontSize": 13, "color": "#5b3c94"},
       "encoding": {"text": {"field": "label", "type": "nominal"}}

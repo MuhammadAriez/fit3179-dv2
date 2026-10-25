@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 7: Full-time equivalent students by state and territory, all schools and non-government schools, 2025. Source: ABS, Schools 2025, Table 43a.",
+  "description": "Figure 6: Full-time equivalent students by state and territory, all schools and non-government schools, 2025. Source: ABS, Schools 2025, Table 43a.",
   "width": "container",
   "height": 420,
   "projection": {"type": "conicEqualArea", "parallels": [-18, -36], "rotate": [-132, 0]},
@@ -25,7 +25,7 @@
           "type": "quantitative",
           "title": "Students",
           "scale": {"range": [0, 4000]},
-          "legend": {"orient": "bottom", "direction": "horizontal", "values": [100000, 500000, 1000000], "format": ",.0f", "symbolFillColor": "#22262e", "symbolStrokeWidth": 0}
+          "legend": {"orient": "bottom", "direction": "horizontal", "values": [100000, 500000, 1000000], "labelExpr": "datum.value >= 1000000 ? '1 million' : format(datum.value / 1000, ',.0f') + 'k'", "symbolFillColor": "#22262e", "symbolStrokeWidth": 0}
         },
         "color": {
           "field": "student_group",

@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Panel 12: Share of students (ABS, Schools 2024, full-time equivalent) against share of government funding received by schools (ACARA, school income 2024), by school sector, Australia, 2024.",
+  "description": "Figure 12: Share of students (ABS, Schools 2024, full-time equivalent) against share of government funding received by schools (ACARA, school income 2024), by school sector, Australia, 2024.",
   "spacing": 8,
   "hconcat": [
     {
       "title": {"text": "Share of students", "fontSize": 13},
-      "width": 180,
+      "width": 155,
       "height": 300,
       "data": {"url": "data/enrolments.csv", "format": {"parse": {"fte_students": "number"}}},
       "transform": [
@@ -37,7 +37,7 @@
     },
     {
       "title": {"text": "Share of government funding", "fontSize": 13},
-      "width": 180,
+      "width": 155,
       "height": 300,
       "data": {"url": "data/school_income_2024.csv", "format": {"parse": {"total_aud": "number"}}},
       "transform": [

@@ -1,0 +1,275 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 5: Government recurrent funding per student, all schools, by state and territory, 2023-24 (in 2023-24 dollars), from all governments, the Australian Government or state and territory governments. Source: Productivity Commission, Report on Government Services 2026, Table 4A.32.",
+  "width": "container",
+  "height": 420,
+  "params": [
+    {
+      "name": "funder",
+      "value": "Total government",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Total government",
+          "Australian Government",
+          "State and territory government"
+        ],
+        "labels": [
+          "All governments",
+          "Australian Government",
+          "State and territory governments"
+        ],
+        "name": "Who pays: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/gov_funding_real.csv",
+        "format": {
+          "parse": {
+            "per_student_real_2023_24_aud": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == '2023-24' && datum.sector == 'All' && datum.source == funder && datum.state_abbr != 'Aust'"
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "data/geo/aus_states.topojson",
+              "format": {
+                "type": "topojson",
+                "feature": "states"
+              }
+            },
+            "key": "properties.STATE_NAME"
+          },
+          "as": "geo"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "per_student_real_2023_24_aud",
+          "type": "quantitative",
+          "title": "Funding per student",
+          "scale": {
+            "zero": false,
+            "range": [
+              "#e7e1f2",
+              "#5b3c94"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "format": "$,.0f",
+            "gradientLength": 260,
+            "tickCount": 3,
+            "labelOverlap": "greedy"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State or territory"
+          },
+          {
+            "field": "source",
+            "type": "nominal",
+            "title": "Paid by"
+          },
+          {
+            "field": "per_student_real_2023_24_aud",
+            "type": "quantitative",
+            "title": "Funding per student",
+            "format": "$,.0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/gov_funding_real.csv",
+        "format": {
+          "parse": {
+            "per_student_real_2023_24_aud": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == '2023-24' && datum.sector == 'All' && datum.source == funder && datum.state_abbr != 'Aust'"
+        },
+        {
+          "joinaggregate": [
+            {
+              "op": "max",
+              "field": "per_student_real_2023_24_aud",
+              "as": "vmax"
+            },
+            {
+              "op": "min",
+              "field": "per_student_real_2023_24_aud",
+              "as": "vmin"
+            }
+          ]
+        },
+        {
+          "filter": "datum.state_abbr != 'ACT'"
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "data/states.csv"
+            },
+            "key": "state",
+            "fields": [
+              "lon",
+              "lat"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.per_student_real_2023_24_aud == datum.vmax || datum.per_student_real_2023_24_aud == datum.vmin ? datum.state + ' ' + format(datum.per_student_real_2023_24_aud, '$,.0f') : datum.state",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "fontSize": 12,
+        "lineBreak": " "
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.per_student_real_2023_24_aud >= datum.vmin + 0.6 * (datum.vmax - datum.vmin) && datum.state_abbr != 'Tas'",
+            "value": "white"
+          },
+          "value": "black"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/gov_funding_real.csv",
+        "format": {
+          "parse": {
+            "per_student_real_2023_24_aud": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == '2023-24' && datum.sector == 'All' && datum.source == funder && datum.state_abbr != 'Aust'"
+        },
+        {
+          "joinaggregate": [
+            {
+              "op": "max",
+              "field": "per_student_real_2023_24_aud",
+              "as": "vmax"
+            },
+            {
+              "op": "min",
+              "field": "per_student_real_2023_24_aud",
+              "as": "vmin"
+            }
+          ]
+        },
+        {
+          "filter": "datum.state_abbr == 'ACT'"
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "data/states.csv"
+            },
+            "key": "state",
+            "fields": [
+              "lon",
+              "lat"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.per_student_real_2023_24_aud == datum.vmax || datum.per_student_real_2023_24_aud == datum.vmin ? datum.state + ' ' + format(datum.per_student_real_2023_24_aud, '$,.0f') : datum.state",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "fontSize": 12,
+        "lineBreak": " ",
+        "align": "left",
+        "dx": 18,
+        "dy": 4
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Atkinson Hyperlegible",
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "titleFontSize": 12,
+      "labelFontSize": 12
+    }
+  }
+}

@@ -1,8 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "Panel 13: Government funding (Australian Government plus state and territory) received by schools in each state, then by school sector, 2024. Source: ACARA, school income 2024.",
-  "width": 500,
+  "description": "Figure 13: Government funding (Australian Government plus state and territory) received by schools in each state, then by school sector, 2024. Source: ACARA, school income 2024.",
   "height": 360,
+  "signals": [
+    {"name": "width", "init": "min(containerSize()[0], 500)", "on": [{"events": "window:resize", "update": "min(containerSize()[0], 500)"}]}
+  ],
   "data": [
     {
       "name": "funding",
